@@ -1,0 +1,2399 @@
+[
+  {
+    "type": 1,
+    "word": "爱",
+    "pinyin": "ài",
+    "cixing": "动",
+    "sort": 1,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "八",
+    "pinyin": "bā",
+    "cixing": "数",
+    "sort": 2,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "爸爸",
+    "pinyin": "bàba",
+    "cixing": "名",
+    "sort": 3,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "吧",
+    "pinyin": "ba",
+    "cixing": "助",
+    "sort": 4,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "白天",
+    "pinyin": "báitiān",
+    "cixing": "名",
+    "sort": 5,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "百",
+    "pinyin": "bǎi",
+    "cixing": "数",
+    "sort": 6,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "半",
+    "pinyin": "bàn",
+    "cixing": "数、（副）",
+    "sort": 7,
+    "levelName": "一级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "包子",
+    "pinyin": "bāozi",
+    "cixing": "名",
+    "sort": 8,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "杯子",
+    "pinyin": "bēizi",
+    "cixing": "名",
+    "sort": 9,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "本1",
+    "pinyin": "běn",
+    "cixing": "量",
+    "sort": 10,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "边",
+    "pinyin": "biān",
+    "cixing": "名、后缀",
+    "sort": 11,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "病",
+    "pinyin": "bìng",
+    "cixing": "名、动",
+    "sort": 12,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "不",
+    "pinyin": "bù",
+    "cixing": "副",
+    "sort": 13,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "不客气",
+    "pinyin": "bú kèqi",
+    "cixing": "",
+    "sort": 14,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "不要",
+    "pinyin": "búyào",
+    "cixing": "副",
+    "sort": 15,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "菜",
+    "pinyin": "cài",
+    "cixing": "名",
+    "sort": 16,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "茶",
+    "pinyin": "chá",
+    "cixing": "名",
+    "sort": 17,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "唱",
+    "pinyin": "chàng",
+    "cixing": "动",
+    "sort": 18,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "超市",
+    "pinyin": "chāoshì",
+    "cixing": "名",
+    "sort": 19,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "车",
+    "pinyin": "chē",
+    "cixing": "名",
+    "sort": 20,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "吃",
+    "pinyin": "chī",
+    "cixing": "动",
+    "sort": 21,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "出租车",
+    "pinyin": "chūzūchē",
+    "cixing": "名",
+    "sort": 22,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "穿",
+    "pinyin": "chuān",
+    "cixing": "动",
+    "sort": 23,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "打电话",
+    "pinyin": "dǎ diànhuà",
+    "sort": 24,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "大",
+    "pinyin": "dà",
+    "cixing": "形",
+    "sort": 25,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "大家",
+    "pinyin": "dàjiā",
+    "cixing": "代",
+    "sort": 26,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "大学",
+    "pinyin": "dàxué",
+    "cixing": "名",
+    "sort": 27,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "大学生",
+    "pinyin": "dàxuéshēng",
+    "cixing": "名",
+    "sort": 28,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "到",
+    "pinyin": "dào",
+    "cixing": "动",
+    "sort": 29,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "的",
+    "pinyin": "de",
+    "cixing": "助",
+    "sort": 30,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "第",
+    "pinyin": "dì",
+    "cixing": "前缀",
+    "sort": 31,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "弟弟",
+    "pinyin": "dìdi",
+    "cixing": "名",
+    "sort": 32,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "点1",
+    "pinyin": "diǎn",
+    "cixing": "量、（名）",
+    "sort": 33,
+    "levelName": "一级（三级）"
+  },
+  {
+    "type": 1,
+    "word": "店",
+    "pinyin": "diàn",
+    "cixing": "名",
+    "sort": 34,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "电话",
+    "pinyin": "diànhuà",
+    "cixing": "名",
+    "sort": 35,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "电脑",
+    "pinyin": "diànnǎo",
+    "cixing": "名",
+    "sort": 36,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "电视",
+    "pinyin": "diànshì",
+    "cixing": "名",
+    "sort": 37,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "电影",
+    "pinyin": "diànyǐng",
+    "cixing": "名",
+    "sort": 38,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "电影院",
+    "pinyin": "diànyǐngyuàn",
+    "cixing": "名",
+    "sort": 39,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "东西",
+    "pinyin": "dōngxi",
+    "cixing": "名",
+    "sort": 40,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "都",
+    "pinyin": "dōu",
+    "cixing": "副",
+    "sort": 41,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "读",
+    "pinyin": "dú",
+    "cixing": "动",
+    "sort": 42,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "读书",
+    "pinyin": "dúshū",
+    "cixing": "动",
+    "sort": 43,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "对",
+    "pinyin": "duì",
+    "cixing": "形、介、（动、量）",
+    "sort": 44,
+    "levelName": "一级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "对不起",
+    "pinyin": "duìbuqǐ",
+    "cixing": "动",
+    "sort": 45,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "多",
+    "pinyin": "duō",
+    "cixing": "形、动、代、（数、副）",
+    "sort": 46,
+    "levelName": "一级（二级）"
+  },
+  {
+    "type": 1,
+    "word": "多少",
+    "pinyin": "duōshao",
+    "cixing": "代",
+    "sort": 47,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "儿子",
+    "pinyin": "érzi",
+    "cixing": "名",
+    "sort": 48,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "二",
+    "pinyin": "èr",
+    "cixing": "数",
+    "sort": 49,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "饭",
+    "pinyin": "fàn",
+    "cixing": "名",
+    "sort": 50,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "饭店",
+    "pinyin": "fàndiàn",
+    "cixing": "名",
+    "sort": 51,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "房间",
+    "pinyin": "fángjiān",
+    "cixing": "名",
+    "sort": 52,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "非常",
+    "pinyin": "fēicháng",
+    "cixing": "副",
+    "sort": 53,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "飞机",
+    "pinyin": "fēijī",
+    "cixing": "名",
+    "sort": 54,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "分",
+    "pinyin": "fēn",
+    "cixing": "量、（动、名）",
+    "sort": 55,
+    "levelName": "一级（三级）"
+  },
+  {
+    "type": 1,
+    "word": "分钟",
+    "pinyin": "fēnzhōng",
+    "cixing": "量",
+    "sort": 56,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "高兴",
+    "pinyin": "gāoxìng",
+    "cixing": "形",
+    "sort": 57,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "歌",
+    "pinyin": "gē",
+    "cixing": "名",
+    "sort": 58,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "哥哥",
+    "pinyin": "gēge",
+    "cixing": "名",
+    "sort": 59,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "个",
+    "pinyin": "gè",
+    "cixing": "量",
+    "sort": 60,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "给",
+    "pinyin": "gěi",
+    "cixing": "动、（介）",
+    "sort": 61,
+    "levelName": "一级（二级）"
+  },
+  {
+    "type": 1,
+    "word": "公司",
+    "pinyin": "gōngsī",
+    "cixing": "名",
+    "sort": 62,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "工作",
+    "pinyin": "gōngzuò",
+    "cixing": "动、名",
+    "sort": 63,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "狗",
+    "pinyin": "gǒu",
+    "cixing": "名",
+    "sort": 64,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "贵",
+    "pinyin": "guì",
+    "cixing": "形",
+    "sort": 65,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "国",
+    "pinyin": "guó",
+    "cixing": "名",
+    "sort": 66,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "还",
+    "pinyin": "hái",
+    "cixing": "副",
+    "sort": 67,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "孩子",
+    "pinyin": "háizi",
+    "cixing": "名",
+    "sort": 68,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "汉语",
+    "pinyin": "Hànyǔ",
+    "cixing": "名",
+    "sort": 69,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "汉字",
+    "pinyin": "Hànzì",
+    "cixing": "名",
+    "sort": 70,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "好",
+    "pinyin": "hǎo",
+    "cixing": "形、（副）、（动）",
+    "sort": 71,
+    "levelName": "一级（二级）（四级）"
+  },
+  {
+    "type": 1,
+    "word": "好吃",
+    "pinyin": "hǎochī",
+    "cixing": "形",
+    "sort": 72,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "好看",
+    "pinyin": "hǎokàn",
+    "cixing": "形",
+    "sort": 73,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "好听",
+    "pinyin": "hǎotīng",
+    "cixing": "形",
+    "sort": 74,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "好玩儿",
+    "pinyin": "hǎowánr",
+    "cixing": "形",
+    "sort": 75,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "号",
+    "pinyin": "hào",
+    "cixing": "名、量",
+    "sort": 76,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "喝",
+    "pinyin": "hē",
+    "cixing": "动",
+    "sort": 77,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "和1",
+    "pinyin": "hé",
+    "cixing": "介、连",
+    "sort": 78,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "很",
+    "pinyin": "hěn",
+    "cixing": "副",
+    "sort": 79,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "后",
+    "pinyin": "hòu",
+    "cixing": "名",
+    "sort": 80,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "回",
+    "pinyin": "huí",
+    "cixing": "动、（量）",
+    "sort": 81,
+    "levelName": "一级（三级）"
+  },
+  {
+    "type": 1,
+    "word": "会1",
+    "pinyin": "huì",
+    "cixing": "动",
+    "sort": 82,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "火车",
+    "pinyin": "huǒchē",
+    "cixing": "名",
+    "sort": 83,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "鸡蛋",
+    "pinyin": "jīdàn",
+    "cixing": "名",
+    "sort": 84,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "几",
+    "pinyin": "jǐ",
+    "cixing": "代、数",
+    "sort": 85,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "家",
+    "pinyin": "jiā",
+    "cixing": "名、量、（后缀）",
+    "sort": 86,
+    "levelName": "一级（三级）"
+  },
+  {
+    "type": 1,
+    "word": "家人",
+    "pinyin": "jiārén",
+    "cixing": "名",
+    "sort": 87,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "见",
+    "pinyin": "jiàn",
+    "cixing": "动",
+    "sort": 88,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "件",
+    "pinyin": "jiàn",
+    "cixing": "量",
+    "sort": 89,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "饺子",
+    "pinyin": "jiǎozi",
+    "cixing": "名",
+    "sort": 90,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "叫",
+    "pinyin": "jiào",
+    "cixing": "动、（介）",
+    "sort": 91,
+    "levelName": "一级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "姐姐",
+    "pinyin": "jiějie",
+    "cixing": "名",
+    "sort": 92,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "今年",
+    "pinyin": "jīnnián",
+    "cixing": "名",
+    "sort": 93,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "今天",
+    "pinyin": "jīntiān",
+    "cixing": "名",
+    "sort": 94,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "九",
+    "pinyin": "jiǔ",
+    "cixing": "数",
+    "sort": 95,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "觉得",
+    "pinyin": "juéde",
+    "cixing": "动",
+    "sort": 96,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "开",
+    "pinyin": "kāi",
+    "cixing": "动",
+    "sort": 97,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "开车",
+    "pinyin": "kāichē",
+    "cixing": "动",
+    "sort": 98,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "看",
+    "pinyin": "kàn",
+    "cixing": "动",
+    "sort": 99,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "看病",
+    "pinyin": "kànbìng",
+    "cixing": "动",
+    "sort": 100,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "看见",
+    "pinyin": "kànjiàn",
+    "cixing": "动",
+    "sort": 101,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "可以",
+    "pinyin": "kěyǐ",
+    "cixing": "动、形",
+    "sort": 102,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "课",
+    "pinyin": "kè",
+    "cixing": "名",
+    "sort": 103,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "口",
+    "pinyin": "kǒu",
+    "cixing": "名、量",
+    "sort": 104,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "块",
+    "pinyin": "kuài",
+    "cixing": "量",
+    "sort": 105,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "来",
+    "pinyin": "lái",
+    "cixing": "动",
+    "sort": 106,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "老师",
+    "pinyin": "lǎoshī",
+    "cixing": "名",
+    "sort": 107,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "了",
+    "pinyin": "le",
+    "cixing": "助",
+    "sort": 108,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "冷",
+    "pinyin": "lěng",
+    "cixing": "形",
+    "sort": 109,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "里",
+    "pinyin": "lǐ",
+    "cixing": "名",
+    "sort": 110,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "两1",
+    "pinyin": "liǎng",
+    "cixing": "数",
+    "sort": 111,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "零",
+    "pinyin": "líng",
+    "cixing": "数",
+    "sort": 112,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "六",
+    "pinyin": "liù",
+    "cixing": "数",
+    "sort": 113,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "妈妈",
+    "pinyin": "māma",
+    "cixing": "名",
+    "sort": 114,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "吗",
+    "pinyin": "ma",
+    "cixing": "助",
+    "sort": 115,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "买",
+    "pinyin": "mǎi",
+    "cixing": "动",
+    "sort": 116,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "卖",
+    "pinyin": "mài",
+    "cixing": "动",
+    "sort": 117,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "忙",
+    "pinyin": "máng",
+    "cixing": "形、动",
+    "sort": 118,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "猫",
+    "pinyin": "māo",
+    "cixing": "名",
+    "sort": 119,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "没关系",
+    "pinyin": "méi guānxi",
+    "cixing": "",
+    "sort": 120,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "没事",
+    "pinyin": "méishì",
+    "cixing": "动",
+    "sort": 121,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "没有",
+    "pinyin": "méiyǒu",
+    "cixing": "动、副",
+    "sort": 122,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "妹妹",
+    "pinyin": "mèimei",
+    "cixing": "名",
+    "sort": 123,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "们",
+    "pinyin": "men",
+    "cixing": "后缀",
+    "sort": 124,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "米饭",
+    "pinyin": "mǐfàn",
+    "cixing": "名",
+    "sort": 125,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "面包",
+    "pinyin": "miànbāo",
+    "cixing": "名",
+    "sort": 126,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "面条儿",
+    "pinyin": "miàntiáor",
+    "cixing": "名",
+    "sort": 127,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "明年",
+    "pinyin": "míngnián",
+    "cixing": "名",
+    "sort": 128,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "明天",
+    "pinyin": "míngtiān",
+    "cixing": "名",
+    "sort": 129,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "名字",
+    "pinyin": "míngzi",
+    "cixing": "名",
+    "sort": 130,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "哪",
+    "pinyin": "nǎ",
+    "cixing": "代",
+    "sort": 131,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "哪个",
+    "pinyin": "nǎge",
+    "cixing": "代",
+    "sort": 132,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "哪里",
+    "pinyin": "nǎlǐ",
+    "cixing": "代",
+    "sort": 133,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "哪儿",
+    "pinyin": "nǎr",
+    "cixing": "代",
+    "sort": 134,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "哪些",
+    "pinyin": "nǎxiē",
+    "cixing": "代",
+    "sort": 135,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "那",
+    "pinyin": "nà",
+    "cixing": "代、（连）",
+    "sort": 136,
+    "levelName": "一级（二级）"
+  },
+  {
+    "type": 1,
+    "word": "那边",
+    "pinyin": "nàbiān",
+    "cixing": "代",
+    "sort": 137,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "那个",
+    "pinyin": "nàge",
+    "cixing": "代",
+    "sort": 138,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "那里",
+    "pinyin": "nàlǐ",
+    "cixing": "代",
+    "sort": 139,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "那儿",
+    "pinyin": "nàr",
+    "cixing": "代",
+    "sort": 140,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "那些",
+    "pinyin": "nàxiē",
+    "cixing": "代",
+    "sort": 141,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "男",
+    "pinyin": "nán",
+    "cixing": "形",
+    "sort": 142,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "男朋友",
+    "pinyin": "nánpéngyou",
+    "cixing": "名",
+    "sort": 143,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "呢",
+    "pinyin": "ne",
+    "cixing": "助",
+    "sort": 144,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "能",
+    "pinyin": "néng",
+    "cixing": "动",
+    "sort": 145,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "你",
+    "pinyin": "nǐ",
+    "cixing": "代",
+    "sort": 146,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "你好",
+    "pinyin": "nǐ hǎo",
+    "cixing": "",
+    "sort": 147,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "你们",
+    "pinyin": "nǐmen",
+    "cixing": "代",
+    "sort": 148,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "年",
+    "pinyin": "nián",
+    "cixing": "名、量",
+    "sort": 149,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "您",
+    "pinyin": "nín",
+    "cixing": "代",
+    "sort": 150,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "牛奶",
+    "pinyin": "niúnǎi",
+    "cixing": "名",
+    "sort": 151,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "女",
+    "pinyin": "nǚ",
+    "cixing": "形",
+    "sort": 152,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "女儿",
+    "pinyin": "nǚ’ér",
+    "cixing": "名",
+    "sort": 153,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "女朋友",
+    "pinyin": "nǚpéngyou",
+    "cixing": "名",
+    "sort": 154,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "女士",
+    "pinyin": "nǚshì",
+    "cixing": "名",
+    "sort": 155,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "朋友",
+    "pinyin": "péngyou",
+    "cixing": "名",
+    "sort": 156,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "便宜",
+    "pinyin": "piányi",
+    "cixing": "形",
+    "sort": 157,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "漂亮",
+    "pinyin": "piàoliang",
+    "cixing": "形",
+    "sort": 158,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "苹果",
+    "pinyin": "píngguǒ",
+    "cixing": "名",
+    "sort": 159,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "七",
+    "pinyin": "qī",
+    "cixing": "数",
+    "sort": 160,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "起床",
+    "pinyin": "qǐchuáng",
+    "cixing": "动",
+    "sort": 161,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "千",
+    "pinyin": "qiān",
+    "cixing": "数",
+    "sort": 162,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "前",
+    "pinyin": "qián",
+    "cixing": "名",
+    "sort": 163,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "钱",
+    "pinyin": "qián",
+    "cixing": "名",
+    "sort": 164,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "请",
+    "pinyin": "qǐng",
+    "cixing": "动",
+    "sort": 165,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "请问",
+    "pinyin": "qǐngwèn",
+    "cixing": "动",
+    "sort": 166,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "去",
+    "pinyin": "qù",
+    "cixing": "动",
+    "sort": 167,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "去年",
+    "pinyin": "qùnián",
+    "cixing": "名",
+    "sort": 168,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "热",
+    "pinyin": "rè",
+    "cixing": "形",
+    "sort": 169,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "人",
+    "pinyin": "rén",
+    "cixing": "名",
+    "sort": 170,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "认识",
+    "pinyin": "rènshi",
+    "cixing": "动",
+    "sort": 171,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "日",
+    "pinyin": "rì",
+    "cixing": "量、（名）",
+    "sort": 172,
+    "levelName": "一级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "三",
+    "pinyin": "sān",
+    "cixing": "数",
+    "sort": 173,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "商店",
+    "pinyin": "shāngdiàn",
+    "cixing": "名",
+    "sort": 174,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "上",
+    "pinyin": "shàng",
+    "cixing": "名、动",
+    "sort": 175,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "上班",
+    "pinyin": "shàngbān",
+    "cixing": "动",
+    "sort": 176,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "上课",
+    "pinyin": "shàngkè",
+    "cixing": "动",
+    "sort": 177,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "上午",
+    "pinyin": "shàngwǔ",
+    "cixing": "名",
+    "sort": 178,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "上学",
+    "pinyin": "shàngxué",
+    "cixing": "动",
+    "sort": 179,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "少",
+    "pinyin": "shǎo",
+    "cixing": "形、动",
+    "sort": 180,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "谁",
+    "pinyin": "shéi/shuí",
+    "cixing": "代",
+    "sort": 181,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "什么",
+    "pinyin": "shénme",
+    "cixing": "代",
+    "sort": 182,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "生病",
+    "pinyin": "shēngbìng",
+    "cixing": "动",
+    "sort": 183,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "十",
+    "pinyin": "shí",
+    "cixing": "数",
+    "sort": 184,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "时候",
+    "pinyin": "shíhou",
+    "cixing": "名",
+    "sort": 185,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "时间",
+    "pinyin": "shíjiān",
+    "cixing": "名",
+    "sort": 186,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "事",
+    "pinyin": "shì",
+    "cixing": "名",
+    "sort": 187,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "是",
+    "pinyin": "shì",
+    "cixing": "动",
+    "sort": 188,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "手机",
+    "pinyin": "shǒujī",
+    "cixing": "名",
+    "sort": 189,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "书",
+    "pinyin": "shū",
+    "cixing": "名",
+    "sort": 190,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "书店",
+    "pinyin": "shūdiàn",
+    "cixing": "名",
+    "sort": 191,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "水",
+    "pinyin": "shuǐ",
+    "cixing": "名",
+    "sort": 192,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "水果",
+    "pinyin": "shuǐguǒ",
+    "cixing": "名",
+    "sort": 193,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "睡",
+    "pinyin": "shuì",
+    "cixing": "动",
+    "sort": 194,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "睡觉",
+    "pinyin": "shuìjiào",
+    "cixing": "动",
+    "sort": 195,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "说",
+    "pinyin": "shuō",
+    "cixing": "动",
+    "sort": 196,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "说话",
+    "pinyin": "shuōhuà",
+    "cixing": "动",
+    "sort": 197,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "四",
+    "pinyin": "sì",
+    "cixing": "数",
+    "sort": 198,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "岁",
+    "pinyin": "suì",
+    "cixing": "量",
+    "sort": 199,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "他",
+    "pinyin": "tā",
+    "cixing": "代",
+    "sort": 200,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "它",
+    "pinyin": "tā",
+    "cixing": "代",
+    "sort": 201,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "她",
+    "pinyin": "tā",
+    "cixing": "代",
+    "sort": 202,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "他们",
+    "pinyin": "tāmen",
+    "cixing": "代",
+    "sort": 203,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "它们",
+    "pinyin": "tāmen",
+    "cixing": "代",
+    "sort": 204,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "她们",
+    "pinyin": "tāmen",
+    "cixing": "代",
+    "sort": 205,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "太",
+    "pinyin": "tài",
+    "cixing": "副",
+    "sort": 206,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "天",
+    "pinyin": "tiān",
+    "cixing": "名、量",
+    "sort": 207,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "天气",
+    "pinyin": "tiānqì",
+    "cixing": "名",
+    "sort": 208,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "听",
+    "pinyin": "tīng",
+    "cixing": "动",
+    "sort": 209,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "听见",
+    "pinyin": "tīngjiàn",
+    "cixing": "动",
+    "sort": 210,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "同学",
+    "pinyin": "tóngxué",
+    "cixing": "名",
+    "sort": 211,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "外",
+    "pinyin": "wài",
+    "cixing": "名",
+    "sort": 212,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "外边",
+    "pinyin": "wàibian",
+    "cixing": "名",
+    "sort": 213,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "玩",
+    "pinyin": "wán",
+    "cixing": "动",
+    "sort": 214,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "晚",
+    "pinyin": "wǎn",
+    "cixing": "形",
+    "sort": 215,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "晚饭",
+    "pinyin": "wǎnfàn",
+    "cixing": "名",
+    "sort": 216,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "晚上",
+    "pinyin": "wǎnshang",
+    "cixing": "名",
+    "sort": 217,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "喂1",
+    "pinyin": "wèi",
+    "cixing": "叹",
+    "sort": 218,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "问",
+    "pinyin": "wèn",
+    "cixing": "动",
+    "sort": 219,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "问题",
+    "pinyin": "wèntí",
+    "cixing": "名",
+    "sort": 220,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "我",
+    "pinyin": "wǒ",
+    "cixing": "代",
+    "sort": 221,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "我们",
+    "pinyin": "wǒmen",
+    "cixing": "代",
+    "sort": 222,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "五",
+    "pinyin": "wǔ",
+    "cixing": "数",
+    "sort": 223,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "午饭",
+    "pinyin": "wǔfàn",
+    "cixing": "名",
+    "sort": 224,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "喜欢",
+    "pinyin": "xǐhuan",
+    "cixing": "动",
+    "sort": 225,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "下",
+    "pinyin": "xià",
+    "cixing": "名、动、量",
+    "sort": 226,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "下雨",
+    "pinyin": "xià yǔ",
+    "sort": 227,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "下班",
+    "pinyin": "xiàbān",
+    "cixing": "动",
+    "sort": 228,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "下课",
+    "pinyin": "xiàkè",
+    "cixing": "动",
+    "sort": 229,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "下午",
+    "pinyin": "xiàwǔ",
+    "cixing": "名",
+    "sort": 230,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "先生",
+    "pinyin": "xiānsheng",
+    "cixing": "名",
+    "sort": 231,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "现在",
+    "pinyin": "xiànzài",
+    "cixing": "名",
+    "sort": 232,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "想",
+    "pinyin": "xiǎng",
+    "cixing": "动",
+    "sort": 233,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "小",
+    "pinyin": "xiǎo",
+    "cixing": "形、前缀",
+    "sort": 234,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "小朋友",
+    "pinyin": "xiǎopéngyǒu",
+    "cixing": "名",
+    "sort": 235,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "小时",
+    "pinyin": "xiǎoshí",
+    "cixing": "名",
+    "sort": 236,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "小学",
+    "pinyin": "xiǎoxué",
+    "cixing": "名",
+    "sort": 237,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "小学生",
+    "pinyin": "xiǎoxuéshēng",
+    "cixing": "名",
+    "sort": 238,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "些",
+    "pinyin": "xiē",
+    "cixing": "量",
+    "sort": 239,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "写",
+    "pinyin": "xiě",
+    "cixing": "动",
+    "sort": 240,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "谢谢",
+    "pinyin": "xièxie",
+    "cixing": "动",
+    "sort": 241,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "新",
+    "pinyin": "xīn",
+    "cixing": "形",
+    "sort": 242,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "星期",
+    "pinyin": "xīngqī",
+    "cixing": "名",
+    "sort": 243,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "星期日",
+    "pinyin": "xīngqīrì",
+    "cixing": "名",
+    "sort": 244,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "星期天",
+    "pinyin": "xīngqītiān",
+    "cixing": "名",
+    "sort": 245,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "休息",
+    "pinyin": "xiūxi",
+    "cixing": "动",
+    "sort": 246,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "学",
+    "pinyin": "xué",
+    "cixing": "动",
+    "sort": 247,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "学生",
+    "pinyin": "xuéshēng",
+    "cixing": "名",
+    "sort": 248,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "学习",
+    "pinyin": "xuéxí",
+    "cixing": "动",
+    "sort": 249,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "学校",
+    "pinyin": "xuéxiào",
+    "cixing": "名",
+    "sort": 250,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "雪",
+    "pinyin": "xuě",
+    "cixing": "名",
+    "sort": 251,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "要",
+    "pinyin": "yào",
+    "cixing": "动",
+    "sort": 252,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "也",
+    "pinyin": "yě",
+    "cixing": "副",
+    "sort": 253,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "一",
+    "pinyin": "yī",
+    "cixing": "数",
+    "sort": 254,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "衣服",
+    "pinyin": "yīfu",
+    "cixing": "名",
+    "sort": 255,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "医生",
+    "pinyin": "yīshēng",
+    "cixing": "名",
+    "sort": 256,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "医院",
+    "pinyin": "yīyuàn",
+    "cixing": "名",
+    "sort": 257,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "一半",
+    "pinyin": "yíbàn",
+    "cixing": "数",
+    "sort": 258,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "一下",
+    "pinyin": "yíxià",
+    "cixing": "数量、（副）",
+    "sort": 259,
+    "levelName": "一级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "椅子",
+    "pinyin": "yǐzi",
+    "cixing": "名",
+    "sort": 260,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "cixing": "数量",
+    "sort": 261,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "一些",
+    "pinyin": "yìxiē",
+    "cixing": "数量",
+    "sort": 262,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "有",
+    "pinyin": "yǒu",
+    "cixing": "动",
+    "sort": 263,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "有的",
+    "pinyin": "yǒude",
+    "cixing": "代",
+    "sort": 264,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "有点儿",
+    "pinyin": "yǒudiǎnr",
+    "cixing": "副",
+    "sort": 265,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "有些",
+    "pinyin": "yǒuxiē",
+    "cixing": "代、（副）",
+    "sort": 266,
+    "levelName": "一级（三级）"
+  },
+  {
+    "type": 1,
+    "word": "雨",
+    "pinyin": "yǔ",
+    "cixing": "名",
+    "sort": 267,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "元",
+    "pinyin": "yuán",
+    "cixing": "量",
+    "sort": 268,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "月",
+    "pinyin": "yuè",
+    "cixing": "名",
+    "sort": 269,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "再",
+    "pinyin": "zài",
+    "cixing": "副",
+    "sort": 270,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "在",
+    "pinyin": "zài",
+    "cixing": "动、介、副",
+    "sort": 271,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "再见",
+    "pinyin": "zàijiàn",
+    "cixing": "动",
+    "sort": 272,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "早",
+    "pinyin": "zǎo",
+    "cixing": "形",
+    "sort": 273,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "早饭",
+    "pinyin": "zǎofàn",
+    "cixing": "名",
+    "sort": 274,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "早上",
+    "pinyin": "zǎoshang",
+    "cixing": "名",
+    "sort": 275,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "怎么",
+    "pinyin": "zěnme",
+    "cixing": "代",
+    "sort": 276,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "cixing": "代",
+    "sort": 277,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "找",
+    "pinyin": "zhǎo",
+    "cixing": "动",
+    "sort": 278,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "这",
+    "pinyin": "zhè",
+    "cixing": "代",
+    "sort": 279,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "这边",
+    "pinyin": "zhèbiān",
+    "cixing": "代",
+    "sort": 280,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "这个",
+    "pinyin": "zhège",
+    "cixing": "代",
+    "sort": 281,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "这里",
+    "pinyin": "zhèlǐ",
+    "cixing": "代",
+    "sort": 282,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "这儿",
+    "pinyin": "zhèr",
+    "cixing": "代",
+    "sort": 283,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "这些",
+    "pinyin": "zhèxiē",
+    "cixing": "代",
+    "sort": 284,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "真",
+    "pinyin": "zhēn",
+    "cixing": "副、（形）",
+    "sort": 285,
+    "levelName": "一级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "正在",
+    "pinyin": "zhèngzài",
+    "cixing": "副",
+    "sort": 286,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "只",
+    "pinyin": "zhī",
+    "cixing": "量",
+    "sort": 287,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "知道",
+    "pinyin": "zhīdào",
+    "cixing": "动",
+    "sort": 288,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "中国",
+    "pinyin": "Zhōngguó",
+    "cixing": "名",
+    "sort": 289,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "中文",
+    "pinyin": "Zhōngwén",
+    "cixing": "名",
+    "sort": 290,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "中午",
+    "pinyin": "zhōngwǔ",
+    "cixing": "名",
+    "sort": 291,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "中学",
+    "pinyin": "zhōngxué",
+    "cixing": "名",
+    "sort": 292,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "中学生",
+    "pinyin": "zhōngxuéshēng",
+    "cixing": "名",
+    "sort": 293,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "住",
+    "pinyin": "zhù",
+    "cixing": "动",
+    "sort": 294,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "桌子",
+    "pinyin": "zhuōzi",
+    "cixing": "名",
+    "sort": 295,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "字",
+    "pinyin": "zì",
+    "cixing": "名",
+    "sort": 296,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "昨天",
+    "pinyin": "zuótiān",
+    "cixing": "名",
+    "sort": 297,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "坐",
+    "pinyin": "zuò",
+    "cixing": "动",
+    "sort": 298,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "做",
+    "pinyin": "zuò",
+    "cixing": "动",
+    "sort": 299,
+    "levelName": "一级"
+  },
+  {
+    "type": 1,
+    "word": "做饭",
+    "pinyin": "zuò fàn",
+    "sort": 300,
+    "levelName": "一级"
+  }
+]

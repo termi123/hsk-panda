@@ -1,0 +1,562 @@
+[
+  {
+    "examLevelId": "HSK5",
+    "content": "—头",
+    "grammarType": "语素",
+    "categoryType": "后缀",
+    "grammarDetail": "",
+    "cases": "那块石头上刻着一些汉字。\n那本书里头是不是有一封信？"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "彼此、如此、本",
+    "grammarType": "词类",
+    "categoryType": "代词",
+    "grammarDetail": "指示代词",
+    "cases": "在日常交流中，我们应该尊重彼此。\r\n他们已经认识很久了，对彼此的习惯非常了解。\r\n这里的夏天异常炎热，年年如此。\r\n很多人都没有想到乡村的变化如此巨大。\r\n本规定自明日起正式实施。\r\n本次列车开往北京西站。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "册、朵、届、颗、匹、行、架、群、支、根、批、束、副、集、周",
+    "grammarType": "词类",
+    "categoryType": "量词",
+    "grammarDetail": "名量词",
+    "cases": "这册历史书讲述了古代中国的发展过程。\r\n第一次见面时他送给了我一朵玫瑰花。\r\n这届会议讨论了许多重要的话题。\r\n城市夜晚的天空中几乎看不到几颗星星。\r\n那匹马跑得特别快，赢得了这次比赛。\r\n她在表格的最后一行写上了自己的名字。\r\n那架飞机在空中飞行了很久，最终安全降落。\r\n一群可爱的孩子正在舞台上表演节目。\r\n这支队伍非常优秀，连续几年都获得了冠军。\r\n他一不小心把一根筷子掉在了地上。\r\n王经理正在培训这批新员工。\r\n为了表示对朋友的欢迎，他特意买了一束花。\r\n选来选去还是这副手套戴着最舒服。\r\n别看书了，打开电视，看两集电视剧吧。\r\n地球绕太阳一周需要一年。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "眼",
+    "grammarType": "词类",
+    "categoryType": "量词",
+    "grammarDetail": "动量词",
+    "cases": "新娘看了一眼新郎，害羞得低下了头。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "过于、相当、较1、可2、格外、极其",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "程度副词",
+    "cases": "他在面试时过于紧张，连话都说不清楚了。\r\n过于追求完美反而会让人总是对现状不满意。\r\n这次考试的题目相当难，很多同学都没有及格。\r\n他的中文水平相当不错，可以和中国人流利对话。\r\n如何才能在短期内较快地提高中文水平？\r\n年轻人学习新事物的能力较强，能够很快适应新的环境。\r\n那家公司今年推出的新产品可受欢迎了。\r\n这部电影拍得可精彩了，你千万不能错过！\r\n这家餐厅的服务态度格外热情，常常需要提前预约。\r\n国庆假期的景区格外热闹，到处都是外地来的游客。\r\n那天的天气极其恶劣，我们不得不取消旅行计划。\r\n这次旅行给我留下了极其深刻的印象，尤其是当地的美食和历史。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "时刻、曾经、立刻、连忙、始终、早已、即将、急忙、渐渐、尽快、早晚",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "时间副词",
+    "cases": "父母要时刻关心孩子的心理健康。\r\n他提醒我旅行时一定要时刻注意自己的护照和钱包。\r\n她曾经当过导游，在设计旅行线路方面很有经验。\r\n王校长去年曾经来我们学校访问过。\r\n为了迎接客人的到来，他一下班就立刻回家准备晚餐。\r\n张教授刚说完，学生们就立刻认真地写起来。\r\n妈妈连忙检查摔倒的孩子有没有受伤。\r\n他连忙向交警解释自己并非故意违反交通规则。\r\n最近一年，这套教材的销量始终保持增长。\r\n无论如何，亲朋好友始终是你的依靠。\r\n这里的乡村早已实现了现代化，不再是当年的样子。\r\n科学家早已研发出治疗这种疾病的药物。\r\n明天公司即将召开新品发布会，欢迎大家参加！\r\n他们的婚礼即将在下个月举行。\r\n听到消息后，她急忙收拾行李赶往机场。\r\n车祸发生后，他急忙打电话叫救护车。\r\n计算机技术渐渐成为各行各业的关键技术。\r\n春天一到，气温就开始渐渐上升了。\r\n如果您有任何问题，请尽快联系我。\r\n医生建议他尽快接受手术治疗。\r\n他们再这样一直吵下去，早晚会离婚的。\r\n父母应该明白，孩子早晚是要独立生活的。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "老是、通常、时常",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "频率副词",
+    "cases": "他最近老是熬夜，所以脸色很不好。\r\n你出门老是忘记带钥匙，这个坏习惯一定要改！\r\n旅行社通常在寒暑假生意更好。\r\n中国的大学通常会为学生提供更换专业的机会。\r\n他时常下班后去公园散步，顺便放松一下心情。\r\n夫妻二人的工作都很忙，所以时常没有人做家务。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "尽量、亲自",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "方式副词",
+    "cases": "冬天尽量少吃雪糕，容易着凉。\r\n请大家尽量在本周五提交论文。\r\n公司老板亲自参与了新产品的设计与开发。\r\n这些点心是我亲自为你做的。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "便、一旦",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "关联副词",
+    "cases": "会议一结束，我便赶回公司了。\r\n这个学生很聪明，一教便懂。\r\n一旦确定了目标，就不要放弃。\r\n这次机会非常难得，一旦错过了，你会后悔的。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "似乎、仿佛",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "情态副词",
+    "cases": "他似乎在犹豫要不要接受这份新工作。\r\n这家便利店似乎两周前就关门了。\r\n我们仿佛在哪儿见过似的。\r\n他俩见面不打招呼，仿佛谁也不认识谁。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "毕竟、居然、反正、根本、果然、简直、绝对、的确、反而、白、刚好、可3",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "语气副词",
+    "cases": "毕竟他刚来公司一个月，还需要时间适应。\r\n他毕竟是个孩子，有些错误可以被原谅。\r\n昨天我才发现新来的同事居然是我的邻居。\r\n这么冷的天他居然没穿外套。\r\n你要去就去吧，反正我肯定不会去。\r\n反正我已经辞职了，今晚加班我是不会去的。\r\n你不用再劝他了，他根本不会听。\r\n我看根本没必要追求完美，世界上不存在完美的人和事。\r\n她果然选择了自己最喜欢的文学专业。\r\n他果然没有放弃，坚持完成了比赛。\r\n这简直是在开玩笑！\r\n画面里的竹子简直像真的一样。\r\n高科技绝对会成为各行各业发展的重要因素。\r\n老张这个人绝对可靠。\r\n近年来城乡差距的确缩小了不少。\r\n我今天上班的确迟到了，因为路上发生了交通事故。\r\n道歉不会损害企业的形象，反而能够赢得消费者的信任。\r\n我妈妈退休以后反而更忙了。\r\n不用白费力气了，结果已经无法改变了。\r\n妈妈的话白说了，孩子并没有听。\r\n今天刚好有空儿，咱们去爬山吧。\r\n我们去找他玩的时候，他刚好做完作业。\r\n这么难得的机会，你可不能错过啊！\r\n下周就要比赛了，咱们可得抓紧时间训练。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "自从",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出时间、处所",
+    "cases": "自从和丈夫离了婚，她一个人去了很多地方旅行。\r\n自从进入大学，每次与就业有关的讲座他都会参加。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "朝、沿（着）",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出方向、路径",
+    "cases": "沿着这条路朝东走就是我们今晚要住的酒店。\r\n冬天许多鸟都会朝南方温暖的地方飞去。\r\n沿着这条高速公路一直开，就能到达那座城市。\r\n老人沿着墙边种了很多花。\r\n你沿着这个思路进行下去，就能找到解决问题的方法。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "替、同1、较2",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出对象",
+    "cases": "希望这次采访能替我们宣传一下公司的新产品。\r\n我出差期间，同事替我照顾我的宠物。\r\n汉语同其他语言一样，有很多独特的表达方式。\r\n这件事我得同父母谈谈，看看他们同意不同意。\r\n今年的放假时间较去年稍有变化。\r\n本月产品销量较上月增长百分之十五。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "凭",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出凭借、依据",
+    "cases": "她凭这部电影成为了今年的最佳导演。\r\n凭这张票，你可以免费参观这场展览。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "据",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出凭借、依据",
+    "cases": "据我们掌握的数据，这个地区的石油资源十分丰富。\r\n据我观察，这个问题不难解决。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "依据",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出凭借、依据",
+    "cases": "法律的修改应当依据社会现实。\r\n企业要依据消费者的需求研发新产品。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "以及、同2",
+    "grammarType": "词类",
+    "categoryType": "连词",
+    "grammarDetail": "连接词或词组",
+    "cases": "他负责项目的设计、执行以及最终的总结工作。\r\n我对这本书的内容以及作者还不太了解，你能介绍一下吗？\r\n你同新来的同事一起去吧，顺便给他介绍一下公司的情况。\r\n这项比赛要求孩子同家长一起参加。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "从而、可见、假如、总之",
+    "grammarType": "词类",
+    "categoryType": "连词",
+    "grammarDetail": "连接分句或句子",
+    "cases": "学校更新了教学设备，从而为学生提供了更好的学习环境。\r\n这次合作让我们加深了对彼此的了解，从而建立了深厚的友谊。\r\n他每天都工作到很晚，可见他十分热爱这份工作。\r\n他的演讲得到了热烈的掌声，可见大家都很支持他的观点。\r\n假如让我重新选择，我还是会选择医学专业。\r\n假如你有机会出国旅行，你最想去哪个国家？\r\n一个人在国外生活，要自己照顾自己，还要学习当地的语言和文化，总之，挺不容易的。\r\n你同意也好，不同意也好，总之，我一定要去北京。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "似的",
+    "grammarType": "词类",
+    "categoryType": "助词",
+    "grammarDetail": "其他助词",
+    "cases": "她笑得像个孩子似的。\r\n他们讨论得很激烈，像是要吵起来似的。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "A来A去",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "四字格",
+    "cases": "我们争来争去，还是没找到最佳方案。\r\n他工作很忙，经常在国内外飞来飞去。\r\n我想来想去，决定先不告诉她这个坏消息。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "A着A着",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "四字格",
+    "cases": "我今天太困了，写着写着作业就睡着了。\r\n他走着走着，突然发现自己迷路了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "没A没B",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "四字格",
+    "cases": "你这样没日没夜地工作，身体早晚会出问题的。\r\n这孩子说话没大没小，父母必须要好好教育。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "说A就A",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "四字格",
+    "cases": "越来越多的年轻人选择说走就走的旅行。\r\n他总是说干就干，从不浪费时间。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "不得了",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "其他",
+    "cases": "他最近的表现好得不得了，老师都说他进步很大。\n不得了了，厨房着火了！"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "用不着",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "其他",
+    "cases": "这点儿小病，用不着去医院。\n这件事用不着大家都来帮忙，我自己就能完成。\n我们还有时间，你现在用不着着急。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "从……来看",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "从这次的考试成绩来看，大家都付出了很多努力。\r\n从长远来看，掌握一门外语对个人发展很有帮助。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "A的A，B的B",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "这些汉字写得大的大、小的小，一点儿也不整齐。\r\n广场上孩子们跑的跑，跳的跳，热闹极了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "（自）……以来",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "自改革开放以来，中国社会发生了巨大的改变。\r\n外公去世以来，我时常梦到他。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "由……组成",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "本课程由理论学习和实践操作两部分内容组成。\r\n项目团队由三位工程师组成。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "X也不是，Y也不是",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "马上就要面试了，他紧张得坐也不是，站也不是。\r\n公司已经三个月没有发工资了，他走也不是，留也不是，不知道怎么办好。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "X也X不得，Y也Y不得",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "对这个孩子他实在没办法，打也打不得，说也说不得。\r\n听到消息后，她哭也哭不得，笑也笑不得。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "X是它，Y也是它",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "好是它，坏也是它，你没有别的选择。\r\n成功是它，失败也是它，这个决定我绝对不后悔。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "X着也是X着",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "闲着也是闲着，明天我准备把车库打扫一遍。\r\n那辆旧车你很少开，放着也是放着，要不卖了吧。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "不管怎样说",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "不管怎么说，健康才是最重要的，要注意身体。\r\n不管怎么说，用打骂的方法教育孩子是不对的。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "真有你/他/她的",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "真有你的，这么难的题目都做对了！\r\n真有他的，一个人爬上了这么高的山！\r\n真有她的，在这么吵的地方都能睡着！"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "X什么X",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "吵什么吵，公共场所禁止大声说话！\r\n玩什么玩，作业还没写完呢！"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "什么X不X（的）",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "什么谢不谢的，我们之间不用这么客气。\r\n什么麻烦不麻烦的，朋友之间互相帮忙是应该的。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "不X白不X",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "音乐会的门票是客户赠送的，咱们不听白不听。\r\n这件衣服难得打折，不买白不买。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "X来X去，都是/就是……",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "听来听去，都是一些差不多的意见。\r\n大家商量来商量去，就是想不出什么好办法。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "动词+什么（就）是什么",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "孩子长大了，不像以前，父母说什么就是什么。\r\n工作要按照公司的规定执行，不能你想什么就是什么。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "多项状语",
+    "grammarType": "句子成分",
+    "categoryType": "状语",
+    "grammarDetail": "",
+    "cases": "他为了锻炼身体每天早上在公园里跑步。\r\n他昨天晚上一个人在图书馆认真地复习了三个小时。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "动词+得/不得",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "可能补语2",
+    "cases": "伤害人的玩笑可开不得。\r\n这院是出得还是出不得，得先问问医生的建议。\r\n写论文这件事情急不得，你得多看多想。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "形容词/心理动词+得+不得了",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "程度补语2",
+    "cases": "收到大学的录取通知书，她激动得不得了。\r\n听到父亲被送去急诊的消息，她担心得不得了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "趋向补语的引申用法：表示状态意义：动词/形容词+下来/下去/起来/过来/过去",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "趋向补语3",
+    "cases": "听着窗外的雨声，我的心慢慢地平静下来了。\r\n不知道是什么原因，他的声音渐渐低了下去。\r\n该睡觉了，快把你的玩具收拾起来。\r\n在医生们的努力下，病人终于醒过来了。\r\n经过一天的长途旅行，大家都很累，一上车就纷纷睡过去了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "动词/形容词+得+动词短语",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "状态补语2",
+    "cases": "孩子们玩儿得忘了时间，直到天黑才回家。\r\n面对自己喜欢的明星，他紧张得说不出话。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "动词/形容词+得+主谓短语",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "状态补语2",
+    "cases": "他跑得全身是汗，终于按时到了公司。\r\n天气热得大家都不想出门。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "动词/形容词+得+固定短语",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "状态补语2",
+    "cases": "快上课了，他跑得上气不接下气。\r\n为了准备年夜饭，她累得满头大汗。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "表示存在、具有：主语+有+着+宾语",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“有”字句3",
+    "cases": "尽管是兄弟，但是他们心里有着很深的矛盾。\r\n两国之间有着长期友好的关系。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "表示附着：主语+动词+有+宾语",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“有”字句3",
+    "cases": "门关着，墙上挂有“暂停营业”的牌子。\r\n这本书的第一页写有作者的名字。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "主语+把+宾语+一+动词",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“把”字句3",
+    "cases": "孩子把书包一扔，坐在地上哭了起来。\r\n经理把任务一说，员工们就开始干活了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "主语+把+宾语1+动词+宾语2",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“把”字句3",
+    "cases": "他把存款都买车了。\r\n我把父母给的生活费借朋友了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "前后两个动词性词语具有因果、转折、条件关系",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "连动句3",
+    "cases": "她丈夫生病住院了。（因果）\r\n王经理开会忘了带会议资料。（转折）\r\n面对快速变化的形势，我们应该尽快制定方案应对风险。（条件）"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "A+形容词+B+数量补语",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "比较句4",
+    "cases": "他高我一头。\r\n姐姐重我两公斤。\r\n哥哥早我两年上学。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "主语+被/叫/让+宾语+给+动词+其他成分",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "被动句3",
+    "cases": "我新买的衣服被他给洗坏了。\r\n她的帽子叫风给吹跑了。\r\n对不起，这些资料让我给搞乱了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "……，便……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "承接复句",
+    "cases": "领导还没讲完，他便提前离开了。\r\n他看我心情不好，便陪我聊了半天。\r\n我写完作业便和朋友一起出去玩儿了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "或是……，或是……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "选择复句",
+    "cases": "晚餐我或是吃面条儿，或是喝粥。\r\n假期他或是去海边度假，或是去爬山。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "一旦……，就……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "假设复句",
+    "cases": "一旦养成坏习惯，就很难改变。\r\n孩子一旦发烧，就赶快送去医院。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "假如……，（就）……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "假设复句",
+    "cases": "假如他们也同意，我们就按照计划开展工作。\r\n假如有一天你当了校长，你会制定什么规则？"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "万一……，（就）……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "假设复句",
+    "cases": "万一他不配合，我们就要想其他办法。\r\n万一失败了，你考虑过后果吗？"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "……，要不然/不然……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "假设复句",
+    "cases": "公司需要敢想敢干的年轻人，要不然就很难有发展。\r\n还好我反应快，不然孩子就摔倒了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "……，因而……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "因果复句",
+    "cases": "她上课坚持认真听讲，因而成绩始终非常优秀。\r\n我和他认识很多年了，因而很了解他的性格。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "……，可见……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "因果复句",
+    "cases": "这个项目完成得如此顺利，可见团队的合作非常有效。\r\n他每天都在图书馆学习，可见他对考试非常重视。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "哪怕……，也……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "让步复句",
+    "cases": "哪怕时间再紧张，也要按时完成任务。\r\n哪怕租金继续提高，也仍然有很多人愿意住在这里。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "不但不/不但没有……，反而……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "递进复句",
+    "cases": "他不但不改正错误，反而继续犯更大的错误。\r\n你这样做不但没有解决问题，反而增加了新问题。\r\n火不但没有灭，反而越来越大了。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "不是……，还/还是……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "递进复句",
+    "cases": "不是光有目标就可以，还要行动起来。\r\n这个问题不是我一个人就能解决的，还是需要大家积极配合。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "……，为的是……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "目的复句",
+    "cases": "他每天早起锻炼，为的是保持健康。\r\n她每天都练习中文，为的是将来能够来中国留学。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "没有……就没有……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "紧缩复句",
+    "cases": "没有老师的努力付出就没有我们今天的成绩。\r\n没有汗水就没有收获。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "不……不……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "紧缩复句",
+    "cases": "不尝不知道，这种水果的味道果然很独特。\r\n毛病虽然不大，但还是应该修理一下，不修不安全。"
+  },
+  {
+    "examLevelId": "HSK5",
+    "content": "再……也……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "紧缩复句",
+    "cases": "这首歌再听多少遍也不会烦。\r\n困难再大也要坚持下去。"
+  }
+]

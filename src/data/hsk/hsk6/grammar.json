@@ -1,0 +1,402 @@
+[
+  {
+    "examLevelId": "HSK6",
+    "content": "超—、多—、反—、无—、亚—、准—",
+    "grammarType": "语素",
+    "categoryType": "类前缀",
+    "grammarDetail": "",
+    "cases": "没想到他竟然超水平发挥，最终赢得了这场比赛。\n这位演员的表演总能展现出多层次的人物心理。\n父母过分关注孩子的一举一动，会对孩子的成长起到反作用。\n公司所有电脑系统都经过了严格的安全检查，确保无病毒运行。\n新开发的商业区已经成为了城市亚中心，发展潜力巨大。\n小张和女朋友小李已经订婚了，小李现在是张家的准媳妇。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "—化、—式、—型、—性",
+    "grammarType": "语素",
+    "categoryType": "类后缀",
+    "grammarDetail": "",
+    "cases": "随着科技的发展，人们迎来了数字化时代。\n本课程采用专题式的教学方法，每课介绍一个专题。\n这种鱼是观赏型的，很多人把它们当做宠物。\n这款产品具备很好的便捷性，使用十分方便。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "人家",
+    "grammarType": "词类",
+    "categoryType": "代词",
+    "grammarDetail": "人称代词",
+    "cases": "这是人家的东西，咱们不能随便拿。\r\n今天多亏了老张来帮忙，我们得好好感谢人家。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "专用名量词：串、滴、枝、扇、卷1、卷2",
+    "grammarType": "词类",
+    "categoryType": "量词",
+    "grammarDetail": "名量词",
+    "cases": "这串项链是丈夫送给我的订婚礼物。\r\n你试试往碗里加几滴醋，说不定味道会更好。\r\n下班回家的路上，妈妈买了几枝玫瑰花。\r\n听了他的话，我心里就像打开了一扇窗，突然亮了。\r\n你把桌子上那卷胶带递给我一下。\r\n这套书分为上、中、下三卷。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "番",
+    "grammarType": "词类",
+    "categoryType": "量词",
+    "grammarDetail": "动量词",
+    "cases": "经过一番激烈的争论，我们最终达成了一致。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "特、异常、较为",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "程度副词",
+    "cases": "听说我获得了奖学金，同学们都特羡慕。\r\n相声是一种幽默的艺术，特有意思。\r\n改进后的仪器操作异常便捷。\r\n今年夏天异常炎热。\r\n这本小说较为客观地反映了当时的社会现实。\r\n专家们一致认为这项研究的设计较为合理。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "净、一同、大都",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "范围副词",
+    "cases": "我们净忙着说话，甚至忘了给客人倒茶。\r\n那位老师的书房里净是外文书。\r\n我明天在大厅等你，咱们一同出发。\r\n人们聚集在广场上，一同迎接新年的到来。\r\n公园里散步的老年人大都是附近的居民。\r\n假期时，这里的人们大都选择去海边度假。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "一时、不时、仍旧、依旧、一向",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "时间副词",
+    "cases": "他一时紧张，忘记要说什么了。\r\n面对眼前的比赛结果，人们一时难以接受。\r\n她不时看看手机，等待着朋友的消息。\r\n隔壁房间不时传来一阵笑声。\r\n实验失败了，但他们没有放弃，仍旧坚持干下去。\r\n他很努力地练习发音，但仍旧说得不太标准。\r\n他们带着孩子又跑了几家医院，但依旧没有得到明确的诊断。\r\n二十多年过去了，她依旧那么美丽动人。\r\n作为老师，她一向严格要求自己的学生。\r\n他一向喜欢跟朋友开玩笑。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "一再、再三",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "频率副词",
+    "cases": "出发前老师一再提醒大家带上护照，可我还是忘了。\r\n王经理一再强调这个项目对于公司至关重要。\r\n他再三考虑要不要放弃工作的机会。\r\n小张再三向领导解释他上班迟到的原因。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "不禁、赶忙、特地、特意、偷偷",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "方式副词",
+    "cases": "听到这可怕的消息，我的心不禁凉了。\r\n听完她的演讲，大家不禁鼓起掌来。\r\n上课铃一响，学生们就赶忙跑回了教室。\r\n听到有人求助，他赶忙过去帮忙。\r\n回国当天，朋友特地开车把我送到了机场。\r\n为了掌握实际情况，政府特地组织专家团队到当地开展调查。\r\n这些书是我特意请朋友从国外买回来的。\r\n我特意为您准备了一份礼物，请您一定收下。\r\n小女孩偷偷把糖装进了口袋。\r\n他偷偷把那件事告诉了老师。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "未必",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "否定副词",
+    "cases": "她最近工作很忙，未必有时间回老家。\r\n有钱就一定会幸福吗？那也未必。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "恰好、倒是、干脆、明明、总算",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "语气副词",
+    "cases": "婚礼那天恰好是新娘的生日。\r\n下周六我恰好有时间，咱们可以一起去爬山。\r\n你计划得倒是很好，可是你能做到吗？\r\n这部漫画的内容一般，绘画风格倒是生动有趣。\r\n既然双方不愿意合作，干脆就不要浪费时间再谈了。\r\n你今天这么累，干脆早点休息，明天再工作吧！\r\n你明明不胖，为什么总嫌自己胖呢？\r\n明明是他做错了事，凭什么让我向他道歉？\r\n我们在路边等了很久，总算有位好心的司机让我们搭车回到了学校。\r\n连着下了一周小雨，今天总算迎来了一个晴天。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "于",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出时间、处所",
+    "cases": "这所学校成立于1950年。\r\n他已于上月离京。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "至于",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出对象",
+    "cases": "刚来中国时，我既听不懂也说不清楚，至于写作和阅读，就更不行了。\r\n新产品已经开始生产了，至于销售时间和价格，现在还不能确定。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "因",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出目的、原因",
+    "cases": "因天气原因，运动会延期至周六举行。\r\n他因迟到而错过了这次面试。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "除",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "表示排除",
+    "cases": "除特殊情况外，不得随意离开工作岗位。\r\n除申请表以外，申请人还应提交一份个人简历。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "不料",
+    "grammarType": "词类",
+    "categoryType": "连词",
+    "grammarDetail": "连接分句或句子",
+    "cases": "我本来打算在房间看书，不料突然停电了，我只好去图书馆。\r\n我以为两个孩子能一起好好玩儿，不料他俩刚一见面就吵起来了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "所",
+    "grammarType": "词类",
+    "categoryType": "助词",
+    "grammarDetail": "结构助词",
+    "cases": "这部电影是根据人们所熟悉的故事改编的。\r\n你所了解的情况只是一小部分。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "啦、嘛",
+    "grammarType": "词类",
+    "categoryType": "助词",
+    "grammarDetail": "语气助词",
+    "cases": "我昨天就已经把作业交给老师啦！\r\n这些文件对于公司至关重要，你可千万别弄丢啦！\r\n我只是开个玩笑，你不要太认真嘛。\r\n要是觉得累了，就走慢一点儿嘛。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "也好",
+    "grammarType": "词类",
+    "categoryType": "助词",
+    "grammarDetail": "其他助词",
+    "cases": "孩子们假期不回来也好，我可以好好休息休息了。\r\n手机也好，电脑也好，长时间使用都会造成眼睛疲劳。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "A这A那",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "四字格",
+    "cases": "小孩子总是喜欢拉着父母问这问那。\r\n既然决定了就大胆去做吧，不要总是想这想那。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "左A右B",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "四字格",
+    "cases": "天还没亮，他就醒了，躺在床上左思右想，怎么也睡不着。\r\n她在商场里左挑右选，始终没买到一件满意的衣服。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "好（不）容易",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "其他",
+    "cases": "我好不容易才获得这次面试机会，一定不会轻易放弃。\n假期好不容易可以休息一下，你怎么还要去公司加班？"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "那倒（也）是",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "其他",
+    "cases": "假如去那家公司工作能为你提供更多的发展空间，那倒也是个不错的选择。\n要是你能从失败中吸取教训，那倒也是件值得高兴的事。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "算了",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "其他",
+    "cases": "这些旧衣服扔掉算了，反正也不会再穿了。\n雪下得这么大，估计不会有客人来了，干脆早点儿关门算了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "得了",
+    "grammarType": "短语",
+    "categoryType": "固定短语",
+    "grammarDetail": "其他",
+    "cases": "得了，别再想了，结果不可能改变了。\n你这么喜欢这本书，干脆送给你得了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "A一+量词，B一+量词",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "我们左一句、右一句地安慰，她才终于不哭了。\r\n大家你一言，我一语，很快就商量出了解决的办法。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "东一A，西一A",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "房间里的衣服东一件，西一件，扔得哪儿都是。\r\n最近他东一本，西一本地看了不少书。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "到……为止",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "到目前为止，双方已经达成了初步的合作。\r\n他把产品设计改了很多遍，一直到客户满意为止。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "X到Y头上来了",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "我把你当作好朋友，没想到你竟然骗到我头上来了。\r\n问题不是我造成的，怎么怪到我头上来了？"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "不X不……，一X……",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "不学不知道，一学才知道汉字如此有魅力。\r\n这茶不尝不知道，一尝就喜欢上了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "好你个X",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "好你个老张，原来是你在背后说我坏话！\r\n好你个骗子，赶紧把钱还给我，否则我就报警。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "早（也）不X，晚（也）不X",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "早不来，晚不来，我正要出门你来了。\r\n早也不下雨，晚也不下雨，比赛刚一开始就下起来了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "看/瞧+把+宾语（施事）+X得",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "瞧把他兴奋得，简直像个孩子一样。\r\n看把你笑得，腰都直不起来了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "放着X不Y",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "你为什么放着自己的车不开，跑去借别人的车？\r\n他放着孩子不管，整天跑出去玩儿。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "X了就X了，（没）有……",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "他已经是大人了，走了就走了，有什么好担心的？\r\n东西丢了就丢了，没有什么好可惜的。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "这/那也不X，那/这也不Y",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "这也不好吃，那也不好吃，你干脆饿着吧。\r\n那也不喜欢，这也不满意，你到底想找什么样的工作？"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "X归X，Y归Y",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "打归打，骂归骂，父母永远是最疼你的人。\r\n计划归计划，行动归行动，二者并不完全一样。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "看你X的/瞧他X的",
+    "grammarType": "固定格式",
+    "categoryType": "",
+    "grammarDetail": "",
+    "cases": "我跟你开玩笑呢！看你吓的！\r\n不就是得了奖学金吗？瞧他得意的！"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "动词/形容词+透+了",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "程度补语3",
+    "cases": "我恨透了那些不诚信的商家。\r\n大雨把他身上的衣服全都淋透了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "主语（非生物体）+把+宾语+动词+其他成分",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“把”字句4",
+    "cases": "阳光把大地染成了红色。\r\n音乐声把游客都吸引过去了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "主语+把+宾语（施事）+动词+其他成分",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“把”字句4",
+    "cases": "孩子把妈妈气得睡不着觉。\r\n她讲述的故事把大家感动哭了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "一时……一时……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "并列复句",
+    "cases": "最近产品价格不太稳定，一时上升一时下降。\r\n这段时间天气变化快，一时冷一时热。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "要么……，要么……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "选择复句",
+    "cases": "我平常要么点外卖，要么自己做，很少去食堂吃。\r\n那家饭馆的菜要么太咸，要么太辣，我都不爱吃。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "虽……，但/可/却/也……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "转折复句",
+    "cases": "比赛虽未取得胜利，但我们收获了宝贵的经验。\r\n这道题虽有难度，可做出来的同学不在少数。\r\n文章虽短，读后却使人充满力量。\r\n她心里虽不喜欢，也坚持来上班了。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "凡是……，都……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "条件复句",
+    "cases": "凡是有机会，他都会积极争取。\r\n凡是错误的行为，我们都应该纠正。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "除非……，才……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "条件复句",
+    "cases": "除非你亲自邀请，他才有可能同意参加。\r\n除非是紧急情况，我才会向他求助。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "除非……，否则/不然……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "条件复句",
+    "cases": "除非他承认错误并向我道歉，否则我不会原谅他。\r\n除非你说清楚是什么事情，不然我不可能同意帮忙。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "就算……，也……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "让步复句",
+    "cases": "就算再累，我也要坚持完成任务。\r\n就算他做错了，你也要注意教育方法。"
+  },
+  {
+    "examLevelId": "HSK6",
+    "content": "……，以便……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "目的复句",
+    "cases": "请留下您的联系方式，以便日后联系。\r\n当地政府计划调整地铁的发车时间，以便更多的乘客能够乘坐公共交通。"
+  }
+]

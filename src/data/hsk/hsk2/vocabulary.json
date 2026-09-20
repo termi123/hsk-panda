@@ -1,0 +1,1632 @@
+[
+  {
+    "type": 1,
+    "word": "多",
+    "pinyin": "duō",
+    "cixing": "形、动、代、（数、副）",
+    "sort": 46,
+    "levelName": "一级（二级）"
+  },
+  {
+    "type": 1,
+    "word": "给",
+    "pinyin": "gěi",
+    "cixing": "动、（介）",
+    "sort": 61,
+    "levelName": "一级（二级）"
+  },
+  {
+    "type": 1,
+    "word": "好",
+    "pinyin": "hǎo",
+    "cixing": "形、（副）、（动）",
+    "sort": 71,
+    "levelName": "一级（二级）（四级）"
+  },
+  {
+    "type": 1,
+    "word": "那",
+    "pinyin": "nà",
+    "cixing": "代、（连）",
+    "sort": 136,
+    "levelName": "一级（二级）"
+  },
+  {
+    "type": 1,
+    "word": "啊",
+    "pinyin": "a",
+    "cixing": "助",
+    "sort": 301,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "爱好",
+    "pinyin": "àihào",
+    "cixing": "动、名",
+    "sort": 302,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "白色",
+    "pinyin": "báisè",
+    "cixing": "名",
+    "sort": 303,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "班",
+    "pinyin": "bān",
+    "cixing": "名、（量）",
+    "sort": 304,
+    "levelName": "二级（五级）"
+  },
+  {
+    "type": 1,
+    "word": "帮",
+    "pinyin": "bāng",
+    "cixing": "动",
+    "sort": 305,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "帮忙",
+    "pinyin": "bāngmáng",
+    "cixing": "动",
+    "sort": 306,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "包",
+    "pinyin": "bāo",
+    "cixing": "动、名、量",
+    "sort": 307,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "本子",
+    "pinyin": "běnzi",
+    "cixing": "名",
+    "sort": 308,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "比",
+    "pinyin": "bǐ",
+    "cixing": "动、介",
+    "sort": 309,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "笔",
+    "pinyin": "bǐ",
+    "cixing": "名、（量）",
+    "sort": 310,
+    "levelName": "二级（五级）"
+  },
+  {
+    "type": 1,
+    "word": "别1",
+    "pinyin": "bié",
+    "cixing": "副",
+    "sort": 311,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "不错",
+    "pinyin": "búcuò",
+    "cixing": "形",
+    "sort": 312,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "不好意思",
+    "pinyin": "bù hǎoyìsi",
+    "sort": 313,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "长",
+    "pinyin": "cháng",
+    "cixing": "形",
+    "sort": 314,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "车站",
+    "pinyin": "chēzhàn",
+    "cixing": "名",
+    "sort": 315,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "出",
+    "pinyin": "chū",
+    "cixing": "动",
+    "sort": 316,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "出国",
+    "pinyin": "chūguó",
+    "cixing": "动",
+    "sort": 317,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "出来",
+    "pinyin": "chūlái",
+    "cixing": "动",
+    "sort": 318,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "出门",
+    "pinyin": "chūmén",
+    "cixing": "动",
+    "sort": 319,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "出去",
+    "pinyin": "chūqù",
+    "cixing": "动",
+    "sort": 320,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "床",
+    "pinyin": "chuáng",
+    "cixing": "名",
+    "sort": 321,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "词",
+    "pinyin": "cí",
+    "cixing": "名",
+    "sort": 322,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "次",
+    "pinyin": "cì",
+    "cixing": "量、（形）",
+    "sort": 323,
+    "levelName": "二级（七-九级）"
+  },
+  {
+    "type": 1,
+    "word": "从",
+    "pinyin": "cóng",
+    "cixing": "介、（副）",
+    "sort": 324,
+    "levelName": "二级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "从小",
+    "pinyin": "cóngxiǎo",
+    "cixing": "副",
+    "sort": 325,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "错",
+    "pinyin": "cuò",
+    "cixing": "形",
+    "sort": 326,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "打1",
+    "pinyin": "dǎ",
+    "cixing": "动",
+    "sort": 327,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "打车",
+    "pinyin": "dǎchē",
+    "cixing": "动",
+    "sort": 328,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "打开",
+    "pinyin": "dǎkāi",
+    "cixing": "动",
+    "sort": 329,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "但",
+    "pinyin": "dàn",
+    "cixing": "连、（副）",
+    "sort": 330,
+    "levelName": "二级（七-九级）"
+  },
+  {
+    "type": 1,
+    "word": "但是",
+    "pinyin": "dànshì",
+    "cixing": "连",
+    "sort": 331,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "得",
+    "pinyin": "de",
+    "cixing": "助",
+    "sort": 332,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "地",
+    "pinyin": "de",
+    "cixing": "助",
+    "sort": 333,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "等1",
+    "pinyin": "děng",
+    "cixing": "动、（介）",
+    "sort": 334,
+    "levelName": "二级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "地铁",
+    "pinyin": "dìtiě",
+    "cixing": "名",
+    "sort": 335,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "点2",
+    "pinyin": "diǎn",
+    "cixing": "动、（名、量）",
+    "sort": 336,
+    "levelName": "二级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "懂",
+    "pinyin": "dǒng",
+    "cixing": "动",
+    "sort": 337,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "动",
+    "pinyin": "dòng",
+    "cixing": "动",
+    "sort": 338,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "饭馆",
+    "pinyin": "fànguǎn",
+    "cixing": "名",
+    "sort": 339,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "飞",
+    "pinyin": "fēi",
+    "cixing": "动",
+    "sort": 340,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "高",
+    "pinyin": "gāo",
+    "cixing": "形、名",
+    "sort": 341,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "高中",
+    "pinyin": "gāozhōng",
+    "cixing": "名",
+    "sort": 342,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "告诉",
+    "pinyin": "gàosu",
+    "cixing": "动",
+    "sort": 343,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "个子",
+    "pinyin": "gèzi",
+    "cixing": "名",
+    "sort": 344,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "跟",
+    "pinyin": "gēn",
+    "cixing": "介、连、（名、动）",
+    "sort": 345,
+    "levelName": "二级（五级）"
+  },
+  {
+    "type": 1,
+    "word": "公交车",
+    "pinyin": "gōngjiāochē",
+    "cixing": "名",
+    "sort": 346,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "过",
+    "pinyin": "guò",
+    "cixing": "动",
+    "sort": 347,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "过来",
+    "pinyin": "guòlái",
+    "cixing": "动",
+    "sort": 348,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "过年",
+    "pinyin": "guònián",
+    "cixing": "动",
+    "sort": 349,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "过去1",
+    "pinyin": "guòqù",
+    "cixing": "动",
+    "sort": 350,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "过",
+    "pinyin": "guo",
+    "cixing": "助",
+    "sort": 351,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "还是",
+    "pinyin": "háishi",
+    "cixing": "副、连",
+    "sort": 352,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "黑色",
+    "pinyin": "hēisè",
+    "cixing": "名",
+    "sort": 353,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "红茶",
+    "pinyin": "hóngchá",
+    "cixing": "名",
+    "sort": 354,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "红色",
+    "pinyin": "hóngsè",
+    "cixing": "名",
+    "sort": 355,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "后面",
+    "pinyin": "hòumiàn",
+    "cixing": "名",
+    "sort": 356,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "花1",
+    "pinyin": "huā",
+    "cixing": "动",
+    "sort": 357,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "花2",
+    "pinyin": "huā",
+    "cixing": "名、（形）",
+    "sort": 358,
+    "levelName": "二级（六级）"
+  },
+  {
+    "type": 1,
+    "word": "画",
+    "pinyin": "huà",
+    "cixing": "动、名",
+    "sort": 359,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "坏",
+    "pinyin": "huài",
+    "cixing": "形",
+    "sort": 360,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "回来",
+    "pinyin": "huílái",
+    "cixing": "动",
+    "sort": 361,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "回去",
+    "pinyin": "huíqù",
+    "cixing": "动",
+    "sort": 362,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "机场",
+    "pinyin": "jīchǎng",
+    "cixing": "名",
+    "sort": 363,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "机票",
+    "pinyin": "jīpiào",
+    "cixing": "名",
+    "sort": 364,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "记得",
+    "pinyin": "jìde",
+    "cixing": "动",
+    "sort": 365,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "间",
+    "pinyin": "jiān",
+    "cixing": "量、（名）",
+    "sort": 366,
+    "levelName": "二级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "教",
+    "pinyin": "jiāo",
+    "cixing": "动",
+    "sort": 367,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "教室",
+    "pinyin": "jiàoshì",
+    "cixing": "名",
+    "sort": 368,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "介绍",
+    "pinyin": "jièshào",
+    "cixing": "动",
+    "sort": 369,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "进",
+    "pinyin": "jìn",
+    "cixing": "动",
+    "sort": 370,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "近",
+    "pinyin": "jìn",
+    "cixing": "形",
+    "sort": 371,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "进来",
+    "pinyin": "jìnlái",
+    "cixing": "动",
+    "sort": 372,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "进去",
+    "pinyin": "jìnqù",
+    "cixing": "动",
+    "sort": 373,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "经常",
+    "pinyin": "jīngcháng",
+    "cixing": "副",
+    "sort": 374,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "酒店",
+    "pinyin": "jiǔdiàn",
+    "cixing": "名",
+    "sort": 375,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "就",
+    "pinyin": "jiù",
+    "cixing": "副、（介）",
+    "sort": 376,
+    "levelName": "二级（七-九级）"
+  },
+  {
+    "type": 1,
+    "word": "咖啡",
+    "pinyin": "kāfēi",
+    "cixing": "名",
+    "sort": 377,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "开始",
+    "pinyin": "kāishǐ",
+    "cixing": "动、名",
+    "sort": 378,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "开学",
+    "pinyin": "kāixué",
+    "cixing": "动",
+    "sort": 379,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "考",
+    "pinyin": "kǎo",
+    "cixing": "动",
+    "sort": 380,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "考试",
+    "pinyin": "kǎoshì",
+    "cixing": "动、名",
+    "sort": 381,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "可能",
+    "pinyin": "kěnéng",
+    "cixing": "形、名、动",
+    "sort": 382,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "裤子",
+    "pinyin": "kùzi",
+    "cixing": "名",
+    "sort": 383,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "快",
+    "pinyin": "kuài",
+    "cixing": "形、副",
+    "sort": 384,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "快乐",
+    "pinyin": "kuàilè",
+    "cixing": "形",
+    "sort": 385,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "快要",
+    "pinyin": "kuàiyào",
+    "cixing": "副",
+    "sort": 386,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "篮球",
+    "pinyin": "lánqiú",
+    "cixing": "名",
+    "sort": 387,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "累",
+    "pinyin": "lèi",
+    "cixing": "形、动",
+    "sort": 388,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "离",
+    "pinyin": "lí",
+    "cixing": "动",
+    "sort": 389,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "里面",
+    "pinyin": "lǐmiàn",
+    "cixing": "名",
+    "sort": 390,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "楼",
+    "pinyin": "lóu",
+    "cixing": "名",
+    "sort": 391,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "路",
+    "pinyin": "lù",
+    "cixing": "名",
+    "sort": 392,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "路上",
+    "pinyin": "lùshang",
+    "cixing": "名",
+    "sort": 393,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "旅游",
+    "pinyin": "lǚyóu",
+    "cixing": "动",
+    "sort": 394,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "绿茶",
+    "pinyin": "lǜchá",
+    "cixing": "名",
+    "sort": 395,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "绿色",
+    "pinyin": "lǜsè",
+    "cixing": "名、（形）",
+    "sort": 396,
+    "levelName": "二级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "慢",
+    "pinyin": "màn",
+    "cixing": "形",
+    "sort": 397,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "没意思",
+    "pinyin": "méi yìsi",
+    "sort": 398,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "每",
+    "pinyin": "měi",
+    "cixing": "代、（副）",
+    "sort": 399,
+    "levelName": "二级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "门",
+    "pinyin": "mén",
+    "cixing": "名",
+    "sort": 400,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "门口",
+    "pinyin": "ménkǒu",
+    "cixing": "名",
+    "sort": 401,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "门票",
+    "pinyin": "ménpiào",
+    "cixing": "名",
+    "sort": 402,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "面1",
+    "pinyin": "miàn",
+    "cixing": "后缀、（动、名、量）",
+    "sort": 403,
+    "levelName": "二级（五级）"
+  },
+  {
+    "type": 1,
+    "word": "名",
+    "pinyin": "míng",
+    "cixing": "名、量",
+    "sort": 404,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "拿",
+    "pinyin": "ná",
+    "cixing": "动",
+    "sort": 405,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "那么",
+    "pinyin": "nàme",
+    "cixing": "代、连",
+    "sort": 406,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "那样",
+    "pinyin": "nàyàng",
+    "cixing": "代",
+    "sort": 407,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "奶茶",
+    "pinyin": "nǎichá",
+    "cixing": "名",
+    "sort": 408,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "奶奶",
+    "pinyin": "nǎinai",
+    "cixing": "名",
+    "sort": 409,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "男孩儿",
+    "pinyin": "nánháir",
+    "cixing": "名",
+    "sort": 410,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "鸟",
+    "pinyin": "niǎo",
+    "cixing": "名",
+    "sort": 411,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "女孩儿",
+    "pinyin": "nǚháir",
+    "cixing": "名",
+    "sort": 412,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "旁边",
+    "pinyin": "pángbiān",
+    "cixing": "名",
+    "sort": 413,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "跑",
+    "pinyin": "pǎo",
+    "cixing": "动",
+    "sort": 414,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "跑步",
+    "pinyin": "pǎobù",
+    "cixing": "动",
+    "sort": 415,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "票",
+    "pinyin": "piào",
+    "cixing": "名",
+    "sort": 416,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "妻子",
+    "pinyin": "qīzi",
+    "cixing": "名",
+    "sort": 417,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "起来",
+    "pinyin": "qǐlái",
+    "cixing": "动",
+    "sort": 418,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "前面",
+    "pinyin": "qiánmiàn",
+    "cixing": "名",
+    "sort": 419,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "晴",
+    "pinyin": "qíng",
+    "cixing": "形",
+    "sort": 420,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "球",
+    "pinyin": "qiú",
+    "cixing": "名",
+    "sort": 421,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "让",
+    "pinyin": "ràng",
+    "cixing": "动、（介）",
+    "sort": 422,
+    "levelName": "二级（四级）"
+  },
+  {
+    "type": 1,
+    "word": "肉",
+    "pinyin": "ròu",
+    "cixing": "名",
+    "sort": 423,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "商场",
+    "pinyin": "shāngchǎng",
+    "cixing": "名",
+    "sort": 424,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "上来",
+    "pinyin": "shànglái",
+    "cixing": "动",
+    "sort": 425,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "上面",
+    "pinyin": "shàngmiàn",
+    "cixing": "名",
+    "sort": 426,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "上去",
+    "pinyin": "shàngqù",
+    "cixing": "动",
+    "sort": 427,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "上网",
+    "pinyin": "shàngwǎng",
+    "cixing": "动",
+    "sort": 428,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "身体",
+    "pinyin": "shēntǐ",
+    "cixing": "名",
+    "sort": 429,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "生日",
+    "pinyin": "shēngrì",
+    "cixing": "名",
+    "sort": 430,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "时",
+    "pinyin": "shí",
+    "cixing": "名、（量）",
+    "sort": 431,
+    "levelName": "二级（六级）"
+  },
+  {
+    "type": 1,
+    "word": "事情",
+    "pinyin": "shìqing",
+    "cixing": "名",
+    "sort": 432,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "手",
+    "pinyin": "shǒu",
+    "cixing": "名",
+    "sort": 433,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "手表",
+    "pinyin": "shǒubiǎo",
+    "cixing": "名",
+    "sort": 434,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "书包",
+    "pinyin": "shūbāo",
+    "cixing": "名",
+    "sort": 435,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "舒服",
+    "pinyin": "shūfu",
+    "cixing": "形",
+    "sort": 436,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "送",
+    "pinyin": "sòng",
+    "cixing": "动",
+    "sort": 437,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "虽然",
+    "pinyin": "suīrán",
+    "cixing": "连",
+    "sort": 438,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "所以",
+    "pinyin": "suǒyǐ",
+    "cixing": "连",
+    "sort": 439,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "疼",
+    "pinyin": "téng",
+    "cixing": "形、（动）",
+    "sort": 440,
+    "levelName": "二级（六级）"
+  },
+  {
+    "type": 1,
+    "word": "踢",
+    "pinyin": "tī",
+    "cixing": "动",
+    "sort": 441,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "题",
+    "pinyin": "tí",
+    "cixing": "名",
+    "sort": 442,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "条",
+    "pinyin": "tiáo",
+    "cixing": "量、（名）",
+    "sort": 443,
+    "levelName": "二级（五级）"
+  },
+  {
+    "type": 1,
+    "word": "跳舞",
+    "pinyin": "tiàowǔ",
+    "cixing": "动",
+    "sort": 444,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "头",
+    "pinyin": "tóu",
+    "cixing": "名、（量）、（形）",
+    "sort": 445,
+    "levelName": "二级（三级）（五级）"
+  },
+  {
+    "type": 1,
+    "word": "外国",
+    "pinyin": "wàiguó",
+    "cixing": "名",
+    "sort": 446,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "外面",
+    "pinyin": "wàimiàn",
+    "cixing": "名",
+    "sort": 447,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "完",
+    "pinyin": "wán",
+    "cixing": "动",
+    "sort": 448,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "万",
+    "pinyin": "wàn",
+    "cixing": "数",
+    "sort": 449,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "往",
+    "pinyin": "wǎng",
+    "cixing": "动、介",
+    "sort": 450,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "网上",
+    "pinyin": "wǎngshang",
+    "cixing": "名",
+    "sort": 451,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "忘",
+    "pinyin": "wàng",
+    "cixing": "动",
+    "sort": 452,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "位",
+    "pinyin": "wèi",
+    "cixing": "量",
+    "sort": 453,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "为什么",
+    "pinyin": "wèi shénme",
+    "cixing": "",
+    "sort": 454,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "希望",
+    "pinyin": "xīwàng",
+    "cixing": "动",
+    "sort": 455,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "洗",
+    "pinyin": "xǐ",
+    "cixing": "动",
+    "sort": 456,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "洗手间",
+    "pinyin": "xǐshǒujiān",
+    "cixing": "名",
+    "sort": 457,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "下来",
+    "pinyin": "xiàlái",
+    "cixing": "动",
+    "sort": 458,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "下面",
+    "pinyin": "xiàmiàn",
+    "cixing": "名",
+    "sort": 459,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "下去",
+    "pinyin": "xiàqù",
+    "cixing": "动",
+    "sort": 460,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "小孩儿",
+    "pinyin": "xiǎoháir",
+    "cixing": "名",
+    "sort": 461,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "小时候",
+    "pinyin": "xiǎoshíhou",
+    "cixing": "名",
+    "sort": 462,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "笑",
+    "pinyin": "xiào",
+    "cixing": "动",
+    "sort": 463,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "姓",
+    "pinyin": "xìng",
+    "cixing": "名、动",
+    "sort": 464,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "姓名",
+    "pinyin": "xìngmíng",
+    "cixing": "名",
+    "sort": 465,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "颜色",
+    "pinyin": "yánsè",
+    "cixing": "名",
+    "sort": 466,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "眼睛",
+    "pinyin": "yǎnjing",
+    "cixing": "名",
+    "sort": 467,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "药",
+    "pinyin": "yào",
+    "cixing": "名",
+    "sort": 468,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "药店",
+    "pinyin": "yàodiàn",
+    "cixing": "名",
+    "sort": 469,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "爷爷",
+    "pinyin": "yéye",
+    "cixing": "名",
+    "sort": 470,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "一会儿",
+    "pinyin": "yíhuìr",
+    "cixing": "数量、（副）",
+    "sort": 471,
+    "levelName": "二级（三级）"
+  },
+  {
+    "type": 1,
+    "word": "已经",
+    "pinyin": "yǐjīng",
+    "cixing": "副",
+    "sort": 472,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "一起",
+    "pinyin": "yìqǐ",
+    "cixing": "副",
+    "sort": 473,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "意思",
+    "pinyin": "yìsi",
+    "cixing": "名",
+    "sort": 474,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "阴",
+    "pinyin": "yīn",
+    "cixing": "形",
+    "sort": 475,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "因为",
+    "pinyin": "yīnwèi",
+    "cixing": "介、连",
+    "sort": 476,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "游",
+    "pinyin": "yóu",
+    "cixing": "动",
+    "sort": 477,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "游泳",
+    "pinyin": "yóuyǒng",
+    "cixing": "动",
+    "sort": 478,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "有意思",
+    "pinyin": "yǒu yìsi",
+    "cixing": "",
+    "sort": 479,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "有时",
+    "pinyin": "yǒushí",
+    "cixing": "副",
+    "sort": 480,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "右",
+    "pinyin": "yòu",
+    "cixing": "名",
+    "sort": 481,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "右边",
+    "pinyin": "yòubian",
+    "cixing": "名",
+    "sort": 482,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "鱼",
+    "pinyin": "yú",
+    "cixing": "名",
+    "sort": 483,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "远",
+    "pinyin": "yuǎn",
+    "cixing": "形",
+    "sort": 484,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "运动",
+    "pinyin": "yùndòng",
+    "cixing": "动、名",
+    "sort": 485,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "站1",
+    "pinyin": "zhàn",
+    "cixing": "名",
+    "sort": 486,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "丈夫",
+    "pinyin": "zhàngfu",
+    "cixing": "名",
+    "sort": 487,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "这么",
+    "pinyin": "zhème",
+    "cixing": "代",
+    "sort": 488,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "这样",
+    "pinyin": "zhèyàng",
+    "cixing": "代",
+    "sort": 489,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "着",
+    "pinyin": "zhe",
+    "cixing": "助",
+    "sort": 490,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "正",
+    "pinyin": "zhèng",
+    "cixing": "副、（形）",
+    "sort": 491,
+    "levelName": "二级（五级）"
+  },
+  {
+    "type": 1,
+    "word": "周",
+    "pinyin": "zhōu",
+    "cixing": "名、（量）",
+    "sort": 492,
+    "levelName": "二级（六级）"
+  },
+  {
+    "type": 1,
+    "word": "准备",
+    "pinyin": "zhǔnbèi",
+    "cixing": "动",
+    "sort": 493,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "自己",
+    "pinyin": "zìjǐ",
+    "cixing": "代",
+    "sort": 494,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "走",
+    "pinyin": "zǒu",
+    "cixing": "动",
+    "sort": 495,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "走路",
+    "pinyin": "zǒulù",
+    "cixing": "动",
+    "sort": 496,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "足球",
+    "pinyin": "zúqiú",
+    "cixing": "名",
+    "sort": 497,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "最",
+    "pinyin": "zuì",
+    "cixing": "副",
+    "sort": 498,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "左",
+    "pinyin": "zuǒ",
+    "cixing": "名",
+    "sort": 499,
+    "levelName": "二级"
+  },
+  {
+    "type": 1,
+    "word": "左边",
+    "pinyin": "zuǒbian",
+    "cixing": "名",
+    "sort": 500,
+    "levelName": "二级"
+  }
+]

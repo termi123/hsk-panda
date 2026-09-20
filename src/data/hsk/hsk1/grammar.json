@@ -1,0 +1,562 @@
+[
+  {
+    "examLevelId": "HSK1",
+    "content": "小—、第—",
+    "grammarType": "语素",
+    "categoryType": "前缀",
+    "grammarDetail": "",
+    "cases": "小高去哪儿了？\r\n今天我们学习第一课。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "—们、—边",
+    "grammarType": "语素",
+    "categoryType": "后缀",
+    "grammarDetail": "",
+    "cases": "同学们，你们好！\r\n学校里边有超市。\r\n外边正在下雨呢。\r\n电影院在医院的后边。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "上、下、里、外、前、后",
+    "grammarType": "词类",
+    "categoryType": "名词",
+    "grammarDetail": "方位名词",
+    "cases": "桌子上有几本书？\r\n书店里的人很多。\r\n他们都在国外。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "会、能",
+    "grammarType": "词类",
+    "categoryType": "动词",
+    "grammarDetail": "能愿动词",
+    "cases": "我会说中文。\r\n他不会开车。\r\n你明天能不能去？\r\n她生病了，不能来上课。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "想、要",
+    "grammarType": "词类",
+    "categoryType": "动词",
+    "grammarDetail": "能愿动词",
+    "cases": "我想买一些水果。\r\n你想喝茶吗？\r\n他们要去书店。\r\n我要学习汉语。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "可以",
+    "grammarType": "词类",
+    "categoryType": "动词",
+    "grammarDetail": "能愿动词",
+    "cases": "这儿不可以吃东西。\r\n我可以问一个问题吗？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "看病、睡觉、说话、上课、下课、上班、下班、生病",
+    "grammarType": "词类",
+    "categoryType": "动词",
+    "grammarDetail": "离合词",
+    "cases": "他去医院看病了。\r\n我想睡一觉，休息一下（儿）。\r\n上课不要说话。\r\n今天我上中文课。\r\n我下了课要去食堂。\r\n下了班你做什么？\r\n她昨天生病了。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "多、多少、几、哪、哪儿、哪里、哪些、什么、谁、怎么、怎么样",
+    "grammarType": "词类",
+    "categoryType": "代词",
+    "grammarDetail": "疑问代词",
+    "cases": "你弟弟多大？\r\n这件衣服多少钱？\r\n现在几点？\r\n她是哪国人？\r\n你去哪儿？\r\n你住在哪里？\r\n哪些是汉语书？\r\n那是什么？\r\n那个人是谁？\r\n你怎么去学校？\r\n明天天气怎么样？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "我、你、您、他、她、我们、你们、他们、她们、它、它们、大家",
+    "grammarType": "词类",
+    "categoryType": "代词",
+    "grammarDetail": "人称代词",
+    "cases": "我是学生。\r\n你是哪国人？\r\n老师，您好！\r\n他会开车吗？\r\n她是不是老师？\r\n我们都是大学生。\r\n你们是学生吗？\r\n他们去哪儿了？\r\n她们都是我的朋友。\r\n你看，它正在吃饭呢。\r\n这些小狗真漂亮，它们叫什么名字？\r\n大家都喜欢学习汉语。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "这、那、这儿、那儿、这里、那里、这些、那些、有的、这个、那个、有些",
+    "grammarType": "词类",
+    "categoryType": "代词",
+    "grammarDetail": "指示代词",
+    "cases": "这是谁的书？\r\n那个手机多少钱？\r\n我在这儿学习中文。\r\n那儿有一家书店。\r\n这里是我的家。\r\n那里有一家饭店。\r\n这些是老师的书。\r\n我不认识那些人。\r\n到了饭店，大家有的想吃米饭，有的想吃面条。\r\n这个杯子多少钱？\r\n她在那个房间。\r\n有些学生不在学校住。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "一、二/两、三、四、五、六、七、八、九、零、十、百、半、千",
+    "grammarType": "词类",
+    "categoryType": "数词",
+    "grammarDetail": "",
+    "cases": "一个、两百、五十八、一百零六、两千三百五十、九点半、半个小时"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "专用名量词：本、个、家、口、块、件、只、元",
+    "grammarType": "词类",
+    "categoryType": "量词",
+    "grammarDetail": "名量词",
+    "cases": "这本书是中文书。\r\n我吃了两个包子。\r\n前边有一家书店。\r\n你家有几口人？\r\n我有十块钱。\r\n这只小猫真漂亮。\r\n这件衣服三百元。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "借用名量词：杯",
+    "grammarType": "词类",
+    "categoryType": "量词",
+    "grammarDetail": "名量词",
+    "cases": "喝杯茶吧。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "日、号、岁、点、分、年、天",
+    "grammarType": "词类",
+    "categoryType": "量词",
+    "grammarDetail": "时量词",
+    "cases": "今天几月几日（号）？\r\n她今年几岁？\r\n现在八点二十分。\r\n一年有十二个月。\r\n你一天学习几个汉字？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "非常、很、太、真、有（一）点儿",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "程度副词",
+    "cases": "我非常喜欢学中文。\r\n这里的水果很便宜。\r\n房间里太热了。\r\n这儿的菜真好吃。\r\n今天天气有点儿冷。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "都1",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "范围副词",
+    "cases": "我们都学习汉语。\r\n他们都是中国学生。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "在、正在",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "时间副词",
+    "cases": "他们在做什么？\r\n学生们正在上课。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "再1",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "频率副词",
+    "cases": "我想再买一本。\r\n我再问一个问题，可以吗？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "还1、也",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "关联副词",
+    "cases": "我想吃面条儿，还想吃包子。\r\n我有两个姐姐，还有一个哥哥。\r\n他是学生，我也是学生。\r\n我学习汉语，我弟弟也学习汉语。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "不、没（有）、不要",
+    "grammarType": "词类",
+    "categoryType": "副词",
+    "grammarDetail": "否定副词",
+    "cases": "她不是老师。\r\n我没看电视。\r\n她去超市了，我没有去。\r\n请大家不要说话。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "在",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出时间、处所",
+    "cases": "我想在中国工作。\r\n你在哪儿学习中文？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "和1、对",
+    "grammarType": "词类",
+    "categoryType": "介词",
+    "grammarDetail": "引出对象",
+    "cases": "我没和她一起去超市。\r\n我对老师说“谢谢”。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "和2",
+    "grammarType": "词类",
+    "categoryType": "连词",
+    "grammarDetail": "连接词语或短语",
+    "cases": "我和姐姐都喜欢唱歌。\r\n今天和明天都下雨。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "的1",
+    "grammarType": "词类",
+    "categoryType": "助词",
+    "grammarDetail": "结构助词",
+    "cases": "这是你的手机吗？\r\n她是我的好朋友。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "了1",
+    "grammarType": "词类",
+    "categoryType": "助词",
+    "grammarDetail": "动态助词",
+    "cases": "今天我们学了十个汉字。\r\n我买了一些苹果。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "吧1、了2 、吗、呢1、呢2、呢3",
+    "grammarType": "词类",
+    "categoryType": "助词",
+    "grammarDetail": "语气助词",
+    "cases": "我们走吧。\r\n八点了，起床吧。\r\n她病了，在家休息呢。\r\n他是中国人吗？\r\n这个电影好看吗？\r\n她正在学习呢1。\r\n我是中国人，你呢2？\r\nA：你的手机呢3？\r\nB：我的手机在房间里。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "喂",
+    "grammarType": "词类",
+    "categoryType": "叹词",
+    "grammarDetail": "",
+    "cases": "喂，请问，李老师在吗？\r\n喂，你去哪儿？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "联合短语",
+    "grammarType": "短语",
+    "categoryType": "结构类型",
+    "grammarDetail": "基本结构类型",
+    "cases": "哥哥姐姐、今天和明天、有没有"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "偏正短语",
+    "grammarType": "短语",
+    "categoryType": "结构类型",
+    "grammarDetail": "基本结构类型",
+    "cases": "好朋友、我的书包、很喜欢"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "动宾短语",
+    "grammarType": "短语",
+    "categoryType": "结构类型",
+    "grammarDetail": "基本结构类型",
+    "cases": "买东西、回学校、去公司"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "主谓短语",
+    "grammarType": "短语",
+    "categoryType": "结构类型",
+    "grammarDetail": "基本结构类型",
+    "cases": "我们学习、孩子高兴、房间很大"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "数量短语",
+    "grammarType": "短语",
+    "categoryType": "结构类型",
+    "grammarDetail": "其他结构类型",
+    "cases": "一杯、两个"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "介宾短语",
+    "grammarType": "短语",
+    "categoryType": "结构类型",
+    "grammarDetail": "其他结构类型",
+    "cases": "在学校（学习）、对老师（说）、和朋友（说汉语）"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "方位短语",
+    "grammarType": "短语",
+    "categoryType": "结构类型",
+    "grammarDetail": "其他结构类型",
+    "cases": "桌子上、饭店里、椅子下边"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "名词、代词或名词性短语作主语",
+    "grammarType": "句子成分",
+    "categoryType": "主语",
+    "grammarDetail": "",
+    "cases": "电影很好看。\r\n她是老师。\r\n这本书多少钱？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "名词、代词、数词或数量短语作谓语",
+    "grammarType": "句子成分",
+    "categoryType": "谓语",
+    "grammarDetail": "",
+    "cases": "明天星期三。\r\n那个饭店怎么样？\r\n我今年十二，我哥哥十五。\r\n这本书二十八块。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "动词或动词性短语、形容词或形容词性短语作谓语",
+    "grammarType": "句子成分",
+    "categoryType": "谓语",
+    "grammarDetail": "",
+    "cases": "老师来了。\r\n哥哥去学校了。\r\n我的房间不大。\r\n这个菜很好吃。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "名词、代词或名词性短语作宾语",
+    "grammarType": "句子成分",
+    "categoryType": "宾语",
+    "grammarDetail": "",
+    "cases": "我喝茶。\r\n明天我去找你。\r\n我吃了二十个饺子。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "名词性词语、形容词性短语、数量短语作定语",
+    "grammarType": "句子成分",
+    "categoryType": "定语",
+    "grammarDetail": "",
+    "cases": "她不会唱中文歌。\r\n我的中文老师是中国人。\r\n我想买便宜的手机。\r\n桌子下边有一只小狗。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "副词、形容词作状语\r\n表示时间、处所的词语作状语",
+    "grammarType": "句子成分",
+    "categoryType": "状语",
+    "grammarDetail": "",
+    "cases": "他们都是中国学生。\r\n你多吃一点儿。\r\n我们十二点下课。\r\n我妈妈在医院工作。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "动词+动量补语",
+    "grammarType": "句子成分",
+    "categoryType": "补语",
+    "grammarDetail": "数量补语1",
+    "cases": "休息一下吧。\r\n请问一下，医院在哪儿？\r\n我想看一下那件衣服。\r\n请写一下你的名字。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "主谓句1：动词谓语句",
+    "grammarType": "句子的类型",
+    "categoryType": "句型",
+    "grammarDetail": "单句",
+    "cases": "我买了一个面包。\r\n他今天不休息。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "主谓句2：形容词谓语句",
+    "grammarType": "句子的类型",
+    "categoryType": "句型",
+    "grammarDetail": "单句",
+    "cases": "今天天气很热。\r\n你女儿真漂亮！"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "主谓句3：名词谓语句",
+    "grammarType": "句子的类型",
+    "categoryType": "句型",
+    "grammarDetail": "单句",
+    "cases": "今天星期一。\r\n现在十二点半。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "非主谓句",
+    "grammarType": "句子的类型",
+    "categoryType": "句型",
+    "grammarDetail": "单句",
+    "cases": "对不起！\r\n下雨了。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "",
+    "grammarType": "句子的类型",
+    "categoryType": "句类",
+    "grammarDetail": "陈述句",
+    "cases": "她是我的朋友。\r\n我不想吃面条儿。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "是非问句",
+    "grammarType": "句子的类型",
+    "categoryType": "句类",
+    "grammarDetail": "疑问句",
+    "cases": "他是中国人吗？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "特指问句",
+    "grammarType": "句子的类型",
+    "categoryType": "句类",
+    "grammarDetail": "疑问句",
+    "cases": "他是哪国人？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "正反问句",
+    "grammarType": "句子的类型",
+    "categoryType": "句类",
+    "grammarDetail": "疑问句",
+    "cases": "你想不想学中文？\r\n你吃没吃晚饭？\r\n同学们都来了没有？\r\n今天冷不冷？"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "",
+    "grammarType": "句子的类型",
+    "categoryType": "句类",
+    "grammarDetail": "祈使句",
+    "cases": "您请坐。\r\n走吧！\r\n请大家不要说话！"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "",
+    "grammarType": "句子的类型",
+    "categoryType": "句类",
+    "grammarDetail": "感叹句",
+    "cases": "今天真冷啊！\r\n太贵了！"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "表示等同或类属",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“是”字句1",
+    "cases": "我哥哥是大学生。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "表示领有",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "“有”字句1",
+    "cases": "我有哥哥，没有姐姐。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "所处+是+名词",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "存现句1",
+    "cases": "前边是不是电影院？\r\n超市后边是一家饭店。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "处所+有+数量短语+名词",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "存现句1",
+    "cases": "学校外边有一家书店。\r\n桌子上有一本中文书。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "前后动作先后发生，后一动作是前一动作的目的",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "连动句1",
+    "cases": "我来中国学汉语。\r\n晚上我们去电影院看电影。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "前一动作是后一动作的方式",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "连动句1",
+    "cases": "我坐飞机去上海。\r\n爸爸每天开车上班。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "主语+动词+宾语1+宾语2",
+    "grammarType": "句子的类型",
+    "categoryType": "特殊句型",
+    "grammarDetail": "双宾语句1",
+    "cases": "老师给我一本书。\r\n我问你一个问题。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "不用关联词语的复句",
+    "cases": "这是我哥哥，他学习中文。\r\n我有一个姐姐，没有妹妹。\r\n她今天生病了，不能上课。\r\n上午去，下午去？你说。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "……，也……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "并列复句",
+    "cases": "我喜欢唱歌，我弟弟也喜欢唱歌。\r\n这家饭店的饺子很好吃，也很便宜。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "……，还……",
+    "grammarType": "句子的类型",
+    "categoryType": "复句",
+    "grammarDetail": "并列复句",
+    "cases": "这个房间很大，还很漂亮。\r\n我会说英语，还会说汉语。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "用动态助词“了1”表示",
+    "grammarType": "动作的态",
+    "categoryType": "",
+    "grammarDetail": "完成态",
+    "cases": "你学了多少个汉字？\r\n我买了一些苹果。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "用语气助词“了2”表示",
+    "grammarType": "动作的态",
+    "categoryType": "",
+    "grammarDetail": "变化态",
+    "cases": "八点了，起床吧。\r\n她病了，在家休息呢。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "……在/正在+动词",
+    "grammarType": "动作的态",
+    "categoryType": "",
+    "grammarDetail": "进行态",
+    "cases": "同学们在/正在上课。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "……在/正在+动词……+呢",
+    "grammarType": "动作的态",
+    "categoryType": "",
+    "grammarDetail": "进行态",
+    "cases": "王老师在/正在打电话呢。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "……呢",
+    "grammarType": "动作的态",
+    "categoryType": "",
+    "grammarDetail": "进行态",
+    "cases": "我没看电视，学习呢。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "钱数表示法",
+    "grammarType": "特殊表达法",
+    "categoryType": "数的表达法",
+    "grammarDetail": "",
+    "cases": "这本书二十四块（钱）。\r\n包子三块（钱）一个。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "序数表达法1：第+数词",
+    "grammarType": "特殊表达法",
+    "categoryType": "数的表达法",
+    "grammarDetail": "",
+    "cases": "今天我们学习第六课。\r\n第一本是我的书，第二本是她的书。"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "年、月、日、星期表示法",
+    "grammarType": "特殊表达法",
+    "categoryType": "时间表示法",
+    "grammarDetail": "",
+    "cases": "2022年2月4日\r\n九月十五号、五月一日\r\n星期一、星期二、星期三、星期四、星期五、星期六、星期日/星期天"
+  },
+  {
+    "examLevelId": "HSK1",
+    "content": "钟点表示法",
+    "grammarType": "特殊表达法",
+    "categoryType": "时间表示法",
+    "grammarDetail": "",
+    "cases": "两点、七点零五、九点二十（分）、十点半"
+  }
+]

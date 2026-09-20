@@ -1,0 +1,646 @@
+[
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "人际交往",
+    "level3Content": "人际关系"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "人际交往",
+    "level3Content": "中国人际交往中的品行观念和评价"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "形象服饰",
+    "level3Content": "不同文化和场合符合礼仪的形象"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "形象服饰",
+    "level3Content": "服饰搭配与风格"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "形象服饰",
+    "level3Content": "中式服装特点与审美"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "饮食餐饮",
+    "level3Content": "具有代表性的中国饮食观念、烹饪方法"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "饮食餐饮",
+    "level3Content": "多样化的地域饮食特色"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "饮食餐饮",
+    "level3Content": "各种餐饮形态的特点和代表品种"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "饮食餐饮",
+    "level3Content": "中国餐桌文化及含义"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "建筑与社区",
+    "level3Content": "建筑与社区文化"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "建筑与社区",
+    "level3Content": "社区空间、设施的规划与建设"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "建筑与社区",
+    "level3Content": "建筑功能设计与建设"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "建筑与社区",
+    "level3Content": "房屋买卖与租赁"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "休闲娱乐",
+    "level3Content": "旅游度假"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "休闲娱乐",
+    "level3Content": "运动健身"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "休闲娱乐",
+    "level3Content": "文化娱乐"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "休闲娱乐",
+    "level3Content": "购物休闲"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "学业职业",
+    "level3Content": "专业学习"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "学业职业",
+    "level3Content": "学业发展与生涯规划"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "个体与社会",
+    "level2Content": "学业职业",
+    "level3Content": "职业发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "人口与发展",
+    "level3Content": "人口流动与管理"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "人口与发展",
+    "level3Content": "老龄化"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "人口与发展",
+    "level3Content": "人口发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "教育发展",
+    "level3Content": "教育政策"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "教育发展",
+    "level3Content": "高等教育体制"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "教育发展",
+    "level3Content": "教育高质量发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "媒介与传播",
+    "level3Content": "正式表达与非正式表达"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "媒介与传播",
+    "level3Content": "媒介与信息传播"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "媒介与传播",
+    "level3Content": "数字媒介素养"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "媒介与传播",
+    "level3Content": "知识共享与版权保护"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "健康与医疗",
+    "level3Content": "疾病诊疗与公共卫生"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "健康与医疗",
+    "level3Content": "心理健康与心理治疗"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "健康与医疗",
+    "level3Content": "医学技术创新与伦理"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "健康与医疗",
+    "level3Content": "中医和西医"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "交通与运输",
+    "level3Content": "交通运输系统建设和影响"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "交通与运输",
+    "level3Content": "各种运输方式的特点和发展趋势"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "交通与运输",
+    "level3Content": "城市交通系统规划与发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "经济与生产",
+    "level3Content": "宏观经济"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "经济与生产",
+    "level3Content": "产业发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "经济与生产",
+    "level3Content": "农、林、牧、渔业生产"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "经济与生产",
+    "level3Content": "工业生产"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "经济与生产",
+    "level3Content": "金融服务贸易"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "经济与生产",
+    "level3Content": "企业运营"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "法制与治安",
+    "level3Content": "法制建设"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "法制与治安",
+    "level3Content": "治安管理"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "社会公共管理",
+    "level3Content": "社会保障"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "社会公共管理",
+    "level3Content": "劳动就业"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "社会公共管理",
+    "level3Content": "公共基础设施建设"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "社会公共管理",
+    "level3Content": "社会公共组织"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "国家与社会",
+    "level2Content": "社会公共管理",
+    "level3Content": "社会基层治理"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "文学艺术",
+    "level3Content": "中国传统文化意象及在不同文学艺术形式中的表现"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "文学艺术",
+    "level3Content": "不同文学形式的特点和作品欣赏"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "文学艺术",
+    "level3Content": "不同艺术形式的特点和作品欣赏"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "历史",
+    "level3Content": "中国历史发展基本脉络"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "历史",
+    "level3Content": "中国重大历史事件和历史人物"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "哲学思想",
+    "level3Content": "儒家主要思想、代表人物和影响"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "哲学思想",
+    "level3Content": "道家主要思想、代表人物和影响"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "习俗礼俗",
+    "level3Content": "农历岁时节令习俗"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "习俗礼俗",
+    "level3Content": "节庆习俗"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "习俗礼俗",
+    "level3Content": "婚嫁习俗"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "习俗礼俗",
+    "level3Content": "生日习俗"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "习俗礼俗",
+    "level3Content": "丧葬习俗"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "文化遗产",
+    "level3Content": "中国重要的人类物质文化遗产及影响"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "文化遗产",
+    "level3Content": "中国重要的人类非物质文化遗产及影响"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "文化遗产",
+    "level3Content": "文化遗产保护、传承与发扬"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "宇宙环境",
+    "level3Content": "宇宙的起源与演化"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "宇宙环境",
+    "level3Content": "宇宙的结构与物质"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "宇宙环境",
+    "level3Content": "人类的太空探索与发现"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "地质环境",
+    "level3Content": "地球构造"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "地质环境",
+    "level3Content": "地形、地势、地貌特点"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "地质环境",
+    "level3Content": "地形、地势对经济、人文活动的影响"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "地质环境",
+    "level3Content": "矿产资源"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "大气环境",
+    "level3Content": "不同气候类型"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "大气环境",
+    "level3Content": "气候变化"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "大气环境",
+    "level3Content": "大气监测"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "水环境",
+    "level3Content": "水资源分布和利用"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "水环境",
+    "level3Content": "水生态保护与可持续发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "土地环境",
+    "level3Content": "土地资源分布和利用"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "土地环境",
+    "level3Content": "土地资源保护与可持续发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "生物环境",
+    "level3Content": "生物资源分布特点和利用"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "自然与环境",
+    "level2Content": "生物环境",
+    "level3Content": "生物资源保护与可持续发展"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "信息科学技术",
+    "level3Content": "计算机科学"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "信息科学技术",
+    "level3Content": "网络通信技术"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "信息科学技术",
+    "level3Content": "大数据与数据分析"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "信息科学技术",
+    "level3Content": "人工智能与机器学习"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "航空航天科学技术",
+    "level3Content": "航天航空科技"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "航空航天科学技术",
+    "level3Content": "航空航天技术应用"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "生物科学技术",
+    "level3Content": "生物科技与农业"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "生物科学技术",
+    "level3Content": "生物科技与环保"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "生物科学技术",
+    "level3Content": "生物科技与医疗"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "其他新兴科学技术",
+    "level3Content": "先进材料与制造"
+  },
+  {
+    "examLevelId": "HSK7-9",
+    "children": [],
+    "level1Content": "科学技术",
+    "level2Content": "其他新兴科学技术",
+    "level3Content": "可再生能源技术"
+  }
+]

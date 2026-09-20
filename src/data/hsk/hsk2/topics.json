@@ -1,0 +1,240 @@
+[
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "基本信息",
+    "level2Content": "个人信息",
+    "level3Content": "外貌、穿着、生日等"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "基本信息",
+    "level2Content": "个人信息",
+    "level3Content": "身份、习惯、爱好、来处等"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "基本信息",
+    "level2Content": "事件信息",
+    "level3Content": "事件、人物、时间、方式、地址、原因、变化、状态等"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "基本信息",
+    "level2Content": "物品信息",
+    "level3Content": "名称、颜色、差别、数量、所在、特点等"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "基本信息",
+    "level2Content": "环境信息",
+    "level3Content": "天气"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "基本信息",
+    "level2Content": "环境信息",
+    "level3Content": "环境特征"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "交往",
+    "level3Content": "基本礼貌行为"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "交往",
+    "level3Content": "简单互动行为"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "交往",
+    "level3Content": "意愿感受"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "饮食",
+    "level3Content": "食物饮品"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "饮食",
+    "level3Content": "饮食习惯"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "饮食",
+    "level3Content": "就餐"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "交通出行",
+    "level3Content": "问路"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "交通出行",
+    "level3Content": "出行方式"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "交通出行",
+    "level3Content": "出行安排"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "交通出行",
+    "level3Content": "出行感受"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "购物",
+    "level3Content": "商品选购"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "购物",
+    "level3Content": "商品描述"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "医疗健康",
+    "level3Content": "生病"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "医疗健康",
+    "level3Content": "就医"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "休闲",
+    "level3Content": "休闲活动"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "休闲",
+    "level3Content": "休闲安排"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "家庭生活",
+    "level3Content": "家庭关系"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "日常生活",
+    "level2Content": "家庭生活",
+    "level3Content": "家庭活动"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "教育情况",
+    "level2Content": "学习情况",
+    "level3Content": "基本情况"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "教育情况",
+    "level2Content": "学习情况",
+    "level3Content": "学习经历"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "教育情况",
+    "level2Content": "校园生活",
+    "level3Content": "学校情况"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "教育情况",
+    "level2Content": "校园生活",
+    "level3Content": "课后活动"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "职场生活",
+    "level2Content": "工作情况",
+    "level3Content": "工作信息"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "职场生活",
+    "level2Content": "工作情况",
+    "level3Content": "工作经历、工作感受"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "职场生活",
+    "level2Content": "职业",
+    "level3Content": "职业状况"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "传统习俗",
+    "level3Content": "节日"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "饮食文化",
+    "level3Content": "中餐印象"
+  },
+  {
+    "examLevelId": "HSK2",
+    "children": [],
+    "level1Content": "文化与传统",
+    "level2Content": "姓氏文化",
+    "level3Content": "主要姓氏、正式称谓等"
+  }
+]
