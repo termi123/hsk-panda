@@ -28,6 +28,10 @@ import TaskScene from './scenes/vocabulary/learn/hsk/tasks/TaskScene';
 import TaskDetailScene from './scenes/vocabulary/learn/hsk/tasks/TaskDetailScene';
 
 import WordsScene from './scenes/vocabulary/words/WordsScene';
+
+import HSKQuizMenu from './scenes/games/quiz/HSKQuizMenu';
+
+
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
 const config: Phaser.Types.Core.GameConfig = {
@@ -40,7 +44,6 @@ const config: Phaser.Types.Core.GameConfig = {
     Boot,
     Preloader,
     MainMenu,
-    GamesMenu,
     MainGame,
     GameOver,
 
@@ -59,7 +62,10 @@ const config: Phaser.Types.Core.GameConfig = {
     TaskScene,
     TaskDetailScene,
 
-    WordsScene
+    WordsScene,
+
+    GamesMenu,
+    HSKQuizMenu,
   ],
 };
 

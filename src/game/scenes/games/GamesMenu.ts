@@ -268,10 +268,7 @@ export default class GamesMenu extends Phaser.Scene {
 
     private startGame(game: GameItem): void {
         if (game.id === 'quiz') {
-            this.modal.showComingSoon(
-                game.title.toUpperCase(),
-                "We'll build this next!"
-            );
+            goToScene(this, 'HSKQuizMenu');
         }
     }
 
