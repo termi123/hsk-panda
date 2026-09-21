@@ -1,82 +1,69 @@
 import * as Phaser from 'phaser';
-import { UIButton } from '../ui/UIButton';
-import { UIColors } from '../ui/UIColors';
-import { fadeInScene, goToScene } from '../ui/SceneTransition';
+import { UIButton } from '../../../../../ui/UIButton';
+import { UIColors } from '../../../../../ui/UIColors';
+import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
 import {
-    HSKHanzi,
     HSKLevel,
-} from '../../services/HSKDataService';
+    HSKVocabulary,
+} from '../../../../../../services/HSKDataService';
+import { mapPartOfSpeech } from '../../../../../utils/VocabularyUtils';
 
-export default class HanziDetailScene extends Phaser.Scene {
+export default class WordDetailScene extends Phaser.Scene {
 
     private level!: HSKLevel;
-    private hanzi!: HSKHanzi;
-    private number = 0;
+    private word!: HSKVocabulary;
 
     constructor() {
-        super('HanziDetailScene');
+        super('WordDetailScene');
     }
 
     init(data: {
         level: HSKLevel;
-        hanzi: HSKHanzi;
-        number?: number;
+        word: HSKVocabulary;
     }): void {
         this.level = data.level;
-        this.hanzi = data.hanzi;
-        this.number = data.number ?? 0;
+        this.word = data.word;
     }
 
     create(): void {
+        const width = this.scale.width;
+        const height = this.scale.height;
+
         fadeInScene(this);
 
         this.createBackground();
         this.createHeader();
-        this.createHanziCard();
+        this.createWordCard();
         this.createBackButton();
 
-        this.input.keyboard?.on(
-            'keydown-ESC',
-            () => {
-                this.goBack();
-            }
-        );
+        this.input.keyboard?.on('keydown-ESC', () => {
+            this.goBack();
+        });
     }
 
     private createHeader(): void {
         const width = this.scale.width;
 
-        this.add.text(
-            width / 2,
-            48,
-            'HANZI',
-            {
-                fontFamily: 'Arial',
-                fontSize: '34px',
-                fontStyle: 'bold',
-                color: '#263238',
-            }
-        ).setOrigin(0.5);
+        this.add.text(width / 2, 48, 'WORD', {
+            fontFamily: 'Arial',
+            fontSize: '34px',
+            fontStyle: 'bold',
+            color: '#263238',
+        }).setOrigin(0.5);
 
-        this.add.text(
-            width / 2,
-            84,
-            this.level,
-            {
-                fontFamily: 'Arial',
-                fontSize: '17px',
-                fontStyle: 'bold',
-                color: '#F28C28',
-            }
-        ).setOrigin(0.5);
+        this.add.text(width / 2, 84, this.level, {
+            fontFamily: 'Arial',
+            fontSize: '17px',
+            fontStyle: 'bold',
+            color: '#4E9F3D',
+        }).setOrigin(0.5);
     }
 
-    private createHanziCard(): void {
+    private createWordCard(): void {
         const width = this.scale.width;
 
         const cardWidth = 620;
         const cardHeight = 430;
-
         const cardX = width / 2;
         const cardY = 365;
 
@@ -98,46 +85,39 @@ export default class HanziDetailScene extends Phaser.Scene {
             UIColors.card
         )
             .setOrigin(0.5)
-            .setStrokeStyle(
-                2,
-                UIColors.cardBorder
-            );
+            .setStrokeStyle(2, UIColors.cardBorder);
 
-        this.createCharacter(
-            cardX,
-            cardY
-        );
-
-        this.createInformation(
-            cardX,
-            cardY
-        );
+        this.createWordHeader(cardX, cardY);
+        this.createInformation(cardX, cardY);
     }
 
-    private createCharacter(
+    private createWordHeader(
         cardX: number,
         cardY: number
     ): void {
+
+        // Chinese word
         this.add.text(
             cardX,
-            cardY - 110,
-            this.hanzi.word,
+            cardY - 135,
+            this.word.word,
             {
                 fontFamily: 'Arial',
-                fontSize: '110px',
+                fontSize: '64px',
                 fontStyle: 'bold',
                 color: '#263238',
             }
         ).setOrigin(0.5);
 
+        // Pinyin
         this.add.text(
             cardX,
-            cardY - 25,
-            'Chinese Character',
+            cardY - 72,
+            this.word.pinyin,
             {
                 fontFamily: 'Arial',
-                fontSize: '16px',
-                color: '#667085',
+                fontSize: '24px',
+                color: '#4E9F3D',
             }
         ).setOrigin(0.5);
     }
@@ -146,16 +126,17 @@ export default class HanziDetailScene extends Phaser.Scene {
         cardX: number,
         cardY: number
     ): void {
+
         const leftX = cardX - 245;
         const rightX = cardX + 245;
 
-        const infoTop = cardY + 45;
+        const infoTop = cardY - 20;
 
         // TYPE
         this.add.text(
             leftX,
             infoTop,
-            'TYPE',
+            '词性',
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
@@ -166,13 +147,24 @@ export default class HanziDetailScene extends Phaser.Scene {
 
         this.add.text(
             leftX,
-            infoTop + 32,
-            this.formatType(this.hanzi.type),
+            infoTop + 30,
+            this.word.cixing,
             {
                 fontFamily: 'Arial',
-                fontSize: '20px',
+                fontSize: '18px',
                 fontStyle: 'bold',
-                color: '#F28C28',
+                color: '#263238',
+            }
+        ).setOrigin(0, 0.5);
+
+        this.add.text(
+            leftX,
+            infoTop + 57,
+            mapPartOfSpeech(this.word.cixing),
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                color: '#667085',
             }
         ).setOrigin(0, 0.5);
 
@@ -191,21 +183,21 @@ export default class HanziDetailScene extends Phaser.Scene {
 
         this.add.text(
             rightX,
-            infoTop + 32,
+            infoTop + 30,
             this.level,
             {
                 fontFamily: 'Arial',
-                fontSize: '20px',
+                fontSize: '18px',
                 fontStyle: 'bold',
                 color: '#4E9F3D',
             }
         ).setOrigin(1, 0.5);
 
-        // CHARACTER NUMBER
+        // SORT NUMBER
         this.add.text(
             leftX,
-            infoTop + 90,
-            'CHARACTER NUMBER',
+            infoTop + 105,
+            'WORD NUMBER',
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
@@ -216,22 +208,20 @@ export default class HanziDetailScene extends Phaser.Scene {
 
         this.add.text(
             leftX,
-            infoTop + 122,
-            this.number > 0
-                ? `#${this.number}`
-                : '-',
+            infoTop + 135,
+            `#${this.word.sort}`,
             {
                 fontFamily: 'Arial',
-                fontSize: '20px',
+                fontSize: '18px',
                 fontStyle: 'bold',
                 color: '#263238',
             }
         ).setOrigin(0, 0.5);
 
-        // SOURCE LEVEL
+        // SOURCE LEVEL NAME
         this.add.text(
             rightX,
-            infoTop + 90,
+            infoTop + 105,
             'SOURCE LEVEL',
             {
                 fontFamily: 'Arial',
@@ -243,23 +233,15 @@ export default class HanziDetailScene extends Phaser.Scene {
 
         this.add.text(
             rightX,
-            infoTop + 122,
-            this.hanzi.examLevelId || this.level,
+            infoTop + 135,
+            this.word.levelName || this.level,
             {
                 fontFamily: 'Arial',
-                fontSize: '20px',
+                fontSize: '18px',
                 fontStyle: 'bold',
                 color: '#263238',
             }
         ).setOrigin(1, 0.5);
-    }
-
-    private formatType(type?: string): string {
-        if (!type) {
-            return '-';
-        }
-
-        return `HSK${type}`;
     }
 
     private createBackButton(): void {
@@ -268,9 +250,7 @@ export default class HanziDetailScene extends Phaser.Scene {
             90,
             this.scale.height - 58,
             'BACK',
-            () => {
-                this.goBack();
-            },
+            () => this.goBack(),
             {
                 width: 120,
                 height: 44,
@@ -283,7 +263,7 @@ export default class HanziDetailScene extends Phaser.Scene {
     }
 
     private goBack(): void {
-        goToScene(this, 'HanziScene', {
+        goToScene(this, 'VocabularyScene', {
             level: this.level,
         });
     }
@@ -320,7 +300,7 @@ export default class HanziDetailScene extends Phaser.Scene {
             width - 120,
             100,
             80,
-            UIColors.orange,
+            UIColors.primary,
             0.04
         );
     }

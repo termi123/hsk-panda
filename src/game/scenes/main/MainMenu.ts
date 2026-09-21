@@ -1,8 +1,8 @@
 import * as Phaser from 'phaser';
-import { UIButton } from '../ui/UIButton';
-import { UIColors } from '../ui/UIColors';
-import { UIModal } from '../ui/UIModal';
-import { fadeInScene, goToScene } from '../ui/SceneTransition';
+import { UIButton } from '../../ui/UIButton';
+import { UIColors } from '../../ui/UIColors';
+import { UIModal } from '../../ui/UIModal';
+import { fadeInScene, goToScene } from '../../ui/SceneTransition';
 
 export default class MainMenu extends Phaser.Scene {
 

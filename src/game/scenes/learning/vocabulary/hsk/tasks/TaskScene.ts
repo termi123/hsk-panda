@@ -1,12 +1,17 @@
 import * as Phaser from 'phaser';
-import { UIButton } from '../ui/UIButton';
-import { UIColors } from '../ui/UIColors';
-import { fadeInScene, goToScene } from '../ui/SceneTransition';
+
+import { UIButton } from '../../../../../ui/UIButton';
+import { UIColors } from '../../../../../ui/UIColors';
+import {
+    fadeInScene,
+    goToScene,
+} from '../../../../../ui/SceneTransition';
+
 import {
     HSKDataService,
     HSKLevel,
     HSKTask,
-} from '../../services/HSKDataService';
+} from '../../../../../../services/HSKDataService';
 
 export default class TaskScene extends Phaser.Scene {
 

@@ -1,21 +1,21 @@
 import * as Phaser from 'phaser';
-import { UIButton } from '../ui/UIButton';
-import { UIColors } from '../ui/UIColors';
-import { fadeInScene, goToScene } from '../ui/SceneTransition';
+import { UIButton } from '../../../../../ui/UIButton';
+import { UIColors } from '../../../../../ui/UIColors';
+import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
 import {
     HSKDataService,
-    HSKHanzi,
     HSKLevel,
-} from '../../services/HSKDataService';
+    HSKTopic,
+} from '../../../../../../services/HSKDataService';
 
-export default class HanziScene extends Phaser.Scene {
+export default class TopicScene extends Phaser.Scene {
 
     private level!: HSKLevel;
 
     private readonly itemsPerPage = 10;
     private currentPage = 0;
 
-    private hanzi: HSKHanzi[] = [];
+    private topics: HSKTopic[] = [];
 
     private rowsContainer!: Phaser.GameObjects.Container;
 
@@ -24,7 +24,7 @@ export default class HanziScene extends Phaser.Scene {
     private nextButton!: UIButton;
 
     constructor() {
-        super('HanziScene');
+        super('TopicScene');
     }
 
     init(data: { level: HSKLevel }): void {
@@ -32,15 +32,13 @@ export default class HanziScene extends Phaser.Scene {
     }
 
     create(): void {
-        const width = this.scale.width;
-
         fadeInScene(this);
 
-        this.hanzi = HSKDataService.getHanzi(this.level);
+        this.topics = HSKDataService.getTopics(this.level);
 
         this.createBackground();
         this.createHeader();
-        this.createHanziList();
+        this.createTopicList();
         this.createPagination();
         this.createBackButton();
 
@@ -50,24 +48,34 @@ export default class HanziScene extends Phaser.Scene {
     private createHeader(): void {
         const width = this.scale.width;
 
-        this.add.text(width / 2, 38, 'HANZI', {
-            fontFamily: 'Arial',
-            fontSize: '34px',
-            fontStyle: 'bold',
-            color: '#263238',
-        }).setOrigin(0.5);
+        this.add.text(
+            width / 2,
+            38,
+            'TOPICS',
+            {
+                fontFamily: 'Arial',
+                fontSize: '34px',
+                fontStyle: 'bold',
+                color: '#263238',
+            }
+        ).setOrigin(0.5);
 
-        this.add.text(width / 2, 73, this.level, {
-            fontFamily: 'Arial',
-            fontSize: '17px',
-            fontStyle: 'bold',
-            color: '#F28C28',
-        }).setOrigin(0.5);
+        this.add.text(
+            width / 2,
+            73,
+            this.level,
+            {
+                fontFamily: 'Arial',
+                fontSize: '17px',
+                fontStyle: 'bold',
+                color: '#F28C28',
+            }
+        ).setOrigin(0.5);
 
         this.add.text(
             width / 2,
             98,
-            `${this.hanzi.length.toLocaleString()} characters`,
+            `${this.topics.length.toLocaleString()} topics`,
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
@@ -76,7 +84,7 @@ export default class HanziScene extends Phaser.Scene {
         ).setOrigin(0.5);
     }
 
-    private createHanziList(): void {
+    private createTopicList(): void {
         const width = this.scale.width;
 
         const listX = width / 2;
@@ -84,14 +92,17 @@ export default class HanziScene extends Phaser.Scene {
 
         this.createListHeader();
 
-        this.rowsContainer = this.add.container(listX, listY + 30);
+        this.rowsContainer = this.add.container(
+            listX,
+            listY + 30
+        );
     }
 
     private createListHeader(): void {
         const width = this.scale.width;
 
-        const headerWidth = 700;
-        const headerHeight = 32;
+        const headerWidth = 800;
+        const headerHeight = 36;
 
         const container = this.add.container(
             width / 2,
@@ -106,12 +117,15 @@ export default class HanziScene extends Phaser.Scene {
             UIColors.backgroundAlt
         )
             .setOrigin(0.5)
-            .setStrokeStyle(1, UIColors.cardBorder);
+            .setStrokeStyle(
+                1,
+                UIColors.cardBorder
+            );
 
         container.add(background);
 
         const numberHeader = this.add.text(
-            -330,
+            -380,
             0,
             '#',
             {
@@ -122,10 +136,10 @@ export default class HanziScene extends Phaser.Scene {
             }
         ).setOrigin(0, 0.5);
 
-        const hanziHeader = this.add.text(
-            -180,
+        const level1Header = this.add.text(
+            -330,
             0,
-            'HANZI',
+            'TOPIC',
             {
                 fontFamily: 'Arial',
                 fontSize: '13px',
@@ -134,10 +148,22 @@ export default class HanziScene extends Phaser.Scene {
             }
         ).setOrigin(0, 0.5);
 
-        const typeHeader = this.add.text(
-            120,
+        const level2Header = this.add.text(
+            20,
             0,
-            'TYPE',
+            'SUB TOPIC',
+            {
+                fontFamily: 'Arial',
+                fontSize: '13px',
+                fontStyle: 'bold',
+                color: '#667085',
+            }
+        ).setOrigin(0, 0.5);
+
+        const level3Header = this.add.text(
+            250,
+            0,
+            'DETAIL',
             {
                 fontFamily: 'Arial',
                 fontSize: '13px',
@@ -148,28 +174,33 @@ export default class HanziScene extends Phaser.Scene {
 
         container.add([
             numberHeader,
-            hanziHeader,
-            typeHeader,
+            level1Header,
+            level2Header,
+            level3Header,
         ]);
     }
 
     private renderPage(): void {
         this.rowsContainer.removeAll(true);
 
-        const start = this.currentPage * this.itemsPerPage;
+        const start =
+            this.currentPage * this.itemsPerPage;
+
         const end = Math.min(
             start + this.itemsPerPage,
-            this.hanzi.length
+            this.topics.length
         );
 
-        const pageItems = this.hanzi.slice(start, end);
+        const pageItems =
+            this.topics.slice(start, end);
 
-        pageItems.forEach((hanzi, index) => {
-            const y = 22 + index * 42;
+        pageItems.forEach((topic, index) => {
+            const y = 24 + index * 48;
 
-            this.createHanziRow(
+            this.createTopicRow(
                 this.rowsContainer,
-                hanzi,
+                topic,
+                start + index,
                 y
             );
         });
@@ -177,13 +208,14 @@ export default class HanziScene extends Phaser.Scene {
         this.updatePagination();
     }
 
-    private createHanziRow(
+    private createTopicRow(
         container: Phaser.GameObjects.Container,
-        hanzi: HSKHanzi,
+        topic: HSKTopic,
+        index: number,
         y: number
     ): void {
-        const rowWidth = 700;
-        const rowHeight = 42;
+        const rowWidth = 800;
+        const rowHeight = 48;
 
         const background = this.add.rectangle(
             0,
@@ -193,12 +225,15 @@ export default class HanziScene extends Phaser.Scene {
             UIColors.card
         )
             .setOrigin(0.5)
-            .setStrokeStyle(1, UIColors.cardBorder);
+            .setStrokeStyle(
+                1,
+                UIColors.cardBorder
+            );
 
         const numberText = this.add.text(
-            -330,
+            -380,
             y,
-            `${this.getHanziNumber(hanzi)}`,
+            `${index + 1}`,
             {
                 fontFamily: 'Arial',
                 fontSize: '12px',
@@ -206,25 +241,42 @@ export default class HanziScene extends Phaser.Scene {
             }
         ).setOrigin(0, 0.5);
 
-        const wordText = this.add.text(
-            -180,
+        const level1Text = this.add.text(
+            -330,
             y,
-            hanzi.word,
+            this.cleanText(topic.level1Content),
             {
                 fontFamily: 'Arial',
-                fontSize: '22px',
+                fontSize: '15px',
                 fontStyle: 'bold',
                 color: '#263238',
             }
         ).setOrigin(0, 0.5);
 
-        const typeText = this.add.text(
-            120,
+        const level2Text = this.add.text(
+            20,
             y,
-            this.formatType(hanzi.type),
+            this.truncate(
+                this.cleanText(topic.level2Content),
+                25
+            ),
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
+                color: '#667085',
+            }
+        ).setOrigin(0, 0.5);
+
+        const level3Text = this.add.text(
+            250,
+            y,
+            this.truncate(
+                this.cleanText(topic.level3Content),
+                30
+            ),
+            {
+                fontFamily: 'Arial',
+                fontSize: '13px',
                 color: '#F28C28',
             }
         ).setOrigin(0, 0.5);
@@ -232,8 +284,9 @@ export default class HanziScene extends Phaser.Scene {
         container.add([
             background,
             numberText,
-            wordText,
-            typeText,
+            level1Text,
+            level2Text,
+            level3Text,
         ]);
 
         background.setInteractive({
@@ -253,29 +306,33 @@ export default class HanziScene extends Phaser.Scene {
         });
 
         background.on('pointerdown', () => {
-            goToScene(this, 'HanziDetailScene', {
+            goToScene(this, 'TopicDetailScene', {
                 level: this.level,
-                hanzi,
-                number: this.getHanziNumber(hanzi),
+                topic,
+                number: index + 1,
             });
         });
     }
 
-    private getHanziNumber(hanzi: HSKHanzi): number {
-        const index = this.hanzi.indexOf(hanzi);
-
-        return index >= 0
-            ? index + 1
-            : 0;
-    }
-
-    private formatType(type?: string): string {
-        if (!type) {
+    private cleanText(text?: string): string {
+        if (!text) {
             return '-';
         }
 
-        // The current HSK Hanzi dataset uses numeric type values.
-        return `HSK${type}`;
+        return text
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    private truncate(
+        text: string,
+        maxLength: number
+    ): string {
+        if (text.length <= maxLength) {
+            return text;
+        }
+
+        return `${text.substring(0, maxLength - 3)}...`;
     }
 
     private createPagination(): void {
@@ -332,7 +389,8 @@ export default class HanziScene extends Phaser.Scene {
         const totalPages = Math.max(
             1,
             Math.ceil(
-                this.hanzi.length / this.itemsPerPage
+                this.topics.length /
+                this.itemsPerPage
             )
         );
 
@@ -361,7 +419,8 @@ export default class HanziScene extends Phaser.Scene {
 
     private nextPage(): void {
         const totalPages = Math.ceil(
-            this.hanzi.length / this.itemsPerPage
+            this.topics.length /
+            this.itemsPerPage
         );
 
         if (this.currentPage >= totalPages - 1) {

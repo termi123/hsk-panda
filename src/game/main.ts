@@ -1,24 +1,30 @@
 import { Boot } from "./scenes/Boot";
 import { GameOver } from "./scenes/GameOver";
 import { Game as MainGame } from "./scenes/Game";
-import MainMenu from "./scenes/MainMenu";
 import { AUTO, Game } from "phaser";
 import { Preloader } from "./scenes/Preloader";
-import GamesMenu from "./scenes/GamesMenu";
-import HSKLevelMenu from './scenes/HSKLevelMenu';
-import VocabularyMenu from './scenes/VocabularyMenu';
-import HSKDataService from "../services/HSKDataService";
-import HSKHome from './scenes/HSKHome';
-import VocabularyScene from './scenes/VocabularyScene';
-import WordDetailScene from './scenes/WordDetailScene';
-import GrammarScene from './scenes/GrammarScene';
-import GrammarDetailScene from './scenes/GrammarDetailScene';
-import HanziScene from './scenes/HanziScene';
-import HanziDetailScene from './scenes/HanziDetailScene';
-import TopicScene from './scenes/TopicScene';
-import TopicDetailScene from './scenes/TopicDetailScene';
-import TaskScene from './scenes/TaskScene';
-import TaskDetailScene from './scenes/TaskDetailScene';
+import MainMenu from './scenes/main/MainMenu';
+import GamesMenu from './scenes/games/GamesMenu';
+
+import VocabularyMenu from './scenes/learning/vocabulary/VocabularyMenu';
+
+import HSKLevelMenu from './scenes/learning/vocabulary/hsk/HSKLevelMenu';
+import HSKHome from './scenes/learning/vocabulary/hsk/HSKHome';
+
+import VocabularyScene from './scenes/learning/vocabulary/hsk/words/VocabularyScene';
+import WordDetailScene from './scenes/learning/vocabulary/hsk/words/WordDetailScene';
+
+import GrammarScene from './scenes/learning/vocabulary/hsk/grammar/GrammarScene';
+import GrammarDetailScene from './scenes/learning/vocabulary/hsk/grammar/GrammarDetailScene';
+
+import HanziScene from './scenes/learning/vocabulary/hsk/hanzi/HanziScene';
+import HanziDetailScene from './scenes/learning/vocabulary/hsk/hanzi/HanziDetailScene';
+
+import TopicScene from './scenes/learning/vocabulary/hsk/topics/TopicScene';
+import TopicDetailScene from './scenes/learning/vocabulary/hsk/topics/TopicDetailScene';
+
+import TaskScene from './scenes/learning/vocabulary/hsk/tasks/TaskScene';
+import TaskDetailScene from './scenes/learning/vocabulary/hsk/tasks/TaskDetailScene';
 
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig

@@ -1,12 +1,12 @@
 import * as Phaser from 'phaser';
-import { UIButton } from '../ui/UIButton';
-import { UIColors } from '../ui/UIColors';
-import { UIModal } from '../ui/UIModal';
-import { fadeInScene, goToScene } from '../ui/SceneTransition';
+import { UIButton } from '../../../../ui/UIButton';
+import { UIColors } from '../../../../ui/UIColors';
+import { UIModal } from '../../../../ui/UIModal';
+import { fadeInScene, goToScene } from '../../../../ui/SceneTransition';
 import {
     HSKDataService,
     HSKLevel,
-} from '../../services/HSKDataService';
+} from '../../../../../services/HSKDataService';
 
 export default class HSKHome extends Phaser.Scene {
     private level!: HSKLevel;

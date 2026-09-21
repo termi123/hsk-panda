@@ -1,29 +1,34 @@
 import * as Phaser from 'phaser';
-import { UIButton } from '../ui/UIButton';
-import { UIColors } from '../ui/UIColors';
-import { fadeInScene, goToScene } from '../ui/SceneTransition';
+
+import { UIButton } from '../../../../../ui/UIButton';
+import { UIColors } from '../../../../../ui/UIColors';
+import {
+    fadeInScene,
+    goToScene,
+} from '../../../../../ui/SceneTransition';
+
 import {
     HSKLevel,
-    HSKTopic,
-} from '../../services/HSKDataService';
+    HSKTask,
+} from '../../../../../../services/HSKDataService';
 
-export default class TopicDetailScene extends Phaser.Scene {
+export default class TaskDetailScene extends Phaser.Scene {
 
     private level!: HSKLevel;
-    private topic!: HSKTopic;
+    private task!: HSKTask;
     private number = 0;
 
     constructor() {
-        super('TopicDetailScene');
+        super('TaskDetailScene');
     }
 
     init(data: {
         level: HSKLevel;
-        topic: HSKTopic;
+        task: HSKTask;
         number?: number;
     }): void {
         this.level = data.level;
-        this.topic = data.topic;
+        this.task = data.task;
         this.number = data.number ?? 0;
     }
 
@@ -32,7 +37,7 @@ export default class TopicDetailScene extends Phaser.Scene {
 
         this.createBackground();
         this.createHeader();
-        this.createTopicCard();
+        this.createTaskCard();
         this.createBackButton();
 
         this.input.keyboard?.on(
@@ -49,7 +54,7 @@ export default class TopicDetailScene extends Phaser.Scene {
         this.add.text(
             width / 2,
             48,
-            'TOPIC',
+            'TASK',
             {
                 fontFamily: 'Arial',
                 fontSize: '34px',
@@ -66,16 +71,16 @@ export default class TopicDetailScene extends Phaser.Scene {
                 fontFamily: 'Arial',
                 fontSize: '17px',
                 fontStyle: 'bold',
-                color: '#F28C28',
+                color: '#8B70D6',
             }
         ).setOrigin(0.5);
     }
 
-    private createTopicCard(): void {
+    private createTaskCard(): void {
         const width = this.scale.width;
 
-        const cardWidth = 700;
-        const cardHeight = 500;
+        const cardWidth = 720;
+        const cardHeight = 520;
 
         const cardX = width / 2;
         const cardY = 365;
@@ -103,18 +108,27 @@ export default class TopicDetailScene extends Phaser.Scene {
                 UIColors.cardBorder
             );
 
-        this.createTitle(cardX, cardY);
-        this.createHierarchy(cardX, cardY);
+        this.createTaskTitle(
+            cardX,
+            cardY
+        );
+
+        this.createInformation(
+            cardX,
+            cardY
+        );
     }
 
-    private createTitle(
+    private createTaskTitle(
         cardX: number,
         cardY: number
     ): void {
         this.add.text(
             cardX,
-            cardY - 195,
-            `#${this.number}`,
+            cardY - 220,
+            this.number > 0
+                ? `#${this.number}`
+                : '',
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
@@ -125,146 +139,65 @@ export default class TopicDetailScene extends Phaser.Scene {
 
         this.add.text(
             cardX,
-            cardY - 155,
+            cardY - 175,
             this.cleanText(
-                this.topic.level1Content
+                this.task.level1Content
             ),
             {
                 fontFamily: 'Arial',
-                fontSize: '32px',
+                fontSize: '30px',
                 fontStyle: 'bold',
                 color: '#263238',
                 align: 'center',
                 wordWrap: {
-                    width: 580,
+                    width: 600,
                 },
+                lineSpacing: 5,
             }
         ).setOrigin(0.5);
     }
 
-    private createHierarchy(
+    private createInformation(
         cardX: number,
         cardY: number
     ): void {
-        const leftX = cardX - 270;
-        const rightX = cardX + 270;
+        const contentX = cardX - 300;
 
-        // LEVEL 1
-        this.createSection(
-            leftX,
-            cardY - 65,
-            'TOPIC',
-            this.topic.level1Content,
-            '#263238'
-        );
-
-        // LEVEL 2
-        this.createSection(
-            leftX,
-            cardY + 65,
-            'SUB TOPIC',
-            this.topic.level2Content,
-            '#4E9F3D'
-        );
-
-        // LEVEL 3
-        this.createSection(
-            leftX,
-            cardY + 195,
+        this.add.text(
+            contentX,
+            cardY - 80,
             'DETAIL',
-            this.topic.level3Content,
-            '#F28C28'
-        );
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                fontStyle: 'bold',
+                color: '#98A2B3',
+            }
+        ).setOrigin(0, 0.5);
 
-        // LEVEL
+        const detailText = this.add.text(
+            contentX,
+            cardY - 45,
+            this.cleanText(this.task.level2Content),
+            {
+                fontFamily: 'Arial',
+                fontSize: '17px',
+                color: '#8B70D6',
+                wordWrap: {
+                    width: 600,
+                    useAdvancedWrap: true,
+                },
+                lineSpacing: 7,
+            }
+        ).setOrigin(0, 0);
+
+        // Metadata luôn nằm dưới phần DETAIL
+        const metadataY = cardY - 45 + detailText.height + 45;
+
         this.add.text(
-            rightX,
-            cardY - 65,
+            contentX,
+            metadataY,
             'LEVEL',
-            {
-                fontFamily: 'Arial',
-                fontSize: '14px',
-                fontStyle: 'bold',
-                color: '#98A2B3',
-            }
-        ).setOrigin(1, 0.5);
-
-        this.add.text(
-            rightX,
-            cardY - 33,
-            this.level,
-            {
-                fontFamily: 'Arial',
-                fontSize: '20px',
-                fontStyle: 'bold',
-                color: '#4E9F3D',
-            }
-        ).setOrigin(1, 0.5);
-
-        // NUMBER
-        this.add.text(
-            rightX,
-            cardY + 65,
-            'TOPIC NUMBER',
-            {
-                fontFamily: 'Arial',
-                fontSize: '14px',
-                fontStyle: 'bold',
-                color: '#98A2B3',
-            }
-        ).setOrigin(1, 0.5);
-
-        this.add.text(
-            rightX,
-            cardY + 97,
-            this.number > 0
-                ? `#${this.number}`
-                : '-',
-            {
-                fontFamily: 'Arial',
-                fontSize: '20px',
-                fontStyle: 'bold',
-                color: '#263238',
-            }
-        ).setOrigin(1, 0.5);
-
-        // SOURCE LEVEL
-        this.add.text(
-            rightX,
-            cardY + 165,
-            'SOURCE LEVEL',
-            {
-                fontFamily: 'Arial',
-                fontSize: '14px',
-                fontStyle: 'bold',
-                color: '#98A2B3',
-            }
-        ).setOrigin(1, 0.5);
-
-        this.add.text(
-            rightX,
-            cardY + 197,
-            this.topic.examLevelId || this.level,
-            {
-                fontFamily: 'Arial',
-                fontSize: '18px',
-                fontStyle: 'bold',
-                color: '#263238',
-            }
-        ).setOrigin(1, 0.5);
-    }
-
-    private createSection(
-        x: number,
-        y: number,
-        label: string,
-        value: string | undefined,
-        valueColor: string
-    ): void {
-        this.add.text(
-            x,
-            y,
-            label,
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
@@ -274,17 +207,64 @@ export default class TopicDetailScene extends Phaser.Scene {
         ).setOrigin(0, 0.5);
 
         this.add.text(
-            x,
-            y + 30,
-            this.cleanText(value),
+            contentX,
+            metadataY + 33,
+            this.level,
             {
                 fontFamily: 'Arial',
-                fontSize: '17px',
+                fontSize: '20px',
                 fontStyle: 'bold',
-                color: valueColor,
-                wordWrap: {
-                    width: 360,
-                },
+                color: '#4E9F3D',
+            }
+        ).setOrigin(0, 0.5);
+
+        this.add.text(
+            cardX - 20,
+            metadataY,
+            'TASK NUMBER',
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                fontStyle: 'bold',
+                color: '#98A2B3',
+            }
+        ).setOrigin(0, 0.5);
+
+        this.add.text(
+            cardX - 20,
+            metadataY + 33,
+            this.number > 0
+                ? `#${this.number}`
+                : '-',
+            {
+                fontFamily: 'Arial',
+                fontSize: '20px',
+                fontStyle: 'bold',
+                color: '#263238',
+            }
+        ).setOrigin(0, 0.5);
+
+        this.add.text(
+            cardX + 180,
+            metadataY,
+            'SOURCE LEVEL',
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                fontStyle: 'bold',
+                color: '#98A2B3',
+            }
+        ).setOrigin(0, 0.5);
+
+        this.add.text(
+            cardX + 180,
+            metadataY + 33,
+            this.task.examLevelId || this.level,
+            {
+                fontFamily: 'Arial',
+                fontSize: '18px',
+                fontStyle: 'bold',
+                color: '#263238',
             }
         ).setOrigin(0, 0.5);
     }
@@ -320,7 +300,7 @@ export default class TopicDetailScene extends Phaser.Scene {
     }
 
     private goBack(): void {
-        goToScene(this, 'TopicScene', {
+        goToScene(this, 'TaskScene', {
             level: this.level,
         });
     }
@@ -357,7 +337,7 @@ export default class TopicDetailScene extends Phaser.Scene {
             width - 120,
             100,
             80,
-            UIColors.orange,
+            UIColors.purple,
             0.04
         );
     }

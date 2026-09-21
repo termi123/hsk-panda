@@ -1,29 +1,29 @@
 import * as Phaser from 'phaser';
-import { UIButton } from '../ui/UIButton';
-import { UIColors } from '../ui/UIColors';
-import { fadeInScene, goToScene } from '../ui/SceneTransition';
+import { UIButton } from '../../../../../ui/UIButton';
+import { UIColors } from '../../../../../ui/UIColors';
+import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
 import {
+    HSKHanzi,
     HSKLevel,
-    HSKTask,
-} from '../../services/HSKDataService';
+} from '../../../../../../services/HSKDataService';
 
-export default class TaskDetailScene extends Phaser.Scene {
+export default class HanziDetailScene extends Phaser.Scene {
 
     private level!: HSKLevel;
-    private task!: HSKTask;
+    private hanzi!: HSKHanzi;
     private number = 0;
 
     constructor() {
-        super('TaskDetailScene');
+        super('HanziDetailScene');
     }
 
     init(data: {
         level: HSKLevel;
-        task: HSKTask;
+        hanzi: HSKHanzi;
         number?: number;
     }): void {
         this.level = data.level;
-        this.task = data.task;
+        this.hanzi = data.hanzi;
         this.number = data.number ?? 0;
     }
 
@@ -32,7 +32,7 @@ export default class TaskDetailScene extends Phaser.Scene {
 
         this.createBackground();
         this.createHeader();
-        this.createTaskCard();
+        this.createHanziCard();
         this.createBackButton();
 
         this.input.keyboard?.on(
@@ -49,7 +49,7 @@ export default class TaskDetailScene extends Phaser.Scene {
         this.add.text(
             width / 2,
             48,
-            'TASK',
+            'HANZI',
             {
                 fontFamily: 'Arial',
                 fontSize: '34px',
@@ -66,16 +66,16 @@ export default class TaskDetailScene extends Phaser.Scene {
                 fontFamily: 'Arial',
                 fontSize: '17px',
                 fontStyle: 'bold',
-                color: '#8B70D6',
+                color: '#F28C28',
             }
         ).setOrigin(0.5);
     }
 
-    private createTaskCard(): void {
+    private createHanziCard(): void {
         const width = this.scale.width;
 
-        const cardWidth = 720;
-        const cardHeight = 520;
+        const cardWidth = 620;
+        const cardHeight = 430;
 
         const cardX = width / 2;
         const cardY = 365;
@@ -103,7 +103,7 @@ export default class TaskDetailScene extends Phaser.Scene {
                 UIColors.cardBorder
             );
 
-        this.createTaskTitle(
+        this.createCharacter(
             cardX,
             cardY
         );
@@ -114,40 +114,30 @@ export default class TaskDetailScene extends Phaser.Scene {
         );
     }
 
-    private createTaskTitle(
+    private createCharacter(
         cardX: number,
         cardY: number
     ): void {
         this.add.text(
             cardX,
-            cardY - 220,
-            this.number > 0
-                ? `#${this.number}`
-                : '',
+            cardY - 110,
+            this.hanzi.word,
             {
                 fontFamily: 'Arial',
-                fontSize: '14px',
+                fontSize: '110px',
                 fontStyle: 'bold',
-                color: '#98A2B3',
+                color: '#263238',
             }
         ).setOrigin(0.5);
 
         this.add.text(
             cardX,
-            cardY - 175,
-            this.cleanText(
-                this.task.level1Content
-            ),
+            cardY - 25,
+            'Chinese Character',
             {
                 fontFamily: 'Arial',
-                fontSize: '30px',
-                fontStyle: 'bold',
-                color: '#263238',
-                align: 'center',
-                wordWrap: {
-                    width: 600,
-                },
-                lineSpacing: 5,
+                fontSize: '16px',
+                color: '#667085',
             }
         ).setOrigin(0.5);
     }
@@ -156,12 +146,16 @@ export default class TaskDetailScene extends Phaser.Scene {
         cardX: number,
         cardY: number
     ): void {
-        const contentX = cardX - 300;
+        const leftX = cardX - 245;
+        const rightX = cardX + 245;
 
+        const infoTop = cardY + 45;
+
+        // TYPE
         this.add.text(
-            contentX,
-            cardY - 80,
-            'DETAIL',
+            leftX,
+            infoTop,
+            'TYPE',
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
@@ -170,28 +164,22 @@ export default class TaskDetailScene extends Phaser.Scene {
             }
         ).setOrigin(0, 0.5);
 
-        const detailText = this.add.text(
-            contentX,
-            cardY - 45,
-            this.cleanText(this.task.level2Content),
+        this.add.text(
+            leftX,
+            infoTop + 32,
+            this.formatType(this.hanzi.type),
             {
                 fontFamily: 'Arial',
-                fontSize: '17px',
-                color: '#8B70D6',
-                wordWrap: {
-                    width: 600,
-                    useAdvancedWrap: true,
-                },
-                lineSpacing: 7,
+                fontSize: '20px',
+                fontStyle: 'bold',
+                color: '#F28C28',
             }
-        ).setOrigin(0, 0);
+        ).setOrigin(0, 0.5);
 
-        // Metadata luôn nằm dưới phần DETAIL
-        const metadataY = cardY - 45 + detailText.height + 45;
-
+        // HSK LEVEL
         this.add.text(
-            contentX,
-            metadataY,
+            rightX,
+            infoTop,
             'LEVEL',
             {
                 fontFamily: 'Arial',
@@ -199,11 +187,11 @@ export default class TaskDetailScene extends Phaser.Scene {
                 fontStyle: 'bold',
                 color: '#98A2B3',
             }
-        ).setOrigin(0, 0.5);
+        ).setOrigin(1, 0.5);
 
         this.add.text(
-            contentX,
-            metadataY + 33,
+            rightX,
+            infoTop + 32,
             this.level,
             {
                 fontFamily: 'Arial',
@@ -211,12 +199,13 @@ export default class TaskDetailScene extends Phaser.Scene {
                 fontStyle: 'bold',
                 color: '#4E9F3D',
             }
-        ).setOrigin(0, 0.5);
+        ).setOrigin(1, 0.5);
 
+        // CHARACTER NUMBER
         this.add.text(
-            cardX - 20,
-            metadataY,
-            'TASK NUMBER',
+            leftX,
+            infoTop + 90,
+            'CHARACTER NUMBER',
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
@@ -226,8 +215,8 @@ export default class TaskDetailScene extends Phaser.Scene {
         ).setOrigin(0, 0.5);
 
         this.add.text(
-            cardX - 20,
-            metadataY + 33,
+            leftX,
+            infoTop + 122,
             this.number > 0
                 ? `#${this.number}`
                 : '-',
@@ -239,9 +228,10 @@ export default class TaskDetailScene extends Phaser.Scene {
             }
         ).setOrigin(0, 0.5);
 
+        // SOURCE LEVEL
         this.add.text(
-            cardX + 180,
-            metadataY,
+            rightX,
+            infoTop + 90,
             'SOURCE LEVEL',
             {
                 fontFamily: 'Arial',
@@ -249,29 +239,27 @@ export default class TaskDetailScene extends Phaser.Scene {
                 fontStyle: 'bold',
                 color: '#98A2B3',
             }
-        ).setOrigin(0, 0.5);
+        ).setOrigin(1, 0.5);
 
         this.add.text(
-            cardX + 180,
-            metadataY + 33,
-            this.task.examLevelId || this.level,
+            rightX,
+            infoTop + 122,
+            this.hanzi.examLevelId || this.level,
             {
                 fontFamily: 'Arial',
-                fontSize: '18px',
+                fontSize: '20px',
                 fontStyle: 'bold',
                 color: '#263238',
             }
-        ).setOrigin(0, 0.5);
+        ).setOrigin(1, 0.5);
     }
 
-    private cleanText(text?: string): string {
-        if (!text) {
+    private formatType(type?: string): string {
+        if (!type) {
             return '-';
         }
 
-        return text
-            .replace(/\s+/g, ' ')
-            .trim();
+        return `HSK${type}`;
     }
 
     private createBackButton(): void {
@@ -295,7 +283,7 @@ export default class TaskDetailScene extends Phaser.Scene {
     }
 
     private goBack(): void {
-        goToScene(this, 'TaskScene', {
+        goToScene(this, 'HanziScene', {
             level: this.level,
         });
     }
@@ -332,7 +320,7 @@ export default class TaskDetailScene extends Phaser.Scene {
             width - 120,
             100,
             80,
-            UIColors.purple,
+            UIColors.orange,
             0.04
         );
     }
