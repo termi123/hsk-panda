@@ -1,7 +1,7 @@
 import * as Phaser from 'phaser';
 import { UIButton } from '../../../ui/UIButton';
 import { UIColors } from '../../../ui/UIColors';
-import { fadeInScene, goToScene } from '../../../ui/SceneTransition';
+import { fadeInScene } from '../../../ui/SceneTransition';
 import {
     HSKDataService,
     HSKLevel,
@@ -41,6 +41,10 @@ export default class RunnerScene extends Phaser.Scene {
 
     private pandaBody!: Phaser.GameObjects.Arc;
 
+    private pandaBaseY: number = 0;
+
+    private pandaRunTween?: Phaser.Tweens.Tween;
+
     private groundY: number = 0;
 
     private obstacles: Phaser.GameObjects.Container[] = [];
@@ -63,18 +67,50 @@ export default class RunnerScene extends Phaser.Scene {
         super('RunnerScene');
     }
 
+    // =========================================================
+    // INIT
+    // =========================================================
+
     init(data: {
         level: HSKLevel;
     }): void {
 
         this.level = data.level;
+
+        this.score = 0;
+        this.distance = 0;
+        this.lives = 3;
+
+        this.speed = 260;
+
+        this.gameOver = false;
+        this.questionActive = false;
+        this.jumping = false;
+
+        this.questionTimer = 0;
+        this.obstacleTimer = 0;
+
+        this.currentQuestion = undefined;
+
+        this.answerButtons = [];
+        this.obstacles = [];
+        this.backgroundObjects = [];
+
+        this.questionPanel = undefined;
+
+        this.pandaRunTween = undefined;
     }
+
+    // =========================================================
+    // CREATE
+    // =========================================================
 
     create(): void {
 
         fadeInScene(this);
 
-        this.groundY = this.scale.height - 130;
+        this.groundY =
+            this.scale.height - 130;
 
         this.createBackground();
         this.createHeader();
@@ -100,16 +136,19 @@ export default class RunnerScene extends Phaser.Scene {
             return;
         }
 
-        const dt = delta / 1000;
+        const dt =
+            delta / 1000;
 
         // Increase distance.
-        this.distance += this.speed * dt / 10;
+        this.distance +=
+            this.speed * dt / 10;
 
         // Gradually increase speed.
-        this.speed = Math.min(
-            this.maxSpeed,
-            this.speed + dt * 5
-        );
+        this.speed =
+            Math.min(
+                this.maxSpeed,
+                this.speed + dt * 5
+            );
 
         this.updateUI();
 
@@ -120,15 +159,23 @@ export default class RunnerScene extends Phaser.Scene {
 
             this.obstacleTimer -= delta;
 
-            if (this.obstacleTimer <= 0) {
+            if (
+                this.obstacleTimer <= 0
+            ) {
+
                 this.createObstacle();
+
                 this.scheduleNextObstacle();
             }
 
             this.questionTimer -= delta;
 
-            if (this.questionTimer <= 0) {
+            if (
+                this.questionTimer <= 0
+            ) {
+
                 this.showQuestion();
+
                 this.scheduleNextQuestion();
             }
         }
@@ -142,8 +189,11 @@ export default class RunnerScene extends Phaser.Scene {
 
     private createBackground(): void {
 
-        const width = this.scale.width;
-        const height = this.scale.height;
+        const width =
+            this.scale.width;
+
+        const height =
+            this.scale.height;
 
         this.add.rectangle(
             width / 2,
@@ -171,67 +221,97 @@ export default class RunnerScene extends Phaser.Scene {
         );
 
         // Mountains.
-        for (let i = 0; i < 7; i++) {
+        for (
+            let i = 0;
+            i < 7;
+            i++
+        ) {
 
-            const x = i * 220;
-            const y = this.groundY - 90;
+            const x =
+                i * 220;
 
-            const mountain = this.add.triangle(
-                x,
-                y,
-                0,
-                180,
-                110,
-                0,
-                220,
-                180,
-                UIColors.primary,
-                0.12
+            const y =
+                this.groundY - 90;
+
+            const mountain =
+                this.add.triangle(
+                    x,
+                    y,
+                    0,
+                    180,
+                    110,
+                    0,
+                    220,
+                    180,
+                    UIColors.primary,
+                    0.12
+                );
+
+            this.backgroundObjects.push(
+                mountain
             );
-
-            this.backgroundObjects.push(mountain);
         }
 
         // Bamboo decorations.
-        for (let i = 0; i < 10; i++) {
+        for (
+            let i = 0;
+            i < 10;
+            i++
+        ) {
 
-            const x = i * 150 + 40;
+            const x =
+                i * 150 + 40;
 
-            const bamboo = this.add.rectangle(
-                x,
-                this.groundY - 85,
-                14,
-                170,
-                UIColors.primary,
-                0.22
+            const bamboo =
+                this.add.rectangle(
+                    x,
+                    this.groundY - 85,
+                    14,
+                    170,
+                    UIColors.primary,
+                    0.22
+                );
+
+            this.backgroundObjects.push(
+                bamboo
             );
-
-            this.backgroundObjects.push(bamboo);
         }
     }
 
-    private updateBackground(dt: number): void {
+    private updateBackground(
+        dt: number
+    ): void {
 
         const movement =
-            this.speed * dt * 0.18;
+            this.speed *
+            dt *
+            0.18;
 
-        this.backgroundObjects.forEach(object => {
+        this.backgroundObjects.forEach(
+            object => {
 
-            if (!('x' in object)) {
-                return;
+                if (!('x' in object)) {
+                    return;
+                }
+
+                const displayObject =
+                    object as
+                        Phaser.GameObjects.GameObject & {
+                            x: number;
+                        };
+
+                displayObject.x -=
+                    movement;
+
+                if (
+                    displayObject.x < -250
+                ) {
+
+                    displayObject.x +=
+                        1600;
+                }
             }
-
-            const displayObject =
-                object as Phaser.GameObjects.GameObject & {
-                    x: number;
-                };
-
-            displayObject.x -= movement;
-
-            if (displayObject.x < -250) {
-                displayObject.x += 1600;
-            }
-        });
+        );
     }
 
     // =========================================================
@@ -240,7 +320,8 @@ export default class RunnerScene extends Phaser.Scene {
 
     private createGround(): void {
 
-        const width = this.scale.width;
+        const width =
+            this.scale.width;
 
         this.add.rectangle(
             width / 2,
@@ -266,12 +347,17 @@ export default class RunnerScene extends Phaser.Scene {
 
     private createPanda(): void {
 
-        const x = Math.min(
-            180,
-            this.scale.width * 0.18
-        );
+        const x =
+            Math.min(
+                180,
+                this.scale.width * 0.18
+            );
 
-        const y = this.groundY - 55;
+        const y =
+            this.groundY - 55;
+
+        this.pandaBaseY =
+            y;
 
         this.panda =
             this.add.container(
@@ -371,7 +457,9 @@ export default class RunnerScene extends Phaser.Scene {
                 0x263238
             );
 
-        this.panda.add(nose);
+        this.panda.add(
+            nose
+        );
 
         // Feet.
         const leftFoot =
@@ -397,26 +485,33 @@ export default class RunnerScene extends Phaser.Scene {
             rightFoot,
         ]);
 
-        // Small running animation.
-        this.tweens.add({
-            targets: this.panda,
-            y: y - 5,
-            duration: 220,
-            yoyo: true,
-            repeat: -1,
-            ease: 'Sine.easeInOut',
-        });
+        // Running animation.
+        // This tween is paused during jump
+        // so it cannot fight with jump tween.
+        this.pandaRunTween =
+            this.tweens.add({
+                targets: this.panda,
+                y: this.pandaBaseY - 5,
+                duration: 220,
+                yoyo: true,
+                repeat: -1,
+                ease: 'Sine.easeInOut',
+            });
     }
 
     private updatePandaAnimation(
         _dt: number
     ): void {
 
-        if (this.jumping) {
+        if (
+            this.jumping ||
+            this.gameOver
+        ) {
             return;
         }
 
-        this.pandaBody.rotation += 0.001;
+        this.pandaBody.rotation +=
+            0.001;
     }
 
     // =========================================================
@@ -424,6 +519,18 @@ export default class RunnerScene extends Phaser.Scene {
     // =========================================================
 
     private registerInput(): void {
+
+        this.input.keyboard?.off(
+            'keydown-SPACE',
+            this.handleSpace,
+            this
+        );
+
+        this.input.off(
+            'pointerdown',
+            this.handlePointerDown,
+            this
+        );
 
         this.input.keyboard?.on(
             'keydown-SPACE',
@@ -440,17 +547,24 @@ export default class RunnerScene extends Phaser.Scene {
 
     private handleSpace(): void {
 
+        if (this.gameOver) {
+            return;
+        }
+
         this.jump();
     }
 
     private handlePointerDown(): void {
 
-        if (
-            !this.questionActive &&
-            !this.gameOver
-        ) {
-            this.jump();
+        if (this.gameOver) {
+            return;
         }
+
+        if (this.questionActive) {
+            return;
+        }
+
+        this.jump();
     }
 
     // =========================================================
@@ -469,19 +583,40 @@ export default class RunnerScene extends Phaser.Scene {
 
         this.jumping = true;
 
-        const startY =
-            this.panda.y;
+        // Stop running bob animation.
+        this.pandaRunTween?.pause();
+
+        // Always start from the real ground position.
+        this.panda.y =
+            this.pandaBaseY;
 
         this.tweens.add({
             targets: this.panda,
-            y: startY - 150,
+
+            y:
+                this.pandaBaseY - 150,
+
             duration: 300,
+
             ease: 'Quad.easeOut',
+
             yoyo: true,
+
             hold: 30,
 
             onComplete: () => {
+
+                this.panda.y =
+                    this.pandaBaseY;
+
                 this.jumping = false;
+
+                if (
+                    !this.gameOver
+                ) {
+
+                    this.pandaRunTween?.resume();
+                }
             },
         });
     }
@@ -534,7 +669,9 @@ export default class RunnerScene extends Phaser.Scene {
             UIColors.text
         );
 
-        obstacle.add(rock);
+        obstacle.add(
+            rock
+        );
 
         this.obstacles.push(
             obstacle
@@ -546,7 +683,8 @@ export default class RunnerScene extends Phaser.Scene {
     ): void {
 
         for (
-            let i = this.obstacles.length - 1;
+            let i =
+                this.obstacles.length - 1;
             i >= 0;
             i--
         ) {
@@ -593,7 +731,8 @@ export default class RunnerScene extends Phaser.Scene {
     }
 
     private checkObstacleCollision(
-        obstacle: Phaser.GameObjects.Container
+        obstacle:
+            Phaser.GameObjects.Container
     ): boolean {
 
         const pandaLeft =
@@ -609,13 +748,16 @@ export default class RunnerScene extends Phaser.Scene {
             obstacle.x + 28;
 
         return (
-            pandaRight > obstacleLeft &&
-            pandaLeft < obstacleRight
+            pandaRight >
+                obstacleLeft &&
+            pandaLeft <
+                obstacleRight
         );
     }
 
     private hitObstacle(
-        _obstacle: Phaser.GameObjects.Container
+        _obstacle:
+            Phaser.GameObjects.Container
     ): void {
 
         if (this.gameOver) {
@@ -637,7 +779,10 @@ export default class RunnerScene extends Phaser.Scene {
             repeat: 3,
         });
 
-        if (this.lives <= 0) {
+        if (
+            this.lives <= 0
+        ) {
+
             this.endGame();
         }
     }
@@ -689,7 +834,8 @@ export default class RunnerScene extends Phaser.Scene {
                 width - 80
             );
 
-        const panelHeight = 410;
+        const panelHeight =
+            410;
 
         const panel =
             this.add.rectangle(
@@ -775,17 +921,22 @@ export default class RunnerScene extends Phaser.Scene {
         // ANSWER BUTTONS
         // =====================================================
 
-        const horizontalGap = 20;
+        const horizontalGap =
+            20;
 
-        const buttonWidth = Math.min(
-            280,
-            (panelWidth - 60) / 2
-        );
+        const buttonWidth =
+            Math.min(
+                280,
+                (panelWidth - 60) / 2
+            );
 
         const totalWidth =
-            buttonWidth * 2 + horizontalGap;
+            buttonWidth * 2 +
+            horizontalGap;
 
-        const groupCenterX = width / 2;
+        // UIButton uses x/y as CENTER.
+        const groupCenterX =
+            width / 2;
 
         const leftX =
             groupCenterX -
@@ -797,54 +948,76 @@ export default class RunnerScene extends Phaser.Scene {
             totalWidth / 2 -
             buttonWidth / 2;
 
-        const centerY = height / 2;
+        const centerY =
+            height / 2;
 
-        const positions: [number, number][] = [
-            [
-                leftX,
-                centerY + 65,
-            ],
-            [
-                rightX,
-                centerY + 65,
-            ],
-            [
-                leftX,
-                centerY + 145,
-            ],
-            [
-                rightX,
-                centerY + 145,
-            ],
-        ];
+        const positions:
+            [number, number][] = [
+                [
+                    leftX,
+                    centerY + 65,
+                ],
+                [
+                    rightX,
+                    centerY + 65,
+                ],
+                [
+                    leftX,
+                    centerY + 145,
+                ],
+                [
+                    rightX,
+                    centerY + 145,
+                ],
+            ];
 
         this.currentQuestion.options.forEach(
-            (option, index) => {
+            (
+                option,
+                index
+            ) => {
 
-                const [x, y] = positions[index];
-
-                const button = new UIButton(
-                    this,
+                const [
                     x,
                     y,
-                    option,
-                    () => {
-                        this.selectAnswer(index);
-                    },
-                    {
-                        width: buttonWidth,
-                        height: 58,
-                        color: UIColors.card,
-                        darkColor: UIColors.cardBorder,
-                        textColor: UIColors.text,
-                        fontSize: 18,
-                    }
-                );
+                ] =
+                    positions[index];
 
-                this.answerButtons.push(button);
+                const button =
+                    new UIButton(
+                        this,
+                        x,
+                        y,
+                        option,
+                        () => {
+                            this.selectAnswer(
+                                index
+                            );
+                        },
+                        {
+                            width:
+                                buttonWidth,
+                            height: 58,
+                            color:
+                                UIColors.card,
+                            darkColor:
+                                UIColors.cardBorder,
+                            textColor:
+                                UIColors.text,
+                            fontSize: 18,
+                        }
+                    );
+
+                this.answerButtons.push(
+                    button
+                );
             }
         );
     }
+
+    // =========================================================
+    // CREATE QUESTION
+    // =========================================================
 
     private createQuestion(): RunnerQuestion {
 
@@ -861,25 +1034,36 @@ export default class RunnerScene extends Phaser.Scene {
         const wrongWords =
             vocabulary
                 .filter(
-                    (item: HSKVocabulary) =>
-                        item.word !== word.word &&
-                        item.pinyin !== word.pinyin
+                    (
+                        item: HSKVocabulary
+                    ) =>
+                        item.word !==
+                            word.word &&
+                        item.pinyin !==
+                            word.pinyin
                 )
                 .sort(
-                    () => Math.random() - 0.5
+                    () =>
+                        Math.random() -
+                        0.5
                 )
-                .slice(0, 3);
+                .slice(
+                    0,
+                    3
+                );
 
         const options: string[] = [
             word.pinyin,
             ...wrongWords.map(
-                item => item.pinyin
+                item =>
+                    item.pinyin
             ),
         ];
 
         while (
             options.length < 4
         ) {
+
             options.push(
                 word.pinyin
             );
@@ -900,13 +1084,18 @@ export default class RunnerScene extends Phaser.Scene {
         };
     }
 
+    // =========================================================
+    // SELECT ANSWER
+    // =========================================================
+
     private selectAnswer(
         index: number
     ): void {
 
         if (
             !this.questionActive ||
-            !this.currentQuestion
+            !this.currentQuestion ||
+            this.gameOver
         ) {
             return;
         }
@@ -931,16 +1120,20 @@ export default class RunnerScene extends Phaser.Scene {
                 false
             );
 
-            if (this.lives <= 0) {
+            if (
+                this.lives <= 0
+            ) {
 
                 this.time.delayedCall(
                     700,
                     () => {
 
-                        if (!this.gameOver) {
+                        if (
+                            !this.gameOver
+                        ) {
+
                             this.endGame();
                         }
-
                     }
                 );
 
@@ -952,23 +1145,30 @@ export default class RunnerScene extends Phaser.Scene {
             650,
             () => {
 
-                if (!this.gameOver) {
+                if (
+                    !this.gameOver
+                ) {
 
                     this.clearQuestion();
 
                     this.questionActive =
                         false;
                 }
-
             }
         );
     }
+
+    // =========================================================
+    // ANSWER FEEDBACK
+    // =========================================================
 
     private showAnswerFeedback(
         correct: boolean
     ): void {
 
-        if (!this.questionPanel) {
+        if (
+            !this.questionPanel
+        ) {
             return;
         }
 
@@ -1004,6 +1204,10 @@ export default class RunnerScene extends Phaser.Scene {
         }
     }
 
+    // =========================================================
+    // CLEAR QUESTION
+    // =========================================================
+
     private clearQuestion(): void {
 
         this.answerButtons.forEach(
@@ -1014,7 +1218,6 @@ export default class RunnerScene extends Phaser.Scene {
                 } catch {
                     // Ignore already-destroyed buttons.
                 }
-
             }
         );
 
@@ -1080,7 +1283,9 @@ export default class RunnerScene extends Phaser.Scene {
 
     private updateUI(): void {
 
-        if (!this.scoreText) {
+        if (
+            !this.scoreText
+        ) {
             return;
         }
 
@@ -1118,17 +1323,37 @@ export default class RunnerScene extends Phaser.Scene {
         }
 
         this.gameOver = true;
-        this.questionActive = false;
+
         this.jumping = false;
+        this.questionActive = false;
 
-        this.clearQuestion();
+        // Stop timers.
+        this.obstacleTimer = 0;
+        this.questionTimer = 0;
 
-        // Stop all running gameplay tweens.
-        this.tweens.killTweensOf(
-            this.panda
+        // Stop panda running animation.
+        this.pandaRunTween?.stop();
+
+        // Stop all scene tweens.
+        this.tweens.killAll();
+
+        // Remove gameplay input.
+        this.input.keyboard?.off(
+            'keydown-SPACE',
+            this.handleSpace,
+            this
         );
 
-        // Remove all obstacles.
+        this.input.off(
+            'pointerdown',
+            this.handlePointerDown,
+            this
+        );
+
+        // Remove current question.
+        this.clearQuestion();
+
+        // Remove obstacles.
         this.obstacles.forEach(
             obstacle =>
                 obstacle.destroy()
@@ -1136,11 +1361,10 @@ export default class RunnerScene extends Phaser.Scene {
 
         this.obstacles = [];
 
-        const width =
-            this.scale.width;
-
-        const height =
-            this.scale.height;
+        const {
+            width,
+            height,
+        } = this.scale;
 
         // =====================================================
         // OVERLAY
@@ -1153,57 +1377,50 @@ export default class RunnerScene extends Phaser.Scene {
                 width,
                 height,
                 UIColors.overlay,
-                0.78
+                0.72
             );
 
         overlay.setDepth(100);
 
         // =====================================================
-        // GAME OVER TEXT
+        // TITLE
         // =====================================================
 
-        this.add.text(
-            width / 2,
-            height / 2 - 120,
-            'GAME OVER',
-            {
-                fontFamily: 'Arial',
-                fontSize: 48,
-                fontStyle: 'bold',
-                color: '#FFFFFF',
-            }
-        )
-            .setOrigin(0.5)
-            .setDepth(101);
+        const title =
+            this.add.text(
+                width / 2,
+                height / 2 - 100,
+                'GAME OVER',
+                {
+                    fontFamily: 'Arial',
+                    fontSize: '48px',
+                    fontStyle: 'bold',
+                    color: '#FFFFFF',
+                }
+            );
 
-        this.add.text(
-            width / 2,
-            height / 2 - 55,
-            `${this.level}  •  ${Math.floor(
-                this.distance
-            )} m`,
-            {
-                fontFamily: 'Arial',
-                fontSize: 20,
-                color: '#FFFFFF',
-            }
-        )
-            .setOrigin(0.5)
-            .setDepth(101);
+        title.setOrigin(0.5);
+        title.setDepth(101);
 
-        this.add.text(
-            width / 2,
-            height / 2 - 15,
-            `SCORE  ${this.score}`,
-            {
-                fontFamily: 'Arial',
-                fontSize: 26,
-                fontStyle: 'bold',
-                color: '#FFFFFF',
-            }
-        )
-            .setOrigin(0.5)
-            .setDepth(101);
+        // =====================================================
+        // SCORE
+        // =====================================================
+
+        const scoreText =
+            this.add.text(
+                width / 2,
+                height / 2 - 35,
+                `Score: ${this.score}`,
+                {
+                    fontFamily: 'Arial',
+                    fontSize: '26px',
+                    fontStyle: 'bold',
+                    color: '#FFFFFF',
+                }
+            );
+
+        scoreText.setOrigin(0.5);
+        scoreText.setDepth(101);
 
         // =====================================================
         // PLAY AGAIN
@@ -1212,83 +1429,61 @@ export default class RunnerScene extends Phaser.Scene {
         const playAgain =
             new UIButton(
                 this,
-                width / 2 - 130,
-                height / 2 + 80,
+                width / 2,
+                height / 2 + 70,
                 'PLAY AGAIN',
                 () => {
 
-                    /*
-                     * IMPORTANT:
-                     * Restart the actual Phaser scene instead
-                     * of routing through goToScene().
-                     *
-                     * This completely resets:
-                     * - gameOver
-                     * - score
-                     * - distance
-                     * - lives
-                     * - speed
-                     * - obstacles
-                     * - timers
-                     * - jumping
-                     * - question state
-                     * - input listeners
-                     * - tweens
-                     */
                     this.scene.restart({
                         level: this.level,
                     });
 
                 },
                 {
-                    width: 210,
-                    height: 55,
-                    color: UIColors.primary,
+                    width: 240,
+                    height: 58,
+                    color:
+                        UIColors.primary,
                     darkColor:
                         UIColors.primaryDark,
-                    fontSize: 17,
+                    textColor:
+                        UIColors.white,
+                    fontSize: 20,
                 }
             );
 
-        /*
-         * UIButton is already a self-contained UI object.
-         * Do not cast it to Container.
-         *
-         * Phaser renders it after the overlay because it is
-         * created after the overlay, so it stays clickable.
-         */
-        void playAgain;
+        playAgain.setDepth(101);
 
         // =====================================================
         // BACK
         // =====================================================
 
-        const back =
+        const backButton =
             new UIButton(
                 this,
-                width / 2 + 130,
-                height / 2 + 80,
+                width / 2,
+                height / 2 + 145,
                 'BACK',
                 () => {
 
-                    goToScene(
-                        this,
+                    this.scene.start(
                         'HSKRunnerMenu'
                     );
 
                 },
                 {
-                    width: 160,
-                    height: 55,
-                    color: UIColors.card,
+                    width: 180,
+                    height: 52,
+                    color:
+                        UIColors.card,
                     darkColor:
                         UIColors.cardBorder,
                     textColor:
                         UIColors.text,
-                    fontSize: 17,
+                    fontSize: 18,
                 }
             );
 
-        void back;
+        backButton.setDepth(101);
     }
 }
