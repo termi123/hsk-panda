@@ -5,7 +5,8 @@ import MainMenu from "./scenes/MainMenu";
 import { AUTO, Game } from "phaser";
 import { Preloader } from "./scenes/Preloader";
 import GamesMenu from "./scenes/GamesMenu";
-import VocabularyMenu from "./scenes/VocabularyMenu";
+import HSKLevelMenu from './scenes/HSKLevelMenu';
+import VocabularyMenu from './scenes/VocabularyMenu';
 import HSKDataService from "../services/HSKDataService";
 
 //  Find out more information about the Game Config at:
@@ -24,6 +25,7 @@ const config: Phaser.Types.Core.GameConfig = {
     MainGame,
     GameOver,
     VocabularyMenu,
+    HSKLevelMenu,
   ],
 };
 

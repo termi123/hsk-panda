@@ -1,131 +1,296 @@
-import * as Phaser from "phaser";
+import * as Phaser from 'phaser';
+import { UIButton } from '../ui/UIButton';
+import { UIColors } from '../ui/UIColors';
+import { UIModal } from '../ui/UIModal';
+
 export default class MainMenu extends Phaser.Scene {
-  constructor() {
-    super("MainMenu");
-  }
 
-  create() {
-    const { width, height } = this.scale;
+    private modal!: UIModal;
 
+    constructor() {
+        super('MainMenu');
+    }
+
+    create(): void {
+        const width = this.scale.width;
+        const height = this.scale.height;
+
+        this.modal = new UIModal(this);
+
+        this.createBackground();
+
+        // --------------------------------------------------
+        // Header
+        // --------------------------------------------------
+
+        this.add.text(
+            width / 2,
+            72,
+            'HSK PANDA',
+            {
+                fontFamily: 'Arial',
+                fontSize: '52px',
+                fontStyle: 'bold',
+                color: '#263238',
+            }
+        ).setOrigin(0.5);
+
+        this.add.text(
+            width / 2,
+            120,
+            'Learn Chinese. Play. Grow.',
+            {
+                fontFamily: 'Arial',
+                fontSize: '18px',
+                color: '#667085',
+            }
+        ).setOrigin(0.5);
+
+        // --------------------------------------------------
+        // Panda
+        // --------------------------------------------------
+
+        this.createPanda();
+
+        // --------------------------------------------------
+        // Main actions
+        // --------------------------------------------------
+
+        new UIButton(
+            this,
+            width / 2,
+            385,
+            'PLAY',
+            () => {
+                this.scene.start('GamesMenu');
+            },
+            {
+                width: 390,
+                height: 78,
+                color: UIColors.primary,
+                darkColor: UIColors.primaryDark,
+                fontSize: 27,
+            }
+        );
+
+        new UIButton(
+            this,
+            width / 2,
+            485,
+            'VOCABULARY',
+            () => {
+                this.scene.start('VocabularyMenu');
+            },
+            {
+                width: 390,
+                height: 68,
+                color: UIColors.secondary,
+                darkColor: UIColors.secondaryDark,
+                fontSize: 21,
+            }
+        );
+
+        new UIButton(
+            this,
+            width / 2,
+            575,
+            'ACHIEVEMENTS',
+            () => {
+                this.modal.showComingSoon();
+            },
+            {
+                width: 390,
+                height: 62,
+                color: UIColors.yellow,
+                darkColor: UIColors.yellowDark,
+                textColor: UIColors.text,
+                fontSize: 19,
+            }
+        );
+
+        // --------------------------------------------------
+        // Footer
+        // --------------------------------------------------
+
+        this.add.text(
+            width / 2,
+            height - 28,
+            'HSK Panda  •  v0.1',
+            {
+                fontFamily: 'Arial',
+                fontSize: '13px',
+                color: '#98A2B3',
+            }
+        ).setOrigin(0.5);
+    }
+
+    // ======================================================
     // Background
-    this.add.rectangle(width / 2, height / 2, width, height, 0xf5f1e8);
+    // ======================================================
 
-    // Title
-    this.add
-      .text(width / 2, 100, "HSK PANDA", {
-        fontFamily: "Arial",
-        fontSize: "52px",
-        color: "#2d2d2d",
-        fontStyle: "bold",
-      })
-      .setOrigin(0.5);
+    private createBackground(): void {
+        const width = this.scale.width;
+        const height = this.scale.height;
 
-    // Subtitle
-    this.add
-      .text(width / 2, 155, "Learn Chinese - Play - Grow", {
-        fontFamily: "Arial",
-        fontSize: "20px",
-        color: "#777777",
-      })
-      .setOrigin(0.5);
+        this.add.rectangle(
+            width / 2,
+            height / 2,
+            width,
+            height,
+            UIColors.background
+        );
 
-    // Panda placeholder
-    this.add.circle(width / 2, 270, 70, 0xffffff);
-    this.add.circle(width / 2 - 30, 235, 18, 0x222222);
-    this.add.circle(width / 2 + 30, 235, 18, 0x222222);
+        // Decorative shapes
 
-    // Eyes
-    this.add.circle(width / 2 - 25, 265, 7, 0x222222);
-    this.add.circle(width / 2 + 25, 265, 7, 0x222222);
+        this.add.circle(
+            60,
+            100,
+            150,
+            UIColors.yellow,
+            0.10
+        );
 
-    // Play
-    this.createButton(width / 2, 410, 300, 70, "PLAY", () => {
-      this.scene.start("GamesMenu");
-    });
+        this.add.circle(
+            width - 80,
+            120,
+            110,
+            UIColors.secondary,
+            0.08
+        );
 
-    // Vocabulary
-    this.createButton(width / 2, 500, 300, 60, "VOCABULARY", () => {
-      this.scene.start("VocabularyMenu");
-    });
+        this.add.circle(
+            width - 60,
+            height - 60,
+            190,
+            UIColors.primary,
+            0.07
+        );
 
-    // Achievements
-    this.createButton(width / 2, 575, 300, 60, "ACHIEVEMENTS", () => {
-      this.showComingSoon("Achievements");
-    });
+        this.add.circle(
+            80,
+            height - 100,
+            100,
+            UIColors.orange,
+            0.07
+        );
+    }
 
-    this.add
-      .text(width / 2, height - 25, "HSK Panda v0.1", {
-        fontFamily: "Arial",
-        fontSize: "14px",
-        color: "#999999",
-      })
-      .setOrigin(0.5);
-  }
+    // ======================================================
+    // Panda
+    // ======================================================
 
-  private createButton(
-    x: number,
-    y: number,
-    width: number,
-    height: number,
-    label: string,
-    callback: () => void,
-  ) {
-    const background = this.add.rectangle(x, y, width, height, 0xffffff);
+    private createPanda(): void {
+        const width = this.scale.width;
 
-    background
-      .setStrokeStyle(2, 0xdddddd)
-      .setInteractive({ useHandCursor: true });
+        const panda = this.add.container(
+            width / 2,
+            235
+        );
 
-    const text = this.add
-      .text(x, y, label, {
-        fontFamily: "Arial",
-        fontSize: "22px",
-        color: "#333333",
-        fontStyle: "bold",
-      })
-      .setOrigin(0.5);
+        // Body
+        const body = this.add.circle(
+            0,
+            40,
+            48,
+            UIColors.text
+        );
 
-    background.on("pointerover", () => {
-      background.setFillStyle(0xe8f5e9);
-    });
+        // Head
+        const head = this.add.circle(
+            0,
+            -18,
+            58,
+            UIColors.white
+        );
 
-    background.on("pointerout", () => {
-      background.setFillStyle(0xffffff);
-    });
+        // Ears
+        const leftEar = this.add.circle(
+            -42,
+            -58,
+            20,
+            UIColors.text
+        );
 
-    background.on("pointerdown", callback);
+        const rightEar = this.add.circle(
+            42,
+            -58,
+            20,
+            UIColors.text
+        );
 
-    text.setInteractive({ useHandCursor: true });
+        // Eye patches
+        const leftPatch = this.add.ellipse(
+            -21,
+            -20,
+            18,
+            28,
+            UIColors.text
+        );
 
-    text.on("pointerdown", callback);
-  }
+        const rightPatch = this.add.ellipse(
+            21,
+            -20,
+            18,
+            28,
+            UIColors.text
+        );
 
-  private showComingSoon(name: string) {
-    const { width, height } = this.scale;
+        // Eyes
+        const leftEye = this.add.circle(
+            -21,
+            -20,
+            5,
+            UIColors.white
+        );
 
-    const overlay = this.add.rectangle(
-      width / 2,
-      height / 2,
-      width,
-      height,
-      0x000000,
-      0.5,
-    );
+        const rightEye = this.add.circle(
+            21,
+            -20,
+            5,
+            UIColors.white
+        );
 
-    const message = this.add
-      .text(width / 2, height / 2, `${name}\n\nComing Soon`, {
-        fontFamily: "Arial",
-        fontSize: "28px",
-        color: "#ffffff",
-        align: "center",
-      })
-      .setOrigin(0.5);
+        // Nose
+        const nose = this.add.circle(
+            0,
+            0,
+            6,
+            UIColors.text
+        );
 
-    overlay.setInteractive();
+        // Mouth
+        const mouth = this.add.arc(
+            0,
+            5,
+            12,
+            10,
+            20,
+            160,
+            false,
+            UIColors.text
+        );
 
-    overlay.once("pointerdown", () => {
-      overlay.destroy();
-      message.destroy();
-    });
-  }
+        panda.add([
+            body,
+            head,
+            leftEar,
+            rightEar,
+            leftPatch,
+            rightPatch,
+            leftEye,
+            rightEye,
+            nose,
+            mouth,
+        ]);
+
+        // Idle animation
+        this.tweens.add({
+            targets: panda,
+            y: 228,
+            duration: 1400,
+            yoyo: true,
+            repeat: -1,
+            ease: 'Sine.easeInOut',
+        });
+    }
 }
