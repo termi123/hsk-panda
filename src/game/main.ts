@@ -13,6 +13,8 @@ import VocabularyScene from './scenes/VocabularyScene';
 import WordDetailScene from './scenes/WordDetailScene';
 import GrammarScene from './scenes/GrammarScene';
 import GrammarDetailScene from './scenes/GrammarDetailScene';
+import HanziScene from './scenes/HanziScene';
+import HanziDetailScene from './scenes/HanziDetailScene';
 
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
@@ -40,6 +42,8 @@ const config: Phaser.Types.Core.GameConfig = {
     WordDetailScene,
     GrammarScene,
     GrammarDetailScene,
+    HanziScene,
+    HanziDetailScene,
 
   ],
 };

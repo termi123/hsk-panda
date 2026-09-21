@@ -102,7 +102,9 @@ export default class HSKHome extends Phaser.Scene {
             `${stats.hanzi.toLocaleString()} characters`,
             UIColors.yellow,
             () => {
-                this.modal.showComingSoon('HANZI');
+                goToScene(this, 'HanziScene', {
+                    level: this.level,
+                });
             }
         );
 
