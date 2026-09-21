@@ -1,4 +1,8 @@
 import * as Phaser from 'phaser';
+import { UIButton } from '../ui/UIButton';
+import { UIColors } from '../ui/UIColors';
+import { UIModal } from '../ui/UIModal';
+import { fadeInScene, goToScene } from '../ui/SceneTransition';
 
 interface GameItem {
     id: string;
@@ -8,6 +12,8 @@ interface GameItem {
 }
 
 export default class GamesMenu extends Phaser.Scene {
+
+    private modal!: UIModal;
 
     private games: GameItem[] = [
         {
@@ -64,48 +70,44 @@ export default class GamesMenu extends Phaser.Scene {
         super('GamesMenu');
     }
 
-    create() {
-        const { width, height } = this.scale;
+    create(): void {
+        const width = this.scale.width;
+        const height = this.scale.height;
 
-        // Background
-        this.add.rectangle(
-            width / 2,
-            height / 2,
-            width,
-            height,
-            0xf5f1e8
-        );
+        fadeInScene(this);
 
-        // Header
+        this.modal = new UIModal(this);
+
+        this.createBackground();
+
         this.add.text(
             width / 2,
-            50,
+            60,
             'GAMES',
             {
                 fontFamily: 'Arial',
-                fontSize: '40px',
-                color: '#2d2d2d',
+                fontSize: '38px',
                 fontStyle: 'bold',
+                color: '#263238',
             }
         ).setOrigin(0.5);
 
         this.add.text(
             width / 2,
-            90,
+            102,
             'Choose a game',
             {
                 fontFamily: 'Arial',
-                fontSize: '18px',
-                color: '#777777',
+                fontSize: '17px',
+                color: '#667085',
             }
         ).setOrigin(0.5);
 
-        // Grid
         const cardWidth = 430;
         const cardHeight = 105;
 
         const startX = width / 2 - cardWidth / 2 - 15;
-        const startY = 165;
+        const startY = 175;
 
         const columnGap = 30;
         const rowGap = 20;
@@ -132,8 +134,23 @@ export default class GamesMenu extends Phaser.Scene {
             );
         });
 
-        // Back
-        this.createBackButton(60, height - 30);
+        new UIButton(
+            this,
+            90,
+            height - 48,
+            'BACK',
+            () => {
+                goToScene(this, 'MainMenu');
+            },
+            {
+                width: 130,
+                height: 44,
+                color: UIColors.card,
+                darkColor: UIColors.cardBorder,
+                textColor: UIColors.text,
+                fontSize: 15,
+            }
+        );
     }
 
     private createGameCard(
@@ -142,160 +159,149 @@ export default class GamesMenu extends Phaser.Scene {
         width: number,
         height: number,
         game: GameItem
-    ) {
+    ): void {
+
+        const card = this.add.container(x, y);
+
+        const shadow = this.add.rectangle(
+            0,
+            5,
+            width,
+            height,
+            0xD8CCB8
+        );
+
+        shadow.setAlpha(game.available ? 0.9 : 0.5);
 
         const background = this.add.rectangle(
-            x,
-            y,
+            0,
+            0,
             width,
             height,
             game.available
-                ? 0xffffff
-                : 0xe8e5df
+                ? UIColors.card
+                : UIColors.backgroundAlt
         );
 
         background.setStrokeStyle(
             2,
             game.available
-                ? 0xdddddd
-                : 0xd5d2cc
+                ? UIColors.cardBorder
+                : 0xE0D8C4
         );
 
-        if (game.available) {
-
-            background.setInteractive({
-                useHandCursor: true
-            });
-
-            background.on('pointerover', () => {
-                background.setFillStyle(0xe8f5e9);
-            });
-
-            background.on('pointerout', () => {
-                background.setFillStyle(0xffffff);
-            });
-
-            background.on('pointerdown', () => {
-                this.startGame(game);
-            });
-        }
-
-        // Title
-        this.add.text(
-            x - width / 2 + 25,
-            y - 20,
+        const title = this.add.text(
+            -width / 2 + 25,
+            -20,
             game.title,
             {
                 fontFamily: 'Arial',
                 fontSize: '20px',
-                color: game.available
-                    ? '#222222'
-                    : '#888888',
                 fontStyle: 'bold',
+                color: game.available
+                    ? '#263238'
+                    : '#98A2B3',
             }
         );
 
-        // Description
-        this.add.text(
-            x - width / 2 + 25,
-            y + 15,
+        const description = this.add.text(
+            -width / 2 + 25,
+            15,
             game.description,
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
-                color: '#888888',
+                color: '#98A2B3',
             }
         );
 
-        // Status
-        this.add.text(
-            x + width / 2 - 55,
-            y,
+        const badge = this.add.text(
+            width / 2 - 55,
+            0,
             game.available
                 ? 'PLAY'
                 : 'SOON',
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
-                color: game.available
-                    ? '#2e7d32'
-                    : '#999999',
                 fontStyle: 'bold',
+                color: game.available
+                    ? '#4E9F3D'
+                    : '#98A2B3',
             }
         ).setOrigin(0.5);
+
+        card.add([
+            shadow,
+            background,
+            title,
+            description,
+            badge,
+        ]);
+
+        card.setSize(width, height);
+
+        if (!game.available) {
+            return;
+        }
+
+        card.setInteractive(
+            new Phaser.Geom.Rectangle(0, 0, width, height),
+            Phaser.Geom.Rectangle.Contains
+        );
+
+        card.on('pointerdown', () => {
+            this.startGame(game);
+
+            this.tweens.killTweensOf(card);
+
+            this.tweens.add({
+                targets: card,
+                scaleX: 0.97,
+                scaleY: 0.97,
+                duration: 60,
+                yoyo: true,
+                ease: 'Quad.easeOut',
+            });
+        });
     }
 
-    private startGame(game: GameItem) {
-
+    private startGame(game: GameItem): void {
         if (game.id === 'quiz') {
-            this.showComingSoon('HSK Quiz Battle');
+            this.modal.showComingSoon(
+                game.title.toUpperCase(),
+                "We'll build this next!"
+            );
         }
     }
 
-    private createBackButton(
-        x: number,
-        y: number
-    ) {
+    private createBackground(): void {
 
-        const button = this.add.text(
-            x,
-            y,
-            '< BACK',
-            {
-                fontFamily: 'Arial',
-                fontSize: '18px',
-                color: '#555555',
-                fontStyle: 'bold',
-            }
-        ).setOrigin(0.5);
+        const width = this.scale.width;
+        const height = this.scale.height;
 
-        button.setInteractive({
-            useHandCursor: true
-        });
-
-        button.on('pointerover', () => {
-            button.setColor('#2e7d32');
-        });
-
-        button.on('pointerout', () => {
-            button.setColor('#555555');
-        });
-
-        button.on('pointerdown', () => {
-            this.scene.start('MainMenu');
-        });
-    }
-
-    private showComingSoon(name: string) {
-
-        const { width, height } = this.scale;
-
-        const overlay = this.add.rectangle(
+        this.add.rectangle(
             width / 2,
             height / 2,
             width,
             height,
-            0x000000,
-            0.6
+            UIColors.background
         );
 
-        const message = this.add.text(
-            width / 2,
-            height / 2,
-            `${name}\n\nWe'll build this next!`,
-            {
-                fontFamily: 'Arial',
-                fontSize: '28px',
-                color: '#ffffff',
-                align: 'center',
-            }
-        ).setOrigin(0.5);
+        this.add.circle(
+            70,
+            90,
+            140,
+            UIColors.secondary,
+            0.06
+        );
 
-        overlay.setInteractive();
-
-        overlay.once('pointerdown', () => {
-            overlay.destroy();
-            message.destroy();
-        });
+        this.add.circle(
+            width - 70,
+            height - 90,
+            170,
+            UIColors.primary,
+            0.07
+        );
     }
 }
