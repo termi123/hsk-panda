@@ -32,7 +32,7 @@ export default class GamesMenu extends Phaser.Scene {
             id: 'runner',
             title: 'HSK Runner',
             description: 'Run and learn',
-            available: false,
+            available: true,
         },
         {
             id: 'restaurant',
@@ -269,6 +269,9 @@ export default class GamesMenu extends Phaser.Scene {
     private startGame(game: GameItem): void {
         if (game.id === 'quiz') {
             goToScene(this, 'HSKQuizMenu');
+        }
+        if (game.id === 'runner') {
+            goToScene(this, 'HSKRunnerMenu');
         }
     }
 

@@ -33,6 +33,9 @@ import WordsScene from './scenes/vocabulary/words/WordsScene';
 import HSKQuizMenu from './scenes/games/quiz/HSKQuizMenu';
 import QuizScene from './scenes/games/quiz/QuizScene';
 
+import HSKRunnerMenu from './scenes/games/runner/HSKRunnerMenu';
+import RunnerScene from './scenes/games/runner/RunnerScene';
+
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
 const config: Phaser.Types.Core.GameConfig = {
@@ -71,8 +74,9 @@ const config: Phaser.Types.Core.GameConfig = {
 
     GamesMenu,
     HSKQuizMenu,
-    QuizScene
-
+    QuizScene,
+    HSKRunnerMenu,
+    RunnerScene,
   ],
 };
 
