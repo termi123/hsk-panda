@@ -775,19 +775,6 @@ export default class RunnerScene extends Phaser.Scene {
         // ANSWER BUTTONS
         // =====================================================
 
-        /*
-         * Keep the buttons inside the panel.
-         *
-         * Layout:
-         *
-         *     [       ] [       ]
-         *
-         *     [       ] [       ]
-         *
-         * The column positions are calculated from panelWidth,
-         * so the layout stays centered when RESIZE changes.
-         */
-
         const horizontalGap = 20;
 
         const buttonWidth = Math.min(
@@ -795,53 +782,66 @@ export default class RunnerScene extends Phaser.Scene {
             (panelWidth - 60) / 2
         );
 
+        const totalWidth =
+            buttonWidth * 2 + horizontalGap;
+
+        const groupCenterX = width / 2;
+
         const leftX =
-            -(buttonWidth / 2) -
-            (horizontalGap / 2);
+            groupCenterX -
+            totalWidth / 2 +
+            buttonWidth / 2;
 
         const rightX =
-            (buttonWidth / 2) +
-            (horizontalGap / 2);
+            groupCenterX +
+            totalWidth / 2 -
+            buttonWidth / 2;
+
+        const centerY = height / 2;
 
         const positions: [number, number][] = [
-            [leftX, 65],
-            [rightX, 65],
-            [leftX, 145],
-            [rightX, 145],
+            [
+                leftX,
+                centerY + 65,
+            ],
+            [
+                rightX,
+                centerY + 65,
+            ],
+            [
+                leftX,
+                centerY + 145,
+            ],
+            [
+                rightX,
+                centerY + 145,
+            ],
         ];
 
         this.currentQuestion.options.forEach(
             (option, index) => {
 
-                const [x, y] =
-                    positions[index];
+                const [x, y] = positions[index];
 
-                const button =
-                    new UIButton(
-                        this,
-                        x,
-                        y,
-                        option,
-                        () => {
-                            this.selectAnswer(
-                                index
-                            );
-                        },
-                        {
-                            width: buttonWidth,
-                            height: 58,
-                            color: UIColors.card,
-                            darkColor:
-                                UIColors.cardBorder,
-                            textColor:
-                                UIColors.text,
-                            fontSize: 18,
-                        }
-                    );
-
-                this.answerButtons.push(
-                    button
+                const button = new UIButton(
+                    this,
+                    x,
+                    y,
+                    option,
+                    () => {
+                        this.selectAnswer(index);
+                    },
+                    {
+                        width: buttonWidth,
+                        height: 58,
+                        color: UIColors.card,
+                        darkColor: UIColors.cardBorder,
+                        textColor: UIColors.text,
+                        fontSize: 18,
+                    }
                 );
+
+                this.answerButtons.push(button);
             }
         );
     }
