@@ -27,6 +27,7 @@ import TopicDetailScene from './scenes/vocabulary/learn/hsk/topics/TopicDetailSc
 import TaskScene from './scenes/vocabulary/learn/hsk/tasks/TaskScene';
 import TaskDetailScene from './scenes/vocabulary/learn/hsk/tasks/TaskDetailScene';
 
+import WordsScene from './scenes/vocabulary/words/WordsScene';
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
 const config: Phaser.Types.Core.GameConfig = {
@@ -46,7 +47,6 @@ const config: Phaser.Types.Core.GameConfig = {
     VocabularyMenu,
 
     HSKLevelMenu,
-
     HSKHome,
     VocabularyScene,
     WordDetailScene,
@@ -58,6 +58,8 @@ const config: Phaser.Types.Core.GameConfig = {
     TopicDetailScene,
     TaskScene,
     TaskDetailScene,
+
+    WordsScene
   ],
 };
 

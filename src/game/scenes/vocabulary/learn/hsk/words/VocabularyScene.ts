@@ -359,6 +359,7 @@ export default class VocabularyScene extends Phaser.Scene {
             goToScene(this, 'WordDetailScene', {
                 level: this.level,
                 word,
+                from: 'VocabularyScene'
             });
         });
     }

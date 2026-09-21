@@ -11,6 +11,10 @@ export default class WordDetailScene extends Phaser.Scene {
     private level!: HSKLevel;
     private word!: HSKVocabulary;
 
+    private fromScene:
+    | 'VocabularyScene'
+    | 'WordsScene' = 'VocabularyScene';
+
     constructor() {
         super('WordDetailScene');
     }
@@ -18,9 +22,12 @@ export default class WordDetailScene extends Phaser.Scene {
     init(data: {
         level: HSKLevel;
         word: HSKVocabulary;
+        from?: 'VocabularyScene' | 'WordsScene';
     }): void {
         this.level = data.level;
         this.word = data.word;
+        this.fromScene =
+                data.from ?? 'VocabularyScene';
     }
 
     create(): void {
@@ -261,6 +268,11 @@ export default class WordDetailScene extends Phaser.Scene {
     }
 
     private goBack(): void {
+        if (this.fromScene === 'WordsScene') {
+            goToScene(this, 'WordsScene');
+            return;
+        }
+
         goToScene(this, 'VocabularyScene', {
             level: this.level,
         });

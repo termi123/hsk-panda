@@ -73,7 +73,7 @@ export default class VocabularyMenu extends Phaser.Scene {
             400,
             'WORDS',
             UIColors.secondary,
-            () => this.modal.showComingSoon()
+            () => goToScene(this, 'WordsScene')
         );
 
         this.createSmallButton(
