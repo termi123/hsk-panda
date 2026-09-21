@@ -398,9 +398,13 @@ export default class VocabularyScene extends Phaser.Scene {
         background.on(
             'pointerdown',
             () => {
-                console.log(
-                    'Selected vocabulary:',
-                    word
+                goToScene(
+                    this,
+                    'WordDetailScene',
+                    {
+                        level: this.level,
+                        word,
+                    }
                 );
             }
         );
