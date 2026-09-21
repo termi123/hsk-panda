@@ -3,10 +3,10 @@ import { UIButton } from '../ui/UIButton';
 import { UIColors } from '../ui/UIColors';
 import { fadeInScene, goToScene } from '../ui/SceneTransition';
 import {
-    HSKDataService,
     HSKLevel,
     HSKVocabulary,
 } from '../../services/HSKDataService';
+import { mapPartOfSpeech } from '../utils/VocabularyUtils';
 
 export default class WordDetailScene extends Phaser.Scene {
 
@@ -26,7 +26,6 @@ export default class WordDetailScene extends Phaser.Scene {
     }
 
     create(): void {
-
         const width = this.scale.width;
         const height = this.scale.height;
 
@@ -36,267 +35,222 @@ export default class WordDetailScene extends Phaser.Scene {
         this.createHeader();
         this.createWordCard();
         this.createBackButton();
-    }
 
-    // ============================================================
-    // HEADER
-    // ============================================================
+        this.input.keyboard?.on('keydown-ESC', () => {
+            this.goBack();
+        });
+    }
 
     private createHeader(): void {
-
         const width = this.scale.width;
 
-        this.add.text(
-            width / 2,
-            48,
-            'WORD',
-            {
-                fontFamily: 'Arial',
-                fontSize: '34px',
-                fontStyle: 'bold',
-                color: '#263238',
-            }
-        ).setOrigin(0.5);
+        this.add.text(width / 2, 48, 'WORD', {
+            fontFamily: 'Arial',
+            fontSize: '34px',
+            fontStyle: 'bold',
+            color: '#263238',
+        }).setOrigin(0.5);
 
-        this.add.text(
-            width / 2,
-            86,
-            this.level,
-            {
-                fontFamily: 'Arial',
-                fontSize: '17px',
-                fontStyle: 'bold',
-                color: '#4E9F3D',
-            }
-        ).setOrigin(0.5);
+        this.add.text(width / 2, 84, this.level, {
+            fontFamily: 'Arial',
+            fontSize: '17px',
+            fontStyle: 'bold',
+            color: '#4E9F3D',
+        }).setOrigin(0.5);
     }
 
-    // ============================================================
-    // WORD CARD
-    // ============================================================
-
     private createWordCard(): void {
-
         const width = this.scale.width;
 
         const cardWidth = 620;
         const cardHeight = 430;
-
         const cardX = width / 2;
         const cardY = 365;
 
-        // --------------------------------------------------------
         // Shadow
-        // --------------------------------------------------------
-
-        const shadow = this.add.rectangle(
+        this.add.rectangle(
             cardX,
-            cardY + 8,
+            cardY + 7,
             cardWidth,
             cardHeight,
             0xD8CCB8
-        );
+        ).setOrigin(0.5);
 
-        shadow.setOrigin(0.5);
-
-        // --------------------------------------------------------
         // Card
-        // --------------------------------------------------------
-
-        const card = this.add.rectangle(
+        this.add.rectangle(
             cardX,
             cardY,
             cardWidth,
             cardHeight,
             UIColors.card
-        );
-
-        card
+        )
             .setOrigin(0.5)
-            .setStrokeStyle(
-                2,
-                UIColors.cardBorder
-            );
+            .setStrokeStyle(2, UIColors.cardBorder);
 
-        // --------------------------------------------------------
-        // Word number
-        // --------------------------------------------------------
+        this.createWordHeader(cardX, cardY);
+        this.createInformation(cardX, cardY);
+    }
 
-        this.add.text(
-            cardX - 270,
-            cardY - 175,
-            `#${this.word.sort}`,
-            {
-                fontFamily: 'Arial',
-                fontSize: '14px',
-                color: '#98A2B3',
-            }
-        ).setOrigin(0, 0.5);
+    private createWordHeader(
+        cardX: number,
+        cardY: number
+    ): void {
 
-        // --------------------------------------------------------
-        // Hanzi
-        // --------------------------------------------------------
-
+        // Chinese word
         this.add.text(
             cardX,
-            cardY - 105,
+            cardY - 135,
             this.word.word,
             {
                 fontFamily: 'Arial',
-                fontSize: '76px',
+                fontSize: '64px',
                 fontStyle: 'bold',
                 color: '#263238',
             }
         ).setOrigin(0.5);
 
-        // --------------------------------------------------------
         // Pinyin
-        // --------------------------------------------------------
-
         this.add.text(
             cardX,
-            cardY - 20,
+            cardY - 72,
             this.word.pinyin,
             {
                 fontFamily: 'Arial',
-                fontSize: '27px',
-                color: '#667085',
-            }
-        ).setOrigin(0.5);
-
-        // --------------------------------------------------------
-        // Type
-        // --------------------------------------------------------
-
-        const type = this.getPartOfSpeech(
-            this.word.cixing
-        );
-
-        const typeBackground = this.add.rectangle(
-            cardX,
-            cardY + 42,
-            230,
-            42,
-            UIColors.backgroundAlt
-        )
-            .setOrigin(0.5)
-            .setStrokeStyle(
-                1,
-                UIColors.cardBorder
-            );
-
-        this.add.text(
-            cardX,
-            cardY + 42,
-            type,
-            {
-                fontFamily: 'Arial',
-                fontSize: '16px',
-                fontStyle: 'bold',
+                fontSize: '24px',
                 color: '#4E9F3D',
             }
         ).setOrigin(0.5);
+    }
 
-        // --------------------------------------------------------
-        // Divider
-        // --------------------------------------------------------
+    private createInformation(
+        cardX: number,
+        cardY: number
+    ): void {
 
-        this.add.rectangle(
-            cardX,
-            cardY + 85,
-            500,
-            1,
-            UIColors.cardBorder
-        );
+        const leftX = cardX - 245;
+        const rightX = cardX + 245;
 
-        // --------------------------------------------------------
-        // Meaning placeholder
-        // --------------------------------------------------------
+        const infoTop = cardY - 20;
 
+        // TYPE
         this.add.text(
-            cardX,
-            cardY + 125,
-            'Meaning',
+            leftX,
+            infoTop,
+            '词性',
             {
                 fontFamily: 'Arial',
                 fontSize: '14px',
                 fontStyle: 'bold',
                 color: '#98A2B3',
             }
-        ).setOrigin(0.5);
+        ).setOrigin(0, 0.5);
 
         this.add.text(
-            cardX,
-            cardY + 155,
-            'Meaning data will be added later',
+            leftX,
+            infoTop + 30,
+            this.word.cixing,
             {
                 fontFamily: 'Arial',
-                fontSize: '16px',
+                fontSize: '18px',
+                fontStyle: 'bold',
+                color: '#263238',
+            }
+        ).setOrigin(0, 0.5);
+
+        this.add.text(
+            leftX,
+            infoTop + 57,
+            mapPartOfSpeech(this.word.cixing),
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
                 color: '#667085',
             }
-        ).setOrigin(0.5);
+        ).setOrigin(0, 0.5);
+
+        // HSK LEVEL
+        this.add.text(
+            rightX,
+            infoTop,
+            'LEVEL',
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                fontStyle: 'bold',
+                color: '#98A2B3',
+            }
+        ).setOrigin(1, 0.5);
+
+        this.add.text(
+            rightX,
+            infoTop + 30,
+            this.level,
+            {
+                fontFamily: 'Arial',
+                fontSize: '18px',
+                fontStyle: 'bold',
+                color: '#4E9F3D',
+            }
+        ).setOrigin(1, 0.5);
+
+        // SORT NUMBER
+        this.add.text(
+            leftX,
+            infoTop + 105,
+            'WORD NUMBER',
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                fontStyle: 'bold',
+                color: '#98A2B3',
+            }
+        ).setOrigin(0, 0.5);
+
+        this.add.text(
+            leftX,
+            infoTop + 135,
+            `#${this.word.sort}`,
+            {
+                fontFamily: 'Arial',
+                fontSize: '18px',
+                fontStyle: 'bold',
+                color: '#263238',
+            }
+        ).setOrigin(0, 0.5);
+
+        // SOURCE LEVEL NAME
+        this.add.text(
+            rightX,
+            infoTop + 105,
+            'SOURCE LEVEL',
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                fontStyle: 'bold',
+                color: '#98A2B3',
+            }
+        ).setOrigin(1, 0.5);
+
+        this.add.text(
+            rightX,
+            infoTop + 135,
+            this.word.levelName || this.level,
+            {
+                fontFamily: 'Arial',
+                fontSize: '18px',
+                fontStyle: 'bold',
+                color: '#263238',
+            }
+        ).setOrigin(1, 0.5);
     }
-
-    // ============================================================
-    // PART OF SPEECH
-    // ============================================================
-
-    private getPartOfSpeech(
-        type: string
-    ): string {
-
-        const map: Record<string, string> = {
-
-            '名': '名 (Danh từ)',
-            '动': '动 (Động từ)',
-            '形': '形 (Tính từ)',
-            '副': '副 (Phó từ)',
-            '代': '代 (Đại từ)',
-            '数': '数 (Số từ)',
-            '量': '量 (Lượng từ)',
-            '介': '介 (Giới từ)',
-            '连': '连 (Liên từ)',
-            '助': '助 (Trợ từ)',
-            '叹': '叹 (Thán từ)',
-
-            '方': '方 (Từ phương vị)',
-            '时': '时 (Từ chỉ thời gian)',
-            '区别': '区别 (Từ phân biệt)',
-        };
-
-        return type
-            .split(',')
-            .map(item => {
-
-                const key = item.trim();
-
-                return map[key] ?? key;
-            })
-            .join(' / ');
-    }
-
-    // ============================================================
-    // BACK
-    // ============================================================
 
     private createBackButton(): void {
-
         new UIButton(
             this,
             90,
             this.scale.height - 58,
             'BACK',
-            () => {
-
-                goToScene(
-                    this,
-                    'VocabularyScene',
-                    {
-                        level: this.level,
-                    }
-                );
-
-            },
+            () => this.goBack(),
             {
                 width: 120,
                 height: 44,
@@ -308,12 +262,13 @@ export default class WordDetailScene extends Phaser.Scene {
         );
     }
 
-    // ============================================================
-    // BACKGROUND
-    // ============================================================
+    private goBack(): void {
+        goToScene(this, 'VocabularyScene', {
+            level: this.level,
+        });
+    }
 
     private createBackground(): void {
-
         const width = this.scale.width;
         const height = this.scale.height;
 
@@ -339,6 +294,14 @@ export default class WordDetailScene extends Phaser.Scene {
             180,
             UIColors.yellow,
             0.06
+        );
+
+        this.add.circle(
+            width - 120,
+            100,
+            80,
+            UIColors.primary,
+            0.04
         );
     }
 }

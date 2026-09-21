@@ -11,6 +11,8 @@ import HSKDataService from "../services/HSKDataService";
 import HSKHome from './scenes/HSKHome';
 import VocabularyScene from './scenes/VocabularyScene';
 import WordDetailScene from './scenes/WordDetailScene';
+import GrammarScene from './scenes/GrammarScene';
+import GrammarDetailScene from './scenes/GrammarDetailScene';
 
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
@@ -31,9 +33,14 @@ const config: Phaser.Types.Core.GameConfig = {
     VocabularyMenu,
 
     HSKLevelMenu,
+
     HSKHome,
+
     VocabularyScene,
     WordDetailScene,
+    GrammarScene,
+    GrammarDetailScene,
+
   ],
 };
 
@@ -64,6 +71,43 @@ console.log("HSK6 random words:", HSKDataService.getRandomWords("HSK6", 5));
 
 console.log("");
 ///
+
+const types = new Set<string>();
+const categories = new Set<string>();
+
+for (const level of HSKDataService.getLevels()) {
+    const grammar = HSKDataService.getGrammar(level);
+
+    grammar.forEach(item => {
+        if (item.grammarType) {
+            types.add(item.grammarType);
+        }
+
+        if (item.categoryType) {
+            categories.add(item.categoryType);
+        }
+    });
+}
+
+console.log('GRAMMAR TYPES:', [...types]);
+console.log('GRAMMAR CATEGORIES:', [...categories]);
+
+const vocabularyTypes = new Set<string>();
+
+for (const level of HSKDataService.getLevels()) {
+    const vocabulary = HSKDataService.getVocabulary(level);
+
+    vocabulary.forEach(word => {
+        if (word.cixing) {
+            vocabularyTypes.add(word.cixing);
+        }
+    });
+}
+
+console.log(
+    'VOCABULARY TYPES:',
+    [...vocabularyTypes].sort()
+);
 
 const StartGame = (parent: string) => {
   return new Game({ ...config, parent });

@@ -7,6 +7,7 @@ import {
     HSKLevel,
     HSKVocabulary,
 } from '../../services/HSKDataService';
+import { mapPartOfSpeech } from '../utils/VocabularyUtils';
 
 export default class VocabularyScene extends Phaser.Scene {
 
@@ -276,11 +277,9 @@ export default class VocabularyScene extends Phaser.Scene {
         word: HSKVocabulary,
         y: number
     ): void {
-
         const rowWidth = 700;
         const rowHeight = 24;
 
-        // Row background
         const background = this.add.rectangle(
             0,
             y,
@@ -289,14 +288,7 @@ export default class VocabularyScene extends Phaser.Scene {
             UIColors.card
         )
             .setOrigin(0.5)
-            .setStrokeStyle(
-                1,
-                UIColors.cardBorder
-            );
-
-        // ========================================================
-        // #
-        // ========================================================
+            .setStrokeStyle(1, UIColors.cardBorder);
 
         const numberText = this.add.text(
             -340,
@@ -308,10 +300,6 @@ export default class VocabularyScene extends Phaser.Scene {
                 color: '#98A2B3',
             }
         ).setOrigin(0, 0.5);
-
-        // ========================================================
-        // HANZI
-        // ========================================================
 
         const wordText = this.add.text(
             -290,
@@ -325,10 +313,6 @@ export default class VocabularyScene extends Phaser.Scene {
             }
         ).setOrigin(0, 0.5);
 
-        // ========================================================
-        // PINYIN
-        // ========================================================
-
         const pinyinText = this.add.text(
             -140,
             y,
@@ -340,16 +324,10 @@ export default class VocabularyScene extends Phaser.Scene {
             }
         ).setOrigin(0, 0.5);
 
-        // ========================================================
-        // TYPE
-        // ========================================================
-
         const typeText = this.add.text(
             90,
             y,
-            this.getPartOfSpeech(
-                word.cixing
-            ),
+            mapPartOfSpeech(word.cixing),
             {
                 fontFamily: 'Arial',
                 fontSize: '13px',
@@ -365,92 +343,29 @@ export default class VocabularyScene extends Phaser.Scene {
             typeText,
         ]);
 
-        // ========================================================
-        // HOVER
-        // ========================================================
-
         background.setInteractive({
             useHandCursor: true,
         });
 
-        background.on(
-            'pointerover',
-            () => {
-                background.setFillStyle(
-                    UIColors.backgroundAlt
-                );
-            }
-        );
+        background.on('pointerover', () => {
+            background.setFillStyle(UIColors.backgroundAlt);
+        });
 
-        background.on(
-            'pointerout',
-            () => {
-                background.setFillStyle(
-                    UIColors.card
-                );
-            }
-        );
+        background.on('pointerout', () => {
+            background.setFillStyle(UIColors.card);
+        });
 
-        // ========================================================
-        // CLICK
-        // ========================================================
-
-        background.on(
-            'pointerdown',
-            () => {
-                goToScene(
-                    this,
-                    'WordDetailScene',
-                    {
-                        level: this.level,
-                        word,
-                    }
-                );
-            }
-        );
+        background.on('pointerdown', () => {
+            goToScene(this, 'WordDetailScene', {
+                level: this.level,
+                word,
+            });
+        });
     }
 
     // ============================================================
     // PART OF SPEECH
     // ============================================================
-
-    private getPartOfSpeech(
-        type: string
-    ): string {
-
-        const map: Record<string, string> = {
-
-            '名': '名 (Danh từ)',
-            '动': '动 (Động từ)',
-            '形': '形 (Tính từ)',
-            '副': '副 (Phó từ)',
-            '代': '代 (Đại từ)',
-            '数': '数 (Số từ)',
-            '量': '量 (Lượng từ)',
-            '介': '介 (Giới từ)',
-            '连': '连 (Liên từ)',
-            '助': '助 (Trợ từ)',
-            '叹': '叹 (Thán từ)',
-
-            '方': '方 (Từ phương vị)',
-            '时': '时 (Từ chỉ thời gian)',
-            '区别': '区别 (Từ phân biệt)',
-        };
-
-        return type
-            .split(',')
-            .map(item => {
-
-                const key =
-                    item.trim();
-
-                return (
-                    map[key] ??
-                    key
-                );
-            })
-            .join(' / ');
-    }
 
     // ============================================================
     // PAGINATION

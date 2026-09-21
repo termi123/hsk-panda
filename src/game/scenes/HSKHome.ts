@@ -89,7 +89,9 @@ export default class HSKHome extends Phaser.Scene {
             `${stats.grammar.toLocaleString()} grammar items`,
             UIColors.secondary,
             () => {
-                this.modal.showComingSoon('GRAMMAR');
+                goToScene(this, 'GrammarScene', {
+                    level: this.level,
+                });
             }
         );
 
