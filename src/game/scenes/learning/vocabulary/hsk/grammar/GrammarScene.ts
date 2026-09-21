@@ -5,8 +5,8 @@ import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
 import {
     HSKDataService,
     HSKLevel,
-    HSKGrammar,
 } from '../../../../../../services/HSKDataService';
+import { HSKGrammar } from '../../../../../../types/HSKTypes';
 import {
     mapGrammarType,
     mapGrammarCategory,

@@ -4,9 +4,9 @@ import { UIColors } from '../../../../../ui/UIColors';
 import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
 import {
     HSKDataService,
-    HSKHanzi,
     HSKLevel,
 } from '../../../../../../services/HSKDataService';
+import { HSKHanzi } from '../../../../../../types/HSKTypes';
 
 export default class HanziScene extends Phaser.Scene {
 

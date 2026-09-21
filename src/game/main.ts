@@ -5,6 +5,7 @@ import { AUTO, Game } from "phaser";
 import { Preloader } from "./scenes/Preloader";
 import MainMenu from './scenes/main/MainMenu';
 import GamesMenu from './scenes/games/GamesMenu';
+import HSKDataService from "../services/HSKDataService";
 
 import VocabularyMenu from './scenes/learning/vocabulary/VocabularyMenu';
 

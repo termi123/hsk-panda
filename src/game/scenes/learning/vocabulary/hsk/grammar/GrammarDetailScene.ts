@@ -2,10 +2,8 @@ import * as Phaser from 'phaser';
 import { UIButton } from '../../../../../ui/UIButton';
 import { UIColors } from '../../../../../ui/UIColors';
 import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
-import {
-    HSKLevel,
-    HSKGrammar,
-} from '../../../../../../services/HSKDataService';
+import { HSKLevel } from '../../../../../../services/HSKDataService';
+import { HSKGrammar } from '../../../../../../types/HSKTypes';
 import {
     mapGrammarType,
     mapGrammarCategory,

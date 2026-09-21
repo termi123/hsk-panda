@@ -2,10 +2,8 @@ import * as Phaser from 'phaser';
 import { UIButton } from '../../../../../ui/UIButton';
 import { UIColors } from '../../../../../ui/UIColors';
 import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
-import {
-    HSKLevel,
-    HSKTopic,
-} from '../../../../../../services/HSKDataService';
+import { HSKLevel } from '../../../../../../services/HSKDataService';
+import { HSKTopic } from '../../../../../../types/HSKTypes';
 
 export default class TopicDetailScene extends Phaser.Scene {
 

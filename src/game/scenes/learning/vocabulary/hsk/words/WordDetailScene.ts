@@ -2,10 +2,8 @@ import * as Phaser from 'phaser';
 import { UIButton } from '../../../../../ui/UIButton';
 import { UIColors } from '../../../../../ui/UIColors';
 import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
-import {
-    HSKLevel,
-    HSKVocabulary,
-} from '../../../../../../services/HSKDataService';
+import { HSKLevel } from '../../../../../../services/HSKDataService';
+import { HSKVocabulary } from '../../../../../../types/HSKTypes';
 import { mapPartOfSpeech } from '../../../../../utils/VocabularyUtils';
 
 export default class WordDetailScene extends Phaser.Scene {

@@ -5,8 +5,8 @@ import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
 import {
     HSKDataService,
     HSKLevel,
-    HSKVocabulary,
 } from '../../../../../../services/HSKDataService';
+import { HSKVocabulary } from '../../../../../../types/HSKTypes';
 import { mapPartOfSpeech } from '../../../../../utils/VocabularyUtils';
 
 export default class VocabularyScene extends Phaser.Scene {

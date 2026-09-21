@@ -2,10 +2,8 @@ import * as Phaser from 'phaser';
 import { UIButton } from '../../../../../ui/UIButton';
 import { UIColors } from '../../../../../ui/UIColors';
 import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
-import {
-    HSKHanzi,
-    HSKLevel,
-} from '../../../../../../services/HSKDataService';
+import { HSKLevel } from '../../../../../../services/HSKDataService';
+import { HSKHanzi } from '../../../../../../types/HSKTypes';
 
 export default class HanziDetailScene extends Phaser.Scene {
 

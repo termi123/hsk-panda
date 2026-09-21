@@ -5,8 +5,8 @@ import { fadeInScene, goToScene } from '../../../../../ui/SceneTransition';
 import {
     HSKDataService,
     HSKLevel,
-    HSKTopic,
 } from '../../../../../../services/HSKDataService';
+import { HSKTopic } from '../../../../../../types/HSKTypes';
 
 export default class TopicScene extends Phaser.Scene {
 

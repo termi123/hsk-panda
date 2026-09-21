@@ -1,7 +1,6 @@
 import * as Phaser from 'phaser';
 import { UIButton } from '../../../../ui/UIButton';
 import { UIColors } from '../../../../ui/UIColors';
-import { UIModal } from '../../../../ui/UIModal';
 import { fadeInScene, goToScene } from '../../../../ui/SceneTransition';
 import {
     HSKDataService,
@@ -10,7 +9,6 @@ import {
 
 export default class HSKHome extends Phaser.Scene {
     private level!: HSKLevel;
-    private modal!: UIModal;
 
     constructor() {
         super('HSKHome');
@@ -25,8 +23,6 @@ export default class HSKHome extends Phaser.Scene {
         const height = this.scale.height;
 
         fadeInScene(this);
-
-        this.modal = new UIModal(this);
 
         const stats = HSKDataService.getStats(this.level);
 

@@ -10,8 +10,8 @@ import {
 import {
     HSKDataService,
     HSKLevel,
-    HSKTask,
 } from '../../../../../../services/HSKDataService';
+import { HSKTask } from '../../../../../../types/HSKTypes';
 
 export default class TaskScene extends Phaser.Scene {
 

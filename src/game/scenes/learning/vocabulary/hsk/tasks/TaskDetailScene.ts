@@ -7,10 +7,8 @@ import {
     goToScene,
 } from '../../../../../ui/SceneTransition';
 
-import {
-    HSKLevel,
-    HSKTask,
-} from '../../../../../../services/HSKDataService';
+import { HSKLevel } from '../../../../../../services/HSKDataService';
+import { HSKTask } from '../../../../../../types/HSKTypes';
 
 export default class TaskDetailScene extends Phaser.Scene {
 
