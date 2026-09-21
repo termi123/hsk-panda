@@ -115,7 +115,9 @@ export default class HSKHome extends Phaser.Scene {
             `${stats.topics.toLocaleString()} topics`,
             UIColors.orange,
             () => {
-                this.modal.showComingSoon('TOPICS');
+                goToScene(this, 'TopicScene', {
+                        level: this.level,
+                    });
             }
         );
 
