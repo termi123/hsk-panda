@@ -76,7 +76,9 @@ export default class HSKHome extends Phaser.Scene {
             `${stats.vocabulary.toLocaleString()} words`,
             UIColors.primary,
             () => {
-                this.modal.showComingSoon('VOCABULARY');
+                goToScene(this, 'VocabularyScene', {
+                        level: this.level,
+                });
             }
         );
 

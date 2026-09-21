@@ -9,6 +9,8 @@ import HSKLevelMenu from './scenes/HSKLevelMenu';
 import VocabularyMenu from './scenes/VocabularyMenu';
 import HSKDataService from "../services/HSKDataService";
 import HSKHome from './scenes/HSKHome';
+import VocabularyScene from './scenes/VocabularyScene';
+
 
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
@@ -27,8 +29,10 @@ const config: Phaser.Types.Core.GameConfig = {
     GameOver,
 
     VocabularyMenu,
+
     HSKLevelMenu,
     HSKHome,
+    VocabularyScene,
   ],
 };
 
