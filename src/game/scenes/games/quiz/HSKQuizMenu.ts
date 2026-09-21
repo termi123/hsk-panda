@@ -27,6 +27,15 @@ export default class HSKQuizMenu extends Phaser.Scene {
         super('HSKQuizMenu');
     }
 
+    init(data?: {
+        selectedQuestionCount?: number;
+    }): void {
+
+        if (data?.selectedQuestionCount) {
+            this.selectedQuestionCount = data.selectedQuestionCount;
+        }
+    }
+
     create(): void {
 
         const width = this.scale.width;
@@ -81,18 +90,23 @@ export default class HSKQuizMenu extends Phaser.Scene {
 
         this.createQuestionCountButtons();
 
-        // Same style/layout approach as HSKLevelMenu.
+        // =========================
+        // HSK LEVELS
+        // =========================
+
+        const columnOffset = 222;
+
         const positions: [number, number][] = [
-            [290, 290],
-            [734, 290],
+            [width / 2 - columnOffset, 290],
+            [width / 2 + columnOffset, 290],
 
-            [290, 405],
-            [734, 405],
+            [width / 2 - columnOffset, 405],
+            [width / 2 + columnOffset, 405],
 
-            [290, 520],
-            [734, 520],
+            [width / 2 - columnOffset, 520],
+            [width / 2 + columnOffset, 520],
 
-            [512, 635],
+            [width / 2, 635],
         ];
 
         this.levels.forEach((level, index) => {
@@ -164,7 +178,10 @@ export default class HSKQuizMenu extends Phaser.Scene {
                     : `${count}`,
                 () => {
                     this.selectedQuestionCount = count;
-                    this.refreshQuestionCountButtons();
+
+                    this.scene.restart({
+                        selectedQuestionCount: this.selectedQuestionCount,
+                    });
                 },
                 {
                     width: buttonWidth,
@@ -185,34 +202,6 @@ export default class HSKQuizMenu extends Phaser.Scene {
                     fontSize: 18,
                 }
             );
-        });
-    }
-
-    // =========================================================
-    // REFRESH QUESTION COUNT
-    // =========================================================
-
-    private refreshQuestionCountButtons(): void {
-
-        const children = this.children.list.slice();
-
-        children.forEach(child => {
-
-            if (
-                child instanceof Phaser.GameObjects.Container &&
-                child.getData('questionCountButton') === true
-            ) {
-                child.destroy();
-            }
-        });
-
-        // Because UIButton is internally composed of game objects,
-        // use a dedicated container marker instead of relying on
-        // scene-wide object filtering.
-        //
-        // Recreate the buttons cleanly by restarting the scene UI.
-        this.scene.restart({
-            selectedQuestionCount: this.selectedQuestionCount,
         });
     }
 
@@ -239,9 +228,6 @@ export default class HSKQuizMenu extends Phaser.Scene {
 
         const color = colorMap[level];
 
-        // IMPORTANT:
-        // Use UIButton exactly like HSKLevelMenu.
-        // Do not use Container.setInteractive().
         new UIButton(
             this,
             x,
@@ -258,6 +244,19 @@ export default class HSKQuizMenu extends Phaser.Scene {
                 fontSize: 26,
             }
         );
+
+        this.add.text(
+            x,
+            y + 33,
+            `${vocabularyCount.toLocaleString()} words`,
+            {
+                fontFamily: 'Arial',
+                fontSize: '14px',
+                color: level === 'HSK3'
+                    ? '#263238'
+                    : '#FFFFFF',
+            }
+        ).setOrigin(0.5);
     }
 
     // =========================================================

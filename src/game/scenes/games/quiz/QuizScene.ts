@@ -7,6 +7,7 @@ import {
     HSKLevel,
     HSKVocabulary,
 } from '../../../../services/HSKDataService';
+import { QuizScoreService } from '../../../../services/QuizScoreService';
 
 interface QuizQuestion {
     word: HSKVocabulary;
@@ -24,6 +25,7 @@ export default class QuizScene extends Phaser.Scene {
 
     private score: number = 0;
     private correctCount: number = 0;
+    private highScore: number = 0;
 
     private answered: boolean = false;
 
@@ -34,6 +36,7 @@ export default class QuizScene extends Phaser.Scene {
     private feedbackText!: Phaser.GameObjects.Text;
 
     private optionButtons: UIButton[] = [];
+    private nextButton?: UIButton;
 
     constructor() {
         super('QuizScene');
@@ -50,7 +53,6 @@ export default class QuizScene extends Phaser.Scene {
 
     create(): void {
 
-        const width = this.scale.width;
         const height = this.scale.height;
 
         fadeInScene(this);
@@ -58,6 +60,10 @@ export default class QuizScene extends Phaser.Scene {
         this.createBackground();
         this.createHeader();
         this.createQuiz();
+
+        // =====================================================
+        // BACK
+        // =====================================================
 
         new UIButton(
             this,
@@ -167,6 +173,11 @@ export default class QuizScene extends Phaser.Scene {
         this.score = 0;
         this.correctCount = 0;
 
+        this.highScore = QuizScoreService.getHighScore(
+            this.level,
+            this.questionCount
+        );
+
         this.showQuestion();
     }
 
@@ -174,9 +185,13 @@ export default class QuizScene extends Phaser.Scene {
     // CREATE QUESTION
     // =========================================================
 
-    private createQuestion(word: HSKVocabulary): QuizQuestion {
+    private createQuestion(
+        word: HSKVocabulary
+    ): QuizQuestion {
 
-        const allWords = HSKDataService.getVocabulary(this.level);
+        const allWords = HSKDataService.getVocabulary(
+            this.level
+        );
 
         const candidates = allWords
             .filter(item => item.word !== word.word)
@@ -201,7 +216,9 @@ export default class QuizScene extends Phaser.Scene {
         return {
             word,
             options,
-            correctIndex: options.indexOf(word.pinyin),
+            correctIndex: options.indexOf(
+                word.pinyin
+            ),
         };
     }
 
@@ -268,7 +285,9 @@ export default class QuizScene extends Phaser.Scene {
     // OPTIONS
     // =========================================================
 
-    private createOptions(question: QuizQuestion): void {
+    private createOptions(
+        question: QuizQuestion
+    ): void {
 
         const width = this.scale.width;
 
@@ -347,6 +366,8 @@ export default class QuizScene extends Phaser.Scene {
             `Score: ${this.score}`
         );
 
+        // NEXT / FINISH only appears
+        // after the user has selected an answer.
         this.createNextButton();
     }
 
@@ -379,17 +400,25 @@ export default class QuizScene extends Phaser.Scene {
     }
 
     // =========================================================
-    // NEXT
+    // NEXT / FINISH
     // =========================================================
 
     private createNextButton(): void {
 
-        new UIButton(
+        if (this.nextButton) {
+            this.nextButton.destroy();
+            this.nextButton = undefined;
+        }
+
+        const isLastQuestion =
+            this.currentQuestionIndex
+            === this.questions.length - 1;
+
+        this.nextButton = new UIButton(
             this,
             this.scale.width / 2,
             665,
-            this.currentQuestionIndex
-                === this.questions.length - 1
+            isLastQuestion
                 ? 'FINISH'
                 : 'NEXT',
             () => {
@@ -427,26 +456,65 @@ export default class QuizScene extends Phaser.Scene {
 
     private finishQuiz(): void {
 
-        // Temporary result screen.
-        // We will replace this with QuizResultScene later.
+        const result = QuizScoreService.saveScore(
+            this.level,
+            this.questionCount,
+            this.score,
+            this.correctCount,
+            this.questions.length
+        );
+
+        this.highScore = result.highScore;
 
         this.clearQuestionUI();
 
+        // =====================================================
+        // TITLE
+        // =====================================================
+
         this.add.text(
             this.scale.width / 2,
-            220,
-            'QUIZ COMPLETE!',
+            170,
+            result.isNewHighScore
+                ? 'NEW HIGH SCORE!'
+                : 'QUIZ COMPLETE!',
             {
                 fontFamily: 'Arial',
                 fontSize: '42px',
                 fontStyle: 'bold',
-                color: '#263238',
+                color: result.isNewHighScore
+                    ? '#F28C28'
+                    : '#263238',
             }
         ).setOrigin(0.5);
 
+        // =====================================================
+        // CONGRATULATIONS
+        // =====================================================
+
+        if (result.isNewHighScore) {
+
+            this.add.text(
+                this.scale.width / 2,
+                225,
+                'Congratulations! You beat your best score.',
+                {
+                    fontFamily: 'Arial',
+                    fontSize: '18px',
+                    color: '#667085',
+                }
+            ).setOrigin(0.5);
+        }
+
+        // =====================================================
+        // CORRECT ANSWERS
+        // =====================================================
+
         this.add.text(
             this.scale.width / 2,
-            300,
+            result.isNewHighScore
+                ? 290
+                : 245,
             `${this.correctCount} / ${this.questions.length} correct`,
             {
                 fontFamily: 'Arial',
@@ -455,10 +523,16 @@ export default class QuizScene extends Phaser.Scene {
             }
         ).setOrigin(0.5);
 
+        // =====================================================
+        // YOUR SCORE
+        // =====================================================
+
         this.add.text(
             this.scale.width / 2,
-            355,
-            `Score: ${this.score}`,
+            result.isNewHighScore
+                ? 345
+                : 300,
+            `Your Score: ${this.score}`,
             {
                 fontFamily: 'Arial',
                 fontSize: '30px',
@@ -467,10 +541,32 @@ export default class QuizScene extends Phaser.Scene {
             }
         ).setOrigin(0.5);
 
+        // =====================================================
+        // HIGH SCORE
+        // =====================================================
+
+        this.add.text(
+            this.scale.width / 2,
+            result.isNewHighScore
+                ? 395
+                : 350,
+            `High Score: ${this.highScore}`,
+            {
+                fontFamily: 'Arial',
+                fontSize: '22px',
+                fontStyle: 'bold',
+                color: '#F28C28',
+            }
+        ).setOrigin(0.5);
+
+        // =====================================================
+        // PLAY AGAIN
+        // =====================================================
+
         new UIButton(
             this,
             this.scale.width / 2,
-            470,
+            480,
             'PLAY AGAIN',
             () => {
                 this.scene.restart({
@@ -487,24 +583,6 @@ export default class QuizScene extends Phaser.Scene {
                 fontSize: 18,
             }
         );
-
-        new UIButton(
-            this,
-            this.scale.width / 2,
-            545,
-            'BACK TO GAMES',
-            () => {
-                goToScene(this, 'GamesMenu');
-            },
-            {
-                width: 220,
-                height: 55,
-                color: UIColors.card,
-                darkColor: UIColors.cardBorder,
-                textColor: UIColors.text,
-                fontSize: 17,
-            }
-        );
     }
 
     // =========================================================
@@ -513,12 +591,20 @@ export default class QuizScene extends Phaser.Scene {
 
     private clearQuestionUI(): void {
 
+        // Remove NEXT / FINISH
+        if (this.nextButton) {
+            this.nextButton.destroy();
+            this.nextButton = undefined;
+        }
+
+        // Remove answer buttons
         this.optionButtons.forEach(button => {
             button.destroy();
         });
 
         this.optionButtons = [];
 
+        // Remove question text
         if (this.wordText) {
             this.wordText.destroy();
         }
@@ -531,7 +617,8 @@ export default class QuizScene extends Phaser.Scene {
             this.feedbackText.destroy();
         }
 
-        // Remove temporary texts created in showQuestion().
+        // Remove temporary texts created in showQuestion()
+        // while preserving the permanent header texts.
         const texts = this.children.list.filter(
             child =>
                 child instanceof Phaser.GameObjects.Text &&

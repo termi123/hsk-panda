@@ -1,3 +1,4 @@
+import * as Phaser from 'phaser';
 import { Boot } from "./scenes/Boot";
 import { GameOver } from "./scenes/GameOver";
 import { Game as MainGame } from "./scenes/Game";
@@ -38,6 +39,10 @@ const config: Phaser.Types.Core.GameConfig = {
   type: AUTO,
   width: 1024,
   height: 768,
+  scale: {
+          mode: Phaser.Scale.RESIZE,
+          autoCenter: Phaser.Scale.CENTER_BOTH,
+      },
   parent: "game-container",
   backgroundColor: "#f5f1e8",
   scene: [
