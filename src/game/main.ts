@@ -17,6 +17,8 @@ import HanziScene from './scenes/HanziScene';
 import HanziDetailScene from './scenes/HanziDetailScene';
 import TopicScene from './scenes/TopicScene';
 import TopicDetailScene from './scenes/TopicDetailScene';
+import TaskScene from './scenes/TaskScene';
+import TaskDetailScene from './scenes/TaskDetailScene';
 
 //  Find out more information about the Game Config at:
 //  https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
@@ -47,6 +49,8 @@ const config: Phaser.Types.Core.GameConfig = {
     HanziDetailScene,
     TopicScene,
     TopicDetailScene,
+    TaskScene,
+    TaskDetailScene,
   ],
 };
 
