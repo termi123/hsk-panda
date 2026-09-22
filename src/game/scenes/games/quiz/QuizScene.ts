@@ -7,7 +7,7 @@ import {
     HSKLevel,
     HSKVocabulary,
 } from '../../../../services/HSKDataService';
-import { QuizScoreService } from '../../../../services/QuizScoreService';
+import { GameScoreService } from '../../../../services/GameScoreService';
 
 interface QuizQuestion {
     word: HSKVocabulary;
@@ -173,10 +173,11 @@ export default class QuizScene extends Phaser.Scene {
         this.score = 0;
         this.correctCount = 0;
 
-        this.highScore = QuizScoreService.getHighScore(
-            this.level,
-            this.questionCount
-        );
+        this.highScore = GameScoreService.getHighScore(
+                             'quiz',
+                             this.level,
+                             `${this.questionCount}`
+                         );
 
         this.showQuestion();
     }
@@ -456,13 +457,16 @@ export default class QuizScene extends Phaser.Scene {
 
     private finishQuiz(): void {
 
-        const result = QuizScoreService.saveScore(
-            this.level,
-            this.questionCount,
-            this.score,
-            this.correctCount,
-            this.questions.length
-        );
+        const result = GameScoreService.saveScore(
+                           'quiz',
+                           this.level,
+                           this.score,
+                           `${this.questionCount}`,
+                           {
+                               correctCount: this.correctAnswers,
+                               totalQuestions: this.questions.length,
+                           }
+                       );
 
         this.highScore = result.highScore;
 

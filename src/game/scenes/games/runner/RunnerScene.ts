@@ -7,6 +7,7 @@ import {
     HSKLevel,
     HSKVocabulary,
 } from '../../../../services/HSKDataService';
+import { GameScoreService } from '../../../../services/GameScoreService';
 import { RunnerQuestion } from './RunnerTypes';
 
 export default class RunnerScene extends Phaser.Scene {
@@ -18,6 +19,9 @@ export default class RunnerScene extends Phaser.Scene {
     // =========================
 
     private score: number = 0;
+    private highScore: number = 0;
+    private isNewHighScore: boolean = false;
+
     private distance: number = 0;
     private lives: number = 3;
 
@@ -47,19 +51,23 @@ export default class RunnerScene extends Phaser.Scene {
 
     private groundY: number = 0;
 
-    private obstacles: Phaser.GameObjects.Container[] = [];
+    private obstacles:
+        Phaser.GameObjects.Container[] = [];
 
-    private backgroundObjects: Phaser.GameObjects.GameObject[] = [];
+    private backgroundObjects:
+        Phaser.GameObjects.GameObject[] = [];
 
     // =========================
     // UI
     // =========================
 
     private scoreText!: Phaser.GameObjects.Text;
+    private highScoreText!: Phaser.GameObjects.Text;
     private distanceText!: Phaser.GameObjects.Text;
     private livesText!: Phaser.GameObjects.Text;
 
-    private questionPanel?: Phaser.GameObjects.Container;
+    private questionPanel?:
+        Phaser.GameObjects.Container;
 
     private answerButtons: UIButton[] = [];
 
@@ -75,9 +83,19 @@ export default class RunnerScene extends Phaser.Scene {
         level: HSKLevel;
     }): void {
 
-        this.level = data.level;
+        this.level =
+            data.level;
 
         this.score = 0;
+
+        this.highScore =
+            GameScoreService.getHighScore(
+                'runner',
+                this.level
+            );
+
+        this.isNewHighScore = false;
+
         this.distance = 0;
         this.lives = 3;
 
@@ -90,15 +108,18 @@ export default class RunnerScene extends Phaser.Scene {
         this.questionTimer = 0;
         this.obstacleTimer = 0;
 
-        this.currentQuestion = undefined;
+        this.currentQuestion =
+            undefined;
 
         this.answerButtons = [];
         this.obstacles = [];
         this.backgroundObjects = [];
 
-        this.questionPanel = undefined;
+        this.questionPanel =
+            undefined;
 
-        this.pandaRunTween = undefined;
+        this.pandaRunTween =
+            undefined;
     }
 
     // =========================================================
@@ -121,6 +142,8 @@ export default class RunnerScene extends Phaser.Scene {
 
         this.scheduleNextObstacle();
         this.scheduleNextQuestion();
+
+        this.updateUI();
     }
 
     // =========================================================
@@ -486,12 +509,11 @@ export default class RunnerScene extends Phaser.Scene {
         ]);
 
         // Running animation.
-        // This tween is paused during jump
-        // so it cannot fight with jump tween.
         this.pandaRunTween =
             this.tweens.add({
                 targets: this.panda,
-                y: this.pandaBaseY - 5,
+                y:
+                    this.pandaBaseY - 5,
                 duration: 220,
                 yoyo: true,
                 repeat: -1,
@@ -583,10 +605,8 @@ export default class RunnerScene extends Phaser.Scene {
 
         this.jumping = true;
 
-        // Stop running bob animation.
         this.pandaRunTween?.pause();
 
-        // Always start from the real ground position.
         this.panda.y =
             this.pandaBaseY;
 
@@ -811,6 +831,8 @@ export default class RunnerScene extends Phaser.Scene {
 
         this.questionActive = true;
 
+        this.pandaRunTween?.pause();
+
         this.clearQuestion();
 
         this.currentQuestion =
@@ -934,7 +956,6 @@ export default class RunnerScene extends Phaser.Scene {
             buttonWidth * 2 +
             horizontalGap;
 
-        // UIButton uses x/y as CENTER.
         const groupCenterX =
             width / 2;
 
@@ -1019,7 +1040,8 @@ export default class RunnerScene extends Phaser.Scene {
     // CREATE QUESTION
     // =========================================================
 
-    private createQuestion(): RunnerQuestion {
+    private createQuestion():
+        RunnerQuestion {
 
         const word =
             HSKDataService.getRandomWord(
@@ -1153,6 +1175,13 @@ export default class RunnerScene extends Phaser.Scene {
 
                     this.questionActive =
                         false;
+
+                    this.panda.y =
+                        this.pandaBaseY;
+
+                    this.pandaRunTween?.resume();
+
+                    this.scheduleNextQuestion();
                 }
             }
         );
@@ -1254,6 +1283,19 @@ export default class RunnerScene extends Phaser.Scene {
                 }
             );
 
+        this.highScoreText =
+            this.add.text(
+                40,
+                58,
+                `HIGH ${this.highScore}`,
+                {
+                    fontFamily: 'Arial',
+                    fontSize: 15,
+                    fontStyle: 'bold',
+                    color: '#667085',
+                }
+            );
+
         this.distanceText =
             this.add.text(
                 width / 2,
@@ -1293,6 +1335,13 @@ export default class RunnerScene extends Phaser.Scene {
             `SCORE ${this.score}`
         );
 
+        this.highScoreText.setText(
+            `HIGH ${Math.max(
+                this.highScore,
+                this.score
+            )}`
+        );
+
         this.distanceText.setText(
             `${Math.floor(
                 this.distance
@@ -1326,6 +1375,20 @@ export default class RunnerScene extends Phaser.Scene {
 
         this.jumping = false;
         this.questionActive = false;
+
+        // Save Runner score.
+        const result =
+            GameScoreService.saveScore(
+                'runner',
+                this.level,
+                this.score
+            );
+
+        this.highScore =
+            result.highScore;
+
+        this.isNewHighScore =
+            result.isNewHighScore;
 
         // Stop timers.
         this.obstacleTimer = 0;
@@ -1389,11 +1452,11 @@ export default class RunnerScene extends Phaser.Scene {
         const title =
             this.add.text(
                 width / 2,
-                height / 2 - 100,
+                height / 2 - 125,
                 'GAME OVER',
                 {
                     fontFamily: 'Arial',
-                    fontSize: '48px',
+                    fontSize: 48,
                     fontStyle: 'bold',
                     color: '#FFFFFF',
                 }
@@ -1403,17 +1466,42 @@ export default class RunnerScene extends Phaser.Scene {
         title.setDepth(101);
 
         // =====================================================
+        // NEW HIGH SCORE
+        // =====================================================
+
+        if (
+            this.isNewHighScore
+        ) {
+
+            const newHighScoreText =
+                this.add.text(
+                    width / 2,
+                    height / 2 - 75,
+                    '★ NEW HIGH SCORE!',
+                    {
+                        fontFamily: 'Arial',
+                        fontSize: 22,
+                        fontStyle: 'bold',
+                        color: '#F7C948',
+                    }
+                );
+
+            newHighScoreText.setOrigin(0.5);
+            newHighScoreText.setDepth(101);
+        }
+
+        // =====================================================
         // SCORE
         // =====================================================
 
         const scoreText =
             this.add.text(
                 width / 2,
-                height / 2 - 35,
+                height / 2 - 30,
                 `Score: ${this.score}`,
                 {
                     fontFamily: 'Arial',
-                    fontSize: '26px',
+                    fontSize: 25,
                     fontStyle: 'bold',
                     color: '#FFFFFF',
                 }
@@ -1423,6 +1511,25 @@ export default class RunnerScene extends Phaser.Scene {
         scoreText.setDepth(101);
 
         // =====================================================
+        // HIGH SCORE
+        // =====================================================
+
+        const highScoreText =
+            this.add.text(
+                width / 2,
+                height / 2 + 5,
+                `High Score: ${this.highScore}`,
+                {
+                    fontFamily: 'Arial',
+                    fontSize: 19,
+                    color: '#FFFFFF',
+                }
+            );
+
+        highScoreText.setOrigin(0.5);
+        highScoreText.setDepth(101);
+
+        // =====================================================
         // PLAY AGAIN
         // =====================================================
 
@@ -1430,7 +1537,7 @@ export default class RunnerScene extends Phaser.Scene {
             new UIButton(
                 this,
                 width / 2,
-                height / 2 + 70,
+                height / 2 + 80,
                 'PLAY AGAIN',
                 () => {
 
@@ -1462,7 +1569,7 @@ export default class RunnerScene extends Phaser.Scene {
             new UIButton(
                 this,
                 width / 2,
-                height / 2 + 145,
+                height / 2 + 155,
                 'BACK',
                 () => {
 
